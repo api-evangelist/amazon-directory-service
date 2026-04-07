@@ -9,10 +9,10 @@ type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Active Directory
-  - Identity Management
-  - Directory Services
   - Authentication
   - AWS
+  - Directory Services
+  - Identity Management
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/apis.yml
 created: '2026-03-16'
@@ -29,8 +29,8 @@ apis:
     baseURL: https://ds.amazonaws.com
     tags:
       - Active Directory
-      - Identity Management
       - Directory Services
+      - Identity Management
     properties:
       - type: Documentation
         url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
