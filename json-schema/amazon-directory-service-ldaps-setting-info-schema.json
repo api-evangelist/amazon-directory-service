@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-ldaps-setting-info-schema.json",
+  "title": "LDAPSSettingInfo",
+  "description": "Contains general information about the LDAPS settings.",
+  "type": "object",
+  "properties": {
+    "LDAPSStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LDAPSStatus"
+        },
+        {
+          "description": "The state of the LDAPS settings."
+        }
+      ]
+    },
+    "LDAPSStatusReason": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LDAPSStatusReason"
+        },
+        {
+          "description": "Describes a state change for LDAPS."
+        }
+      ]
+    },
+    "LastUpdatedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LastUpdatedDateTime"
+        },
+        {
+          "description": "The date and time when the LDAPS settings were last updated."
+        }
+      ]
+    }
+  }
+}

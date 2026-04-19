@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-structure/amazon-directory-service-directory-description-structure.json",
+  "title": "DirectoryDescription",
+  "description": "Contains information about an Directory Service directory.",
+  "type": "object",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The directory identifier."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryName"
+        },
+        {
+          "description": "The fully qualified name of the directory."
+        }
+      ]
+    },
+    "ShortName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryShortName"
+        },
+        {
+          "description": "The short name of the directory."
+        }
+      ]
+    },
+    "Size": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectorySize"
+        },
+        {
+          "description": "The directory size."
+        }
+      ]
+    },
+    "Edition": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryEdition"
+        },
+        {
+          "description": "The edition associated with this directory."
+        }
+      ]
+    },
+    "Alias": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AliasName"
+        },
+        {
+          "description": "The alias for the directory. If no alias has been created for the directory, the alias is the directory identifier, such as <code>d-XXXXXXXXXX</code>."
+        }
+      ]
+    },
+    "AccessUrl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AccessUrl"
+        },
+        {
+          "description": "The access URL for the directory, such as <code>http://&lt;alias&gt;.awsapps.com</code>. If no alias has been created for the directory, <code>&lt;alias&gt;</code> is the directory identifier, such as <code>d-XXXXXXXXXX</code>."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Description"
+        },
+        {
+          "description": "The description for the directory."
+        }
+      ]
+    },
+    "DnsIpAddrs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DnsIpAddrs"
+        },
+        {
+          "description": "The IP addresses of the DNS servers for the directory. For a Simple AD or Microsoft AD directory, these are the IP addresses of the Simple AD or Microsoft AD directory servers. For an AD Connector directory, these are the IP addresses of the DNS servers or domain controllers in your self-managed directory to which the AD Connector is connected."
+        }
+      ]
+    },
+    "Stage": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryStage"
+        },
+        {
+          "description": "The current stage of the directory."
+        }
+      ]
+    },
+    "ShareStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ShareStatus"
+        },
+        {
+          "description": "Current directory status of the shared Managed Microsoft AD directory."
+        }
+      ]
+    },
+    "ShareMethod": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ShareMethod"
+        },
+        {
+          "description": "The method used when sharing a directory to determine whether the directory should be shared within your Amazon Web Services organization (<code>ORGANIZATIONS</code>) or with any Amazon Web Services account by sending a shared directory request (<code>HANDSHAKE</code>)."
+        }
+      ]
+    },
+    "ShareNotes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Notes"
+        },
+        {
+          "description": "A directory share request that is sent by the directory owner to the directory consumer. The request includes a typed message to help the directory consumer administrator determine whether to approve or reject the share invitation."
+        }
+      ]
+    },
+    "LaunchTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LaunchTime"
+        },
+        {
+          "description": "Specifies when the directory was created."
+        }
+      ]
+    },
+    "StageLastUpdatedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LastUpdatedDateTime"
+        },
+        {
+          "description": "The date and time that the stage was last updated."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryType"
+        },
+        {
+          "description": "The directory size."
+        }
+      ]
+    },
+    "VpcSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryVpcSettingsDescription"
+        },
+        {
+          "description": "A <a>DirectoryVpcSettingsDescription</a> object that contains additional information about a directory. This member is only present if the directory is a Simple AD or Managed Microsoft AD directory."
+        }
+      ]
+    },
+    "ConnectSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryConnectSettingsDescription"
+        },
+        {
+          "description": "A <a>DirectoryConnectSettingsDescription</a> object that contains additional information about an AD Connector directory. This member is only present if the directory is an AD Connector directory."
+        }
+      ]
+    },
+    "RadiusSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RadiusSettings"
+        },
+        {
+          "description": "A <a>RadiusSettings</a> object that contains information about the RADIUS server configured for this directory."
+        }
+      ]
+    },
+    "RadiusStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RadiusStatus"
+        },
+        {
+          "description": "The status of the RADIUS MFA server connection."
+        }
+      ]
+    },
+    "StageReason": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StageReason"
+        },
+        {
+          "description": "Additional information about the directory stage."
+        }
+      ]
+    },
+    "SsoEnabled": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SsoEnabled"
+        },
+        {
+          "description": "Indicates if single sign-on is enabled for the directory. For more information, see <a>EnableSso</a> and <a>DisableSso</a>."
+        }
+      ]
+    },
+    "DesiredNumberOfDomainControllers": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DesiredNumberOfDomainControllers"
+        },
+        {
+          "description": "The desired number of domain controllers in the directory if the directory is Microsoft AD."
+        }
+      ]
+    },
+    "OwnerDirectoryDescription": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OwnerDirectoryDescription"
+        },
+        {
+          "description": "Describes the Managed Microsoft AD directory in the directory owner account."
+        }
+      ]
+    },
+    "RegionsInfo": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RegionsInfo"
+        },
+        {
+          "description": "Lists the Regions where the directory has replicated."
+        }
+      ]
+    },
+    "OsVersion": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OSVersion"
+        },
+        {
+          "description": "The operating system (OS) version of the directory."
+        }
+      ]
+    }
+  }
+}

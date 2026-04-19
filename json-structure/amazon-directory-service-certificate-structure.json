@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-structure/amazon-directory-service-certificate-structure.json",
+  "title": "Certificate",
+  "description": "Information about the certificate.",
+  "type": "object",
+  "properties": {
+    "CertificateId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CertificateId"
+        },
+        {
+          "description": "The identifier of the certificate."
+        }
+      ]
+    },
+    "State": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CertificateState"
+        },
+        {
+          "description": "The state of the certificate."
+        }
+      ]
+    },
+    "StateReason": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CertificateStateReason"
+        },
+        {
+          "description": "Describes a state change for the certificate."
+        }
+      ]
+    },
+    "CommonName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CertificateCN"
+        },
+        {
+          "description": "The common name for the certificate."
+        }
+      ]
+    },
+    "RegisteredDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CertificateRegisteredDateTime"
+        },
+        {
+          "description": "The date and time that the certificate was registered."
+        }
+      ]
+    },
+    "ExpiryDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CertificateExpiryDateTime"
+        },
+        {
+          "description": "The date and time when the certificate will expire."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CertificateType"
+        },
+        {
+          "description": "The function that the registered certificate performs. Valid values include <code>ClientLDAPS</code> or <code>ClientCertAuth</code>. The default value is <code>ClientLDAPS</code>."
+        }
+      ]
+    },
+    "ClientCertAuthSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ClientCertAuthSettings"
+        },
+        {
+          "description": "A <code>ClientCertAuthSettings</code> object that contains client certificate authentication settings."
+        }
+      ]
+    }
+  }
+}

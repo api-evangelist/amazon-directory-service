@@ -1,0 +1,10 @@
+{
+  "RadiusServers": "example-5595",
+  "RadiusPort": "example-2742",
+  "RadiusTimeout": "example-4440",
+  "RadiusRetries": "example-9410",
+  "SharedSecret": "example-5336",
+  "AuthenticationProtocol": "example-4192",
+  "DisplayLabel": "example-8215",
+  "UseSameUsername": "example-5979"
+}

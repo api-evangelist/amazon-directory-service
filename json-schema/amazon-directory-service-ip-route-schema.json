@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-ip-route-schema.json",
+  "title": "IpRoute",
+  "description": "IP address block. This is often the address block of the DNS server used for your self-managed domain. ",
+  "type": "object",
+  "properties": {
+    "CidrIp": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CidrIp"
+        },
+        {
+          "description": "IP address block using CIDR format, for example 10.0.0.0/24. This is often the address block of the DNS server used for your self-managed domain. For a single IP address use a CIDR address block with /32. For example 10.0.0.0/32."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Description"
+        },
+        {
+          "description": "Description of the address block."
+        }
+      ]
+    }
+  }
+}

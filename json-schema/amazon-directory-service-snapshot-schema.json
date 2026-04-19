@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-snapshot-schema.json",
+  "title": "Snapshot",
+  "description": "Describes a directory snapshot.",
+  "type": "object",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The directory identifier."
+        }
+      ]
+    },
+    "SnapshotId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotId"
+        },
+        {
+          "description": "The snapshot identifier."
+        }
+      ]
+    },
+    "Type": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotType"
+        },
+        {
+          "description": "The snapshot type."
+        }
+      ]
+    },
+    "Name": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotName"
+        },
+        {
+          "description": "The descriptive name of the snapshot."
+        }
+      ]
+    },
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SnapshotStatus"
+        },
+        {
+          "description": "The snapshot status."
+        }
+      ]
+    },
+    "StartTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StartTime"
+        },
+        {
+          "description": "The date and time that the snapshot was taken."
+        }
+      ]
+    }
+  }
+}

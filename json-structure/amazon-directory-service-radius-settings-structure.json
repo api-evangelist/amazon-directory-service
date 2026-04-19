@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-structure/amazon-directory-service-radius-settings-structure.json",
+  "title": "RadiusSettings",
+  "description": "Contains information about a Remote Authentication Dial In User Service (RADIUS) server.",
+  "type": "object",
+  "properties": {
+    "RadiusServers": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Servers"
+        },
+        {
+          "description": "An array of strings that contains the fully qualified domain name (FQDN) or IP addresses of the RADIUS server endpoints, or the FQDN or IP addresses of your RADIUS server load balancer."
+        }
+      ]
+    },
+    "RadiusPort": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/PortNumber"
+        },
+        {
+          "description": "The port that your RADIUS server is using for communications. Your self-managed network must allow inbound traffic over this port from the Directory Service servers."
+        }
+      ]
+    },
+    "RadiusTimeout": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RadiusTimeout"
+        },
+        {
+          "description": "The amount of time, in seconds, to wait for the RADIUS server to respond."
+        }
+      ]
+    },
+    "RadiusRetries": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RadiusRetries"
+        },
+        {
+          "description": "The maximum number of times that communication with the RADIUS server is attempted."
+        }
+      ]
+    },
+    "SharedSecret": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RadiusSharedSecret"
+        },
+        {
+          "description": "Required for enabling RADIUS on the directory."
+        }
+      ]
+    },
+    "AuthenticationProtocol": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RadiusAuthenticationProtocol"
+        },
+        {
+          "description": "The protocol specified for your RADIUS endpoints."
+        }
+      ]
+    },
+    "DisplayLabel": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RadiusDisplayLabel"
+        },
+        {
+          "description": "Not currently used."
+        }
+      ]
+    },
+    "UseSameUsername": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UseSameUsername"
+        },
+        {
+          "description": "Not currently used."
+        }
+      ]
+    }
+  }
+}

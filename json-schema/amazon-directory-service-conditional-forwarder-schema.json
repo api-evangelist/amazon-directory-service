@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-conditional-forwarder-schema.json",
+  "title": "ConditionalForwarder",
+  "description": "Points to a remote domain with which you are setting up a trust relationship. Conditional forwarders are required in order to set up a trust relationship with another domain.",
+  "type": "object",
+  "properties": {
+    "RemoteDomainName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RemoteDomainName"
+        },
+        {
+          "description": "The fully qualified domain name (FQDN) of the remote domains pointed to by the conditional forwarder."
+        }
+      ]
+    },
+    "DnsIpAddrs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DnsIpAddrs"
+        },
+        {
+          "description": "The IP addresses of the remote DNS server associated with RemoteDomainName. This is the IP address of the DNS server that your conditional forwarder points to."
+        }
+      ]
+    },
+    "ReplicationScope": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ReplicationScope"
+        },
+        {
+          "description": "The replication scope of the conditional forwarder. The only allowed value is <code>Domain</code>, which will replicate the conditional forwarder to all of the domain controllers for your Amazon Web Services directory."
+        }
+      ]
+    }
+  }
+}

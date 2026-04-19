@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-structure/amazon-directory-service-trust-structure.json",
+  "title": "Trust",
+  "description": "Describes a trust relationship between an Managed Microsoft AD directory and an external domain.",
+  "type": "object",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The Directory ID of the Amazon Web Services directory involved in the trust relationship."
+        }
+      ]
+    },
+    "TrustId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TrustId"
+        },
+        {
+          "description": "The unique ID of the trust relationship."
+        }
+      ]
+    },
+    "RemoteDomainName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RemoteDomainName"
+        },
+        {
+          "description": "The Fully Qualified Domain Name (FQDN) of the external domain involved in the trust relationship."
+        }
+      ]
+    },
+    "TrustType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TrustType"
+        },
+        {
+          "description": "The trust relationship type. <code>Forest</code> is the default."
+        }
+      ]
+    },
+    "TrustDirection": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TrustDirection"
+        },
+        {
+          "description": "The trust relationship direction."
+        }
+      ]
+    },
+    "TrustState": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TrustState"
+        },
+        {
+          "description": "The trust relationship state."
+        }
+      ]
+    },
+    "CreatedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CreatedDateTime"
+        },
+        {
+          "description": "The date and time that the trust relationship was created."
+        }
+      ]
+    },
+    "LastUpdatedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LastUpdatedDateTime"
+        },
+        {
+          "description": "The date and time that the trust relationship was last updated."
+        }
+      ]
+    },
+    "StateLastUpdatedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StateLastUpdatedDateTime"
+        },
+        {
+          "description": "The date and time that the TrustState was last updated."
+        }
+      ]
+    },
+    "TrustStateReason": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TrustStateReason"
+        },
+        {
+          "description": "The reason for the TrustState."
+        }
+      ]
+    },
+    "SelectiveAuth": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SelectiveAuth"
+        },
+        {
+          "description": "Current state of selective authentication for the trust."
+        }
+      ]
+    }
+  }
+}

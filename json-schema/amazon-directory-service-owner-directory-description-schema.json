@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-owner-directory-description-schema.json",
+  "title": "OwnerDirectoryDescription",
+  "description": "Describes the directory owner account details that have been shared to the directory consumer account.",
+  "type": "object",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "Identifier of the Managed Microsoft AD directory in the directory owner account."
+        }
+      ]
+    },
+    "AccountId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CustomerId"
+        },
+        {
+          "description": "Identifier of the directory owner account."
+        }
+      ]
+    },
+    "DnsIpAddrs": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DnsIpAddrs"
+        },
+        {
+          "description": "IP address of the directory\u2019s domain controllers."
+        }
+      ]
+    },
+    "VpcSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryVpcSettingsDescription"
+        },
+        {
+          "description": "Information about the VPC settings for the directory."
+        }
+      ]
+    },
+    "RadiusSettings": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RadiusSettings"
+        },
+        {
+          "description": "A <a>RadiusSettings</a> object that contains information about the RADIUS server."
+        }
+      ]
+    },
+    "RadiusStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RadiusStatus"
+        },
+        {
+          "description": "Information about the status of the RADIUS server."
+        }
+      ]
+    }
+  }
+}

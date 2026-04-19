@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-directory-connect-settings-description-schema.json",
+  "title": "DirectoryConnectSettingsDescription",
+  "description": "Contains information about an AD Connector directory.",
+  "type": "object",
+  "properties": {
+    "VpcId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VpcId"
+        },
+        {
+          "description": "The identifier of the VPC that the AD Connector is in."
+        }
+      ]
+    },
+    "SubnetIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SubnetIds"
+        },
+        {
+          "description": "A list of subnet identifiers in the VPC that the AD Connector is in."
+        }
+      ]
+    },
+    "CustomerUserName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserName"
+        },
+        {
+          "description": "The user name of the service account in your self-managed directory."
+        }
+      ]
+    },
+    "SecurityGroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SecurityGroupId"
+        },
+        {
+          "description": "The security group identifier for the AD Connector directory."
+        }
+      ]
+    },
+    "AvailabilityZones": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AvailabilityZones"
+        },
+        {
+          "description": "A list of the Availability Zones that the directory is in."
+        }
+      ]
+    },
+    "ConnectIps": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpAddrs"
+        },
+        {
+          "description": "The IP addresses of the AD Connector servers."
+        }
+      ]
+    }
+  }
+}

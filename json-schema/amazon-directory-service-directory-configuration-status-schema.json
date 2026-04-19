@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-directory-configuration-status-schema.json",
+  "title": "DirectoryConfigurationStatus",
+  "description": "Amazon Directory Service DirectoryConfigurationStatus resource",
+  "type": "string",
+  "enum": [
+    "Requested",
+    "Updating",
+    "Updated",
+    "Failed",
+    "Default"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-structure/amazon-directory-service-ip-route-info-structure.json",
+  "title": "IpRouteInfo",
+  "description": "Information about one or more IP address blocks.",
+  "type": "object",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "Identifier (ID) of the directory associated with the IP addresses."
+        }
+      ]
+    },
+    "CidrIp": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CidrIp"
+        },
+        {
+          "description": "IP address block in the <a>IpRoute</a>."
+        }
+      ]
+    },
+    "IpRouteStatusMsg": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpRouteStatusMsg"
+        },
+        {
+          "description": "The status of the IP address block."
+        }
+      ]
+    },
+    "AddedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AddedDateTime"
+        },
+        {
+          "description": "The date and time the address block was added to the directory."
+        }
+      ]
+    },
+    "IpRouteStatusReason": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/IpRouteStatusReason"
+        },
+        {
+          "description": "The reason for the IpRouteStatusMsg."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Description"
+        },
+        {
+          "description": "Description of the <a>IpRouteInfo</a>."
+        }
+      ]
+    }
+  }
+}

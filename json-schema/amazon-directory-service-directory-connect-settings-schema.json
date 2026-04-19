@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-directory-connect-settings-schema.json",
+  "title": "DirectoryConnectSettings",
+  "description": "Contains information for the <a>ConnectDirectory</a> operation when an AD Connector directory is being created.",
+  "type": "object",
+  "properties": {
+    "VpcId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VpcId"
+        },
+        {
+          "description": "The identifier of the VPC in which the AD Connector is created."
+        }
+      ]
+    },
+    "SubnetIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SubnetIds"
+        },
+        {
+          "description": "A list of subnet identifiers in the VPC in which the AD Connector is created."
+        }
+      ]
+    },
+    "CustomerDnsIps": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DnsIpAddrs"
+        },
+        {
+          "description": "A list of one or more IP addresses of DNS servers or domain controllers in your self-managed directory."
+        }
+      ]
+    },
+    "CustomerUserName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/UserName"
+        },
+        {
+          "description": "<p>The user name of an account in your self-managed directory that is used to connect to the directory. This account must have the following permissions:</p> <ul> <li> <p>Read users and groups</p> </li> <li> <p>Create computer objects</p> </li> <li> <p>Join computers to the domain</p> </li> </ul>"
+        }
+      ]
+    }
+  },
+  "required": [
+    "VpcId",
+    "SubnetIds",
+    "CustomerDnsIps",
+    "CustomerUserName"
+  ]
+}

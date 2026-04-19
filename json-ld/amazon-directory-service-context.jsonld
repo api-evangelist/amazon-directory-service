@@ -1,0 +1,438 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "https://schema.org/",
+    "ds": "https://aws.amazon.com/directoryservice/vocab#",
+    "Certificate": "ds:Certificate",
+    "CertificateId": {
+      "@id": "ds:CertificateId",
+      "@type": "xsd:string"
+    },
+    "State": {
+      "@id": "ds:State",
+      "@type": "xsd:string"
+    },
+    "StateReason": {
+      "@id": "ds:StateReason",
+      "@type": "xsd:string"
+    },
+    "CommonName": {
+      "@id": "ds:CommonName",
+      "@type": "xsd:string"
+    },
+    "RegisteredDateTime": {
+      "@id": "ds:RegisteredDateTime",
+      "@type": "xsd:string"
+    },
+    "ExpiryDateTime": {
+      "@id": "ds:ExpiryDateTime",
+      "@type": "xsd:string"
+    },
+    "Type": {
+      "@id": "ds:Type",
+      "@type": "xsd:string"
+    },
+    "ClientCertAuthSettings": "ds:ClientCertAuthSettings",
+    "OCSPUrl": {
+      "@id": "ds:OCSPUrl",
+      "@type": "xsd:string"
+    },
+    "Computer": "ds:Computer",
+    "ComputerId": {
+      "@id": "ds:ComputerId",
+      "@type": "xsd:string"
+    },
+    "ComputerName": {
+      "@id": "ds:ComputerName",
+      "@type": "xsd:string"
+    },
+    "ComputerAttributes": {
+      "@id": "ds:ComputerAttributes",
+      "@type": "xsd:string"
+    },
+    "ConditionalForwarder": "ds:ConditionalForwarder",
+    "RemoteDomainName": {
+      "@id": "ds:RemoteDomainName",
+      "@type": "xsd:string"
+    },
+    "DnsIpAddrs": {
+      "@id": "ds:DnsIpAddrs",
+      "@type": "xsd:string"
+    },
+    "ReplicationScope": {
+      "@id": "ds:ReplicationScope",
+      "@type": "xsd:string"
+    },
+    "DirectoryConfigurationStatus": "ds:DirectoryConfigurationStatus",
+    "DirectoryConnectSettings": "ds:DirectoryConnectSettings",
+    "VpcId": {
+      "@id": "ds:VpcId",
+      "@type": "xsd:string"
+    },
+    "SubnetIds": {
+      "@id": "ds:SubnetIds",
+      "@type": "xsd:string"
+    },
+    "CustomerDnsIps": {
+      "@id": "ds:CustomerDnsIps",
+      "@type": "xsd:string"
+    },
+    "CustomerUserName": {
+      "@id": "ds:CustomerUserName",
+      "@type": "xsd:string"
+    },
+    "DirectoryConnectSettingsDescription": "ds:DirectoryConnectSettingsDescription",
+    "SecurityGroupId": {
+      "@id": "ds:SecurityGroupId",
+      "@type": "xsd:string"
+    },
+    "AvailabilityZones": {
+      "@id": "ds:AvailabilityZones",
+      "@type": "xsd:string"
+    },
+    "ConnectIps": {
+      "@id": "ds:ConnectIps",
+      "@type": "xsd:string"
+    },
+    "DirectoryDescription": "ds:DirectoryDescription",
+    "DirectoryId": {
+      "@id": "ds:DirectoryId",
+      "@type": "xsd:string"
+    },
+    "Name": {
+      "@id": "ds:Name",
+      "@type": "xsd:string"
+    },
+    "ShortName": {
+      "@id": "ds:ShortName",
+      "@type": "xsd:string"
+    },
+    "Size": {
+      "@id": "ds:Size",
+      "@type": "xsd:string"
+    },
+    "Edition": {
+      "@id": "ds:Edition",
+      "@type": "xsd:string"
+    },
+    "Alias": {
+      "@id": "ds:Alias",
+      "@type": "xsd:string"
+    },
+    "AccessUrl": {
+      "@id": "ds:AccessUrl",
+      "@type": "xsd:string"
+    },
+    "Description": {
+      "@id": "ds:Description",
+      "@type": "xsd:string"
+    },
+    "Stage": {
+      "@id": "ds:Stage",
+      "@type": "xsd:string"
+    },
+    "ShareStatus": {
+      "@id": "ds:ShareStatus",
+      "@type": "xsd:string"
+    },
+    "ShareMethod": {
+      "@id": "ds:ShareMethod",
+      "@type": "xsd:string"
+    },
+    "ShareNotes": {
+      "@id": "ds:ShareNotes",
+      "@type": "xsd:string"
+    },
+    "LaunchTime": {
+      "@id": "ds:LaunchTime",
+      "@type": "xsd:string"
+    },
+    "StageLastUpdatedDateTime": {
+      "@id": "ds:StageLastUpdatedDateTime",
+      "@type": "xsd:string"
+    },
+    "VpcSettings": {
+      "@id": "ds:VpcSettings",
+      "@type": "xsd:string"
+    },
+    "ConnectSettings": {
+      "@id": "ds:ConnectSettings",
+      "@type": "xsd:string"
+    },
+    "RadiusSettings": "ds:RadiusSettings",
+    "RadiusStatus": {
+      "@id": "ds:RadiusStatus",
+      "@type": "xsd:string"
+    },
+    "StageReason": {
+      "@id": "ds:StageReason",
+      "@type": "xsd:string"
+    },
+    "SsoEnabled": {
+      "@id": "ds:SsoEnabled",
+      "@type": "xsd:string"
+    },
+    "DesiredNumberOfDomainControllers": {
+      "@id": "ds:DesiredNumberOfDomainControllers",
+      "@type": "xsd:string"
+    },
+    "OwnerDirectoryDescription": "ds:OwnerDirectoryDescription",
+    "RegionsInfo": {
+      "@id": "ds:RegionsInfo",
+      "@type": "xsd:string"
+    },
+    "OsVersion": {
+      "@id": "ds:OsVersion",
+      "@type": "xsd:string"
+    },
+    "DirectoryLimits": "ds:DirectoryLimits",
+    "CloudOnlyDirectoriesLimit": {
+      "@id": "ds:CloudOnlyDirectoriesLimit",
+      "@type": "xsd:string"
+    },
+    "CloudOnlyDirectoriesCurrentCount": {
+      "@id": "ds:CloudOnlyDirectoriesCurrentCount",
+      "@type": "xsd:string"
+    },
+    "CloudOnlyDirectoriesLimitReached": {
+      "@id": "ds:CloudOnlyDirectoriesLimitReached",
+      "@type": "xsd:string"
+    },
+    "CloudOnlyMicrosoftADLimit": {
+      "@id": "ds:CloudOnlyMicrosoftADLimit",
+      "@type": "xsd:string"
+    },
+    "CloudOnlyMicrosoftADCurrentCount": {
+      "@id": "ds:CloudOnlyMicrosoftADCurrentCount",
+      "@type": "xsd:string"
+    },
+    "CloudOnlyMicrosoftADLimitReached": {
+      "@id": "ds:CloudOnlyMicrosoftADLimitReached",
+      "@type": "xsd:string"
+    },
+    "ConnectedDirectoriesLimit": {
+      "@id": "ds:ConnectedDirectoriesLimit",
+      "@type": "xsd:string"
+    },
+    "ConnectedDirectoriesCurrentCount": {
+      "@id": "ds:ConnectedDirectoriesCurrentCount",
+      "@type": "xsd:string"
+    },
+    "ConnectedDirectoriesLimitReached": {
+      "@id": "ds:ConnectedDirectoriesLimitReached",
+      "@type": "xsd:string"
+    },
+    "DirectoryVpcSettings": "ds:DirectoryVpcSettings",
+    "DirectoryVpcSettingsDescription": "ds:DirectoryVpcSettingsDescription",
+    "EventTopic": "ds:EventTopic",
+    "TopicName": {
+      "@id": "ds:TopicName",
+      "@type": "xsd:string"
+    },
+    "TopicArn": {
+      "@id": "ds:TopicArn",
+      "@type": "xsd:string"
+    },
+    "CreatedDateTime": {
+      "@id": "ds:CreatedDateTime",
+      "@type": "xsd:string"
+    },
+    "Status": {
+      "@id": "ds:Status",
+      "@type": "xsd:string"
+    },
+    "IpRoute": "ds:IpRoute",
+    "CidrIp": {
+      "@id": "ds:CidrIp",
+      "@type": "xsd:string"
+    },
+    "IpRouteInfo": "ds:IpRouteInfo",
+    "IpRouteStatusMsg": {
+      "@id": "ds:IpRouteStatusMsg",
+      "@type": "xsd:string"
+    },
+    "AddedDateTime": {
+      "@id": "ds:AddedDateTime",
+      "@type": "xsd:string"
+    },
+    "IpRouteStatusReason": {
+      "@id": "ds:IpRouteStatusReason",
+      "@type": "xsd:string"
+    },
+    "LDAPSSettingInfo": "ds:LDAPSSettingInfo",
+    "LDAPSStatus": {
+      "@id": "ds:LDAPSStatus",
+      "@type": "xsd:string"
+    },
+    "LDAPSStatusReason": {
+      "@id": "ds:LDAPSStatusReason",
+      "@type": "xsd:string"
+    },
+    "LastUpdatedDateTime": {
+      "@id": "ds:LastUpdatedDateTime",
+      "@type": "xsd:string"
+    },
+    "LogSubscription": "ds:LogSubscription",
+    "LogGroupName": {
+      "@id": "ds:LogGroupName",
+      "@type": "xsd:string"
+    },
+    "SubscriptionCreatedDateTime": {
+      "@id": "ds:SubscriptionCreatedDateTime",
+      "@type": "xsd:string"
+    },
+    "OSUpdateSettings": "ds:OSUpdateSettings",
+    "OSVersion": {
+      "@id": "ds:OSVersion",
+      "@type": "xsd:string"
+    },
+    "AccountId": {
+      "@id": "ds:AccountId",
+      "@type": "xsd:string"
+    },
+    "RadiusServers": {
+      "@id": "ds:RadiusServers",
+      "@type": "xsd:string"
+    },
+    "RadiusPort": {
+      "@id": "ds:RadiusPort",
+      "@type": "xsd:string"
+    },
+    "RadiusTimeout": {
+      "@id": "ds:RadiusTimeout",
+      "@type": "xsd:string"
+    },
+    "RadiusRetries": {
+      "@id": "ds:RadiusRetries",
+      "@type": "xsd:string"
+    },
+    "SharedSecret": {
+      "@id": "ds:SharedSecret",
+      "@type": "xsd:string"
+    },
+    "AuthenticationProtocol": {
+      "@id": "ds:AuthenticationProtocol",
+      "@type": "xsd:string"
+    },
+    "DisplayLabel": {
+      "@id": "ds:DisplayLabel",
+      "@type": "xsd:string"
+    },
+    "UseSameUsername": {
+      "@id": "ds:UseSameUsername",
+      "@type": "xsd:string"
+    },
+    "RegionDescription": "ds:RegionDescription",
+    "RegionName": {
+      "@id": "ds:RegionName",
+      "@type": "xsd:string"
+    },
+    "RegionType": {
+      "@id": "ds:RegionType",
+      "@type": "xsd:string"
+    },
+    "StatusLastUpdatedDateTime": {
+      "@id": "ds:StatusLastUpdatedDateTime",
+      "@type": "xsd:string"
+    },
+    "SchemaExtensionInfo": "ds:SchemaExtensionInfo",
+    "SchemaExtensionId": {
+      "@id": "ds:SchemaExtensionId",
+      "@type": "xsd:string"
+    },
+    "SchemaExtensionStatus": {
+      "@id": "ds:SchemaExtensionStatus",
+      "@type": "xsd:string"
+    },
+    "SchemaExtensionStatusReason": {
+      "@id": "ds:SchemaExtensionStatusReason",
+      "@type": "xsd:string"
+    },
+    "StartDateTime": {
+      "@id": "ds:StartDateTime",
+      "@type": "xsd:string"
+    },
+    "EndDateTime": {
+      "@id": "ds:EndDateTime",
+      "@type": "xsd:string"
+    },
+    "SharedDirectory": "ds:SharedDirectory",
+    "OwnerAccountId": {
+      "@id": "ds:OwnerAccountId",
+      "@type": "xsd:string"
+    },
+    "OwnerDirectoryId": {
+      "@id": "ds:OwnerDirectoryId",
+      "@type": "xsd:string"
+    },
+    "SharedAccountId": {
+      "@id": "ds:SharedAccountId",
+      "@type": "xsd:string"
+    },
+    "SharedDirectoryId": {
+      "@id": "ds:SharedDirectoryId",
+      "@type": "xsd:string"
+    },
+    "Snapshot": "ds:Snapshot",
+    "SnapshotId": {
+      "@id": "ds:SnapshotId",
+      "@type": "xsd:string"
+    },
+    "StartTime": {
+      "@id": "ds:StartTime",
+      "@type": "xsd:string"
+    },
+    "SnapshotLimits": "ds:SnapshotLimits",
+    "ManualSnapshotsLimit": {
+      "@id": "ds:ManualSnapshotsLimit",
+      "@type": "xsd:string"
+    },
+    "ManualSnapshotsCurrentCount": {
+      "@id": "ds:ManualSnapshotsCurrentCount",
+      "@type": "xsd:string"
+    },
+    "ManualSnapshotsLimitReached": {
+      "@id": "ds:ManualSnapshotsLimitReached",
+      "@type": "xsd:string"
+    },
+    "Tag": "ds:Tag",
+    "Key": {
+      "@id": "ds:Key",
+      "@type": "xsd:string"
+    },
+    "Value": {
+      "@id": "ds:Value",
+      "@type": "xsd:string"
+    },
+    "Trust": "ds:Trust",
+    "TrustId": {
+      "@id": "ds:TrustId",
+      "@type": "xsd:string"
+    },
+    "TrustType": {
+      "@id": "ds:TrustType",
+      "@type": "xsd:string"
+    },
+    "TrustDirection": {
+      "@id": "ds:TrustDirection",
+      "@type": "xsd:string"
+    },
+    "TrustState": {
+      "@id": "ds:TrustState",
+      "@type": "xsd:string"
+    },
+    "StateLastUpdatedDateTime": {
+      "@id": "ds:StateLastUpdatedDateTime",
+      "@type": "xsd:string"
+    },
+    "TrustStateReason": {
+      "@id": "ds:TrustStateReason",
+      "@type": "xsd:string"
+    },
+    "SelectiveAuth": {
+      "@id": "ds:SelectiveAuth",
+      "@type": "xsd:string"
+    }
+  }
+}

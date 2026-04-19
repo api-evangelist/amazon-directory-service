@@ -1,0 +1,263 @@
+naftiko: "1.0.0-alpha1"
+
+info:
+  label: Amazon Directory Service Active Directory Management
+  description: >-
+    Workflow capability for identity engineers and cloud architects to manage
+    AWS Managed Microsoft Active Directory, including directory provisioning,
+    trust relationships, domain controllers, snapshots, IP routing, and
+    certificate management for hybrid identity workloads.
+  tags:
+    - Amazon Directory Service
+    - Active Directory
+    - Identity Management
+    - Hybrid Cloud
+    - AWS
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+binds:
+  - namespace: env
+    keys:
+      AWS_ACCESS_KEY_ID: AWS_ACCESS_KEY_ID
+      AWS_SECRET_ACCESS_KEY: AWS_SECRET_ACCESS_KEY
+      AWS_REGION: AWS_REGION
+
+capability:
+  consumes:
+    - import: directory-service
+      location: ./shared/directory-service-api.yaml
+
+  exposes:
+    - type: rest
+      port: 8080
+      namespace: directory-management-api
+      description: Unified REST API for Amazon Directory Service Active Directory management workflows.
+      resources:
+        - path: /v1/directories
+          name: directories
+          description: Managed Active Directory instances
+          operations:
+            - method: GET
+              name: describe-directories
+              description: List all managed directories
+              call: "directory-service.describe-directories"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+            - method: POST
+              name: create-microsoft-ad
+              description: Create an AWS Managed Microsoft AD directory
+              call: "directory-service.create-microsoft-ad"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+
+        - path: /v1/trusts
+          name: trusts
+          description: Trust relationships between directories
+          operations:
+            - method: GET
+              name: describe-trusts
+              description: List trust relationships
+              call: "directory-service.describe-trusts"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+            - method: POST
+              name: create-trust
+              description: Create a trust relationship
+              call: "directory-service.create-trust"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+
+        - path: /v1/snapshots
+          name: snapshots
+          description: Directory snapshots for backup and restore
+          operations:
+            - method: GET
+              name: describe-snapshots
+              description: List directory snapshots
+              call: "directory-service.describe-snapshots"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+            - method: POST
+              name: create-snapshot
+              description: Create a manual directory snapshot
+              call: "directory-service.create-snapshot"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+
+        - path: /v1/certificates
+          name: certificates
+          description: Certificates for directory authentication
+          operations:
+            - method: GET
+              name: list-certificates
+              description: List registered certificates
+              call: "directory-service.list-certificates"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+
+        - path: /v1/shared-directories
+          name: shared-directories
+          description: Directories shared with other AWS accounts
+          operations:
+            - method: GET
+              name: describe-shared-directories
+              description: List shared directories
+              call: "directory-service.describe-shared-directories"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+
+    - type: mcp
+      port: 9090
+      namespace: directory-management-mcp
+      transport: http
+      description: MCP server for AI-assisted Active Directory management.
+      tools:
+        - name: describe-directories
+          description: List all AWS Managed Microsoft AD and Simple AD directories in the account
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "directory-service.describe-directories"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: create-microsoft-ad
+          description: Create an AWS Managed Microsoft Active Directory in the AWS Cloud
+          hints:
+            readOnly: false
+            destructive: false
+          call: "directory-service.create-microsoft-ad"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: create-directory
+          description: Create a Simple AD directory powered by Samba 4
+          hints:
+            readOnly: false
+            destructive: false
+          call: "directory-service.create-directory"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: delete-directory
+          description: Delete an AWS Directory Service directory
+          hints:
+            readOnly: false
+            destructive: true
+            idempotent: true
+          call: "directory-service.delete-directory"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: describe-trusts
+          description: List trust relationships established for AWS Managed Microsoft AD directories
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "directory-service.describe-trusts"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: create-trust
+          description: Create a trust relationship between AWS Managed Microsoft AD and an on-premises directory
+          hints:
+            readOnly: false
+            destructive: false
+          call: "directory-service.create-trust"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: describe-snapshots
+          description: List manual snapshots of a directory for backup and restore purposes
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "directory-service.describe-snapshots"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: create-snapshot
+          description: Create a manual snapshot of a directory for backup
+          hints:
+            readOnly: false
+            destructive: false
+          call: "directory-service.create-snapshot"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: restore-from-snapshot
+          description: Restore a directory to a previous state using a snapshot
+          hints:
+            readOnly: false
+            destructive: false
+          call: "directory-service.restore-from-snapshot"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: describe-domain-controllers
+          description: List domain controllers provisioned for an AWS Managed Microsoft AD directory
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "directory-service.describe-domain-controllers"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: list-certificates
+          description: List certificates registered for LDAPS or client certificate authentication
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "directory-service.list-certificates"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: share-directory
+          description: Share a directory with another AWS account for multi-account access
+          hints:
+            readOnly: false
+            destructive: false
+          call: "directory-service.share-directory"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: describe-shared-directories
+          description: List directories shared from your account or shared with your account
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "directory-service.describe-shared-directories"
+          outputParameters:
+            - type: object
+              mapping: "$."
+
+        - name: get-directory-limits
+          description: Get the directory service limits for the current AWS account and region
+          hints:
+            readOnly: true
+            openWorld: true
+          call: "directory-service.get-directory-limits"
+          outputParameters:
+            - type: object
+              mapping: "$."

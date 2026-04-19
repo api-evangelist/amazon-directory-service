@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-structure/amazon-directory-service-directory-vpc-settings-description-structure.json",
+  "title": "DirectoryVpcSettingsDescription",
+  "description": "Contains information about the directory.",
+  "type": "object",
+  "properties": {
+    "VpcId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/VpcId"
+        },
+        {
+          "description": "The identifier of the VPC that the directory is in."
+        }
+      ]
+    },
+    "SubnetIds": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SubnetIds"
+        },
+        {
+          "description": "The identifiers of the subnets for the directory servers."
+        }
+      ]
+    },
+    "SecurityGroupId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SecurityGroupId"
+        },
+        {
+          "description": "The domain controller security group identifier for the directory."
+        }
+      ]
+    },
+    "AvailabilityZones": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/AvailabilityZones"
+        },
+        {
+          "description": "The list of Availability Zones that the directory is in."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-computer-schema.json",
+  "title": "Computer",
+  "description": "Contains information about a computer account in a directory.",
+  "type": "object",
+  "properties": {
+    "ComputerId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SID"
+        },
+        {
+          "description": "The identifier of the computer."
+        }
+      ]
+    },
+    "ComputerName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ComputerName"
+        },
+        {
+          "description": "The computer name."
+        }
+      ]
+    },
+    "ComputerAttributes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Attributes"
+        },
+        {
+          "description": "An array of <a>Attribute</a> objects containing the LDAP attributes that belong to the computer account."
+        }
+      ]
+    }
+  }
+}

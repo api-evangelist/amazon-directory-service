@@ -1,0 +1,11 @@
+{
+  "CloudOnlyDirectoriesLimit": "example-5666",
+  "CloudOnlyDirectoriesCurrentCount": "example-8241",
+  "CloudOnlyDirectoriesLimitReached": "example-6246",
+  "CloudOnlyMicrosoftADLimit": "example-1871",
+  "CloudOnlyMicrosoftADCurrentCount": "example-8683",
+  "CloudOnlyMicrosoftADLimitReached": "example-2986",
+  "ConnectedDirectoriesLimit": "example-7981",
+  "ConnectedDirectoriesCurrentCount": "example-1279",
+  "ConnectedDirectoriesLimitReached": "example-1036"
+}

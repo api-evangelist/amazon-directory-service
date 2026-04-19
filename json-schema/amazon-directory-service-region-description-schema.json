@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-region-description-schema.json",
+  "title": "RegionDescription",
+  "description": "The replicated Region information for a directory.",
+  "type": "object",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The identifier of the directory."
+        }
+      ]
+    },
+    "RegionName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RegionName"
+        },
+        {
+          "description": "The name of the Region. For example, <code>us-east-1</code>."
+        }
+      ]
+    },
+    "RegionType": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/RegionType"
+        },
+        {
+          "description": "Specifies whether the Region is the primary Region or an additional Region."
+        }
+      ]
+    },
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryStage"
+        },
+        {
+          "description": "The status of the replication process for the specified Region."
+        }
+      ]
+    },
+    "VpcSettings": {
+      "$ref": "#/components/schemas/DirectoryVpcSettings"
+    },
+    "DesiredNumberOfDomainControllers": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DesiredNumberOfDomainControllers"
+        },
+        {
+          "description": "The desired number of domain controllers in the specified Region for the specified directory."
+        }
+      ]
+    },
+    "LaunchTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LaunchTime"
+        },
+        {
+          "description": "Specifies when the Region replication began."
+        }
+      ]
+    },
+    "StatusLastUpdatedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StateLastUpdatedDateTime"
+        },
+        {
+          "description": "The date and time that the Region status was last updated."
+        }
+      ]
+    },
+    "LastUpdatedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LastUpdatedDateTime"
+        },
+        {
+          "description": "The date and time that the Region description was last updated."
+        }
+      ]
+    }
+  }
+}

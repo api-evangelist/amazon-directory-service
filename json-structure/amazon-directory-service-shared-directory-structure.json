@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-structure/amazon-directory-service-shared-directory-structure.json",
+  "title": "SharedDirectory",
+  "description": "Details about the shared directory in the directory owner account for which the share request in the directory consumer account has been accepted.",
+  "type": "object",
+  "properties": {
+    "OwnerAccountId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CustomerId"
+        },
+        {
+          "description": "Identifier of the directory owner account, which contains the directory that has been shared to the consumer account."
+        }
+      ]
+    },
+    "OwnerDirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "Identifier of the directory in the directory owner account. "
+        }
+      ]
+    },
+    "ShareMethod": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ShareMethod"
+        },
+        {
+          "description": "The method used when sharing a directory to determine whether the directory should be shared within your Amazon Web Services organization (<code>ORGANIZATIONS</code>) or with any Amazon Web Services account by sending a shared directory request (<code>HANDSHAKE</code>)."
+        }
+      ]
+    },
+    "SharedAccountId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CustomerId"
+        },
+        {
+          "description": "Identifier of the directory consumer account that has access to the shared directory (<code>OwnerDirectoryId</code>) in the directory owner account."
+        }
+      ]
+    },
+    "SharedDirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "Identifier of the shared directory in the directory consumer account. This identifier is different for each directory owner account."
+        }
+      ]
+    },
+    "ShareStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ShareStatus"
+        },
+        {
+          "description": "Current directory status of the shared Managed Microsoft AD directory."
+        }
+      ]
+    },
+    "ShareNotes": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Notes"
+        },
+        {
+          "description": "A directory share request that is sent by the directory owner to the directory consumer. The request includes a typed message to help the directory consumer administrator determine whether to approve or reject the share invitation."
+        }
+      ]
+    },
+    "CreatedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CreatedDateTime"
+        },
+        {
+          "description": "The date and time that the shared directory was created."
+        }
+      ]
+    },
+    "LastUpdatedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LastUpdatedDateTime"
+        },
+        {
+          "description": "The date and time that the shared directory was last updated."
+        }
+      ]
+    }
+  }
+}

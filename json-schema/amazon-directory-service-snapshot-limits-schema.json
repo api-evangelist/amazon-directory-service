@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-snapshot-limits-schema.json",
+  "title": "SnapshotLimits",
+  "description": "Contains manual snapshot limit information for a directory.",
+  "type": "object",
+  "properties": {
+    "ManualSnapshotsLimit": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Limit"
+        },
+        {
+          "description": "The maximum number of manual snapshots allowed."
+        }
+      ]
+    },
+    "ManualSnapshotsCurrentCount": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Limit"
+        },
+        {
+          "description": "The current number of manual snapshots of the directory."
+        }
+      ]
+    },
+    "ManualSnapshotsLimitReached": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ManualSnapshotsLimitReached"
+        },
+        {
+          "description": "Indicates if the manual snapshot limit has been reached."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,195 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: Amazon Directory Service
+  description: Unified taxonomy mapping operational (OpenAPI) and capability (Naftiko) dimensions for Amazon Directory Service managed Active Directory.
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - namespace: directory-service
+      version: "2015-04-16"
+      baseUrl: https://ds.amazonaws.com
+      status: active
+      description: Amazon Directory Service REST API for managed Active Directory
+
+  resources:
+    - name: directories
+      description: Managed Microsoft Active Directory and Simple AD instances in AWS
+      api: directory-service
+      actions: [create, describe, delete, connect, share]
+    - name: domain-controllers
+      description: Domain controllers provisioned for AWS Managed Microsoft AD
+      api: directory-service
+      actions: [describe, update]
+    - name: trusts
+      description: Trust relationships between directories and on-premises Active Directory
+      api: directory-service
+      actions: [create, describe, update, delete, verify]
+    - name: snapshots
+      description: Manual and automatic snapshots of directories for backup
+      api: directory-service
+      actions: [create, describe, delete, restore]
+    - name: ip-routes
+      description: IP routes for Microsoft AD directory traffic routing
+      api: directory-service
+      actions: [add, list, remove]
+    - name: certificates
+      description: Certificates registered for LDAPS and client authentication
+      api: directory-service
+      actions: [register, list, describe, deregister]
+    - name: log-subscriptions
+      description: Log forwarding subscriptions for directory security events
+      api: directory-service
+      actions: [create, list, delete]
+    - name: event-topics
+      description: SNS topics for directory event notifications
+      api: directory-service
+      actions: [register, describe, deregister]
+    - name: shared-directories
+      description: Directories shared across AWS accounts
+      api: directory-service
+      actions: [share, describe, unshare, accept, reject]
+    - name: schema-extensions
+      description: Schema extensions applied to a Microsoft AD directory
+      api: directory-service
+      actions: [start, list, cancel]
+
+  actions:
+    - name: create
+      httpMethod: POST
+      pattern: write
+      description: Create a new resource
+    - name: describe
+      httpMethod: POST
+      pattern: read
+      description: Retrieve information about resources
+    - name: update
+      httpMethod: POST
+      pattern: write
+      description: Modify an existing resource
+    - name: delete
+      httpMethod: POST
+      pattern: destructive
+      description: Delete a resource
+    - name: connect
+      httpMethod: POST
+      pattern: write
+      description: Connect a directory to on-premises infrastructure
+    - name: share
+      httpMethod: POST
+      pattern: write
+      description: Share a directory with another account
+    - name: restore
+      httpMethod: POST
+      pattern: write
+      description: Restore from a snapshot
+    - name: verify
+      httpMethod: POST
+      pattern: read
+      description: Verify a trust relationship
+    - name: register
+      httpMethod: POST
+      pattern: write
+      description: Register a certificate or event topic
+    - name: enable
+      httpMethod: POST
+      pattern: write
+      description: Enable a feature or capability
+
+  schemas:
+    core:
+      - name: DirectoryDescription
+        description: Full description of a managed directory
+        properties: [directoryId, name, shortName, size, edition, alias, accessUrl, description, dnsIpAddrs, stage, shareStatus, shareMethod, sharingNotes, launchTime, stageLastUpdatedDateTime, type, vpcSettings, connectSettings, radiusSettings, radiusStatus, stageReason, ssoEnabled, desiredNumberOfDomainControllers, ownerDirectoryDescription, regionsInfo, osVersion]
+      - name: Trust
+        description: A trust relationship between directories
+        properties: [directoryId, trustId, remoteDomainName, trustType, trustDirection, trustState, createdDateTime, lastUpdatedDateTime, stateLastUpdatedDateTime, trustStateReason, selectiveAuth]
+
+    operations:
+      - name: Snapshot
+        description: A point-in-time snapshot of a directory
+        properties: [directoryId, snapshotId, type, name, status, startTime]
+      - name: Certificate
+        description: A certificate registered for directory authentication
+        properties: [certificateId, commonName, state, expiryDateTime, type, clientCertAuthSettings]
+
+    network:
+      - name: IpRouteInfo
+        description: An IP route entry for directory traffic
+        properties: [directoryId, cidrIp, ipRouteStatusMsg, addedDateTime, ipRouteStatusReason, description]
+
+  authentication:
+    schemes:
+      - name: sigv4
+        type: apikey
+        description: AWS Signature Version 4
+
+capability:
+  workflows:
+    - name: Active Directory Management
+      file: capabilities/active-directory-management.yaml
+      description: End-to-end Active Directory lifecycle management using Amazon Directory Service
+      apisConsumed: [directory-service]
+      toolCount: 14
+      personas:
+        - Identity Engineer
+        - Cloud Architect
+      domains:
+        - Identity Management
+        - Hybrid Cloud
+
+  personas:
+    - id: identity-engineer
+      name: Identity Engineer
+      description: Identity engineer provisioning and managing Active Directory in AWS
+      workflows: [Active Directory Management]
+    - id: cloud-architect
+      name: Cloud Architect
+      description: Cloud architect designing hybrid identity solutions with AWS Directory Service
+      workflows: [Active Directory Management]
+
+  domains:
+    - name: Directory Management
+      description: Provisioning and managing Microsoft AD and Simple AD directories
+      resources: [directories, domain-controllers]
+    - name: Identity Federation
+      description: Trust relationships and shared directory access across accounts
+      resources: [trusts, shared-directories]
+    - name: Security and Compliance
+      description: Certificate management, LDAPS, and audit logging
+      resources: [certificates, log-subscriptions, event-topics]
+
+  namespaces:
+    - type: consumed
+      name: directory-service
+      description: Amazon Directory Service REST API
+    - type: rest
+      name: directory-management-api
+      port: 8080
+    - type: mcp
+      name: directory-management-mcp
+      port: 9090
+
+  binds:
+    - name: AWS_ACCESS_KEY_ID
+      workflows: [Active Directory Management]
+    - name: AWS_SECRET_ACCESS_KEY
+      workflows: [Active Directory Management]
+    - name: AWS_REGION
+      workflows: [Active Directory Management]
+
+crossReference:
+  - resource: directories
+    operations: [DescribeDirectories, CreateMicrosoftAD, DeleteDirectory]
+    workflows: [Active Directory Management]
+    personas: [Identity Engineer, Cloud Architect]
+  - resource: trusts
+    operations: [DescribeTrusts, CreateTrust, VerifyTrust]
+    workflows: [Active Directory Management]
+    personas: [Identity Engineer]
+  - resource: snapshots
+    operations: [DescribeSnapshots, CreateSnapshot, RestoreFromSnapshot]
+    workflows: [Active Directory Management]
+    personas: [Identity Engineer]

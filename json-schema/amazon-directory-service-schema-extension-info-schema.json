@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-schema-extension-info-schema.json",
+  "title": "SchemaExtensionInfo",
+  "description": "Information about a schema extension.",
+  "type": "object",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The identifier of the directory to which the schema extension is applied."
+        }
+      ]
+    },
+    "SchemaExtensionId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SchemaExtensionId"
+        },
+        {
+          "description": "The identifier of the schema extension."
+        }
+      ]
+    },
+    "Description": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Description"
+        },
+        {
+          "description": "A description of the schema extension."
+        }
+      ]
+    },
+    "SchemaExtensionStatus": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SchemaExtensionStatus"
+        },
+        {
+          "description": "The current status of the schema extension."
+        }
+      ]
+    },
+    "SchemaExtensionStatusReason": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SchemaExtensionStatusReason"
+        },
+        {
+          "description": "The reason for the <code>SchemaExtensionStatus</code>."
+        }
+      ]
+    },
+    "StartDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/StartDateTime"
+        },
+        {
+          "description": "The date and time that the schema extension started being applied to the directory."
+        }
+      ]
+    },
+    "EndDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/EndDateTime"
+        },
+        {
+          "description": "The date and time that the schema extension was completed."
+        }
+      ]
+    }
+  }
+}

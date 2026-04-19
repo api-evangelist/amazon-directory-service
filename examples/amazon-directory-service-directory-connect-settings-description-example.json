@@ -1,0 +1,8 @@
+{
+  "VpcId": "example-8066",
+  "SubnetIds": "example-6154",
+  "CustomerUserName": "example-2813",
+  "SecurityGroupId": "example-7065",
+  "AvailabilityZones": "example-8373",
+  "ConnectIps": "example-4575"
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-client-cert-auth-settings-schema.json",
+  "title": "ClientCertAuthSettings",
+  "description": "Contains information about the client certificate authentication settings for the <code>RegisterCertificate</code> and <code>DescribeCertificate</code> operations. ",
+  "type": "object",
+  "properties": {
+    "OCSPUrl": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OCSPUrl"
+        },
+        {
+          "description": "Specifies the URL of the default OCSP server used to check for revocation status. A secondary value to any OCSP address found in the AIA extension of the user certificate."
+        }
+      ]
+    }
+  }
+}

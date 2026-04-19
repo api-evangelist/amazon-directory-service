@@ -1,0 +1,10 @@
+{
+  "CertificateId": "example-4888",
+  "State": "example-1816",
+  "StateReason": "example-8450",
+  "CommonName": "example-9948",
+  "RegisteredDateTime": "example-4546",
+  "ExpiryDateTime": "example-2337",
+  "Type": "example-9720",
+  "ClientCertAuthSettings": "example-2781"
+}

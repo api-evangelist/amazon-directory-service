@@ -1,0 +1,6 @@
+{
+  "VpcId": "example-7285",
+  "SubnetIds": "example-1922",
+  "SecurityGroupId": "example-2495",
+  "AvailabilityZones": "example-3844"
+}

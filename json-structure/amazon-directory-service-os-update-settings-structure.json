@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-structure/amazon-directory-service-os-update-settings-structure.json",
+  "title": "OSUpdateSettings",
+  "description": " OS version that the directory needs to be updated to. ",
+  "type": "object",
+  "properties": {
+    "OSVersion": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/OSVersion"
+        },
+        {
+          "description": " OS version that the directory needs to be updated to. "
+        }
+      ]
+    }
+  }
+}

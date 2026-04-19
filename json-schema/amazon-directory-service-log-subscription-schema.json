@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-log-subscription-schema.json",
+  "title": "LogSubscription",
+  "description": "Represents a log subscription, which tracks real-time data from a chosen log group to a specified destination.",
+  "type": "object",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "Identifier (ID) of the directory that you want to associate with the log subscription."
+        }
+      ]
+    },
+    "LogGroupName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/LogGroupName"
+        },
+        {
+          "description": "The name of the log group."
+        }
+      ]
+    },
+    "SubscriptionCreatedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/SubscriptionCreatedDateTime"
+        },
+        {
+          "description": "The date and time that the log subscription was created."
+        }
+      ]
+    }
+  }
+}

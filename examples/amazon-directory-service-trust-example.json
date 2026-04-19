@@ -1,0 +1,13 @@
+{
+  "DirectoryId": "example-2559",
+  "TrustId": "example-4824",
+  "RemoteDomainName": "example-7277",
+  "TrustType": "example-3635",
+  "TrustDirection": "example-2178",
+  "TrustState": "example-6687",
+  "CreatedDateTime": "example-2909",
+  "LastUpdatedDateTime": "example-9320",
+  "StateLastUpdatedDateTime": "example-9294",
+  "TrustStateReason": "example-7202",
+  "SelectiveAuth": "example-5409"
+}

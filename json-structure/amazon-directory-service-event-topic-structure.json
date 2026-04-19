@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-structure/amazon-directory-service-event-topic-structure.json",
+  "title": "EventTopic",
+  "description": "Information about Amazon SNS topic and Directory Service directory associations.",
+  "type": "object",
+  "properties": {
+    "DirectoryId": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/DirectoryId"
+        },
+        {
+          "description": "The Directory ID of an Directory Service directory that will publish status messages to an Amazon SNS topic."
+        }
+      ]
+    },
+    "TopicName": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TopicName"
+        },
+        {
+          "description": "The name of an Amazon SNS topic the receives status messages from the directory."
+        }
+      ]
+    },
+    "TopicArn": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TopicArn"
+        },
+        {
+          "description": "The Amazon SNS topic ARN (Amazon Resource Name)."
+        }
+      ]
+    },
+    "CreatedDateTime": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CreatedDateTime"
+        },
+        {
+          "description": "The date and time of when you associated your directory with the Amazon SNS topic."
+        }
+      ]
+    },
+    "Status": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/TopicStatus"
+        },
+        {
+          "description": "The topic registration status."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "DirectoryId": "example-2230",
+  "RegionName": "example-4022",
+  "RegionType": "example-6668",
+  "Status": "example-7541",
+  "VpcSettings": {},
+  "DesiredNumberOfDomainControllers": "example-2179",
+  "LaunchTime": "example-3230",
+  "StatusLastUpdatedDateTime": "example-6379",
+  "LastUpdatedDateTime": "example-9674"
+}

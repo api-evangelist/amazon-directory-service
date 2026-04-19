@@ -1,0 +1,154 @@
+rules:
+  info-title-prefix:
+    description: API title should include "Directory"
+    severity: warn
+    given: $.info.title
+    then:
+      function: pattern
+      functionOptions:
+        match: "Directory"
+
+  info-description-required:
+    description: API must have a description
+    severity: error
+    given: $.info
+    then:
+      field: description
+      function: truthy
+
+  info-version-required:
+    description: API must have a version
+    severity: error
+    given: $.info
+    then:
+      field: version
+      function: truthy
+
+  openapi-version-3:
+    description: Must use OpenAPI 3.x
+    severity: error
+    given: $
+    then:
+      field: openapi
+      function: pattern
+      functionOptions:
+        match: "^3\\."
+
+  servers-defined:
+    description: At least one server must be defined
+    severity: error
+    given: $
+    then:
+      field: servers
+      function: truthy
+
+  servers-https-only:
+    description: All server URLs must use HTTPS
+    severity: error
+    given: $.servers[*].url
+    then:
+      function: pattern
+      functionOptions:
+        match: "^https://"
+
+  operation-summary-required:
+    description: All operations must have a summary
+    severity: error
+    given: $.paths[*][get,post,put,delete,patch]
+    then:
+      field: summary
+      function: truthy
+
+  operation-description-required:
+    description: All operations must have a description
+    severity: warn
+    given: $.paths[*][get,post,put,delete,patch]
+    then:
+      field: description
+      function: truthy
+
+  operation-id-required:
+    description: All operations must have an operationId
+    severity: error
+    given: $.paths[*][get,post,put,delete,patch]
+    then:
+      field: operationId
+      function: truthy
+
+  operation-id-pascal-case:
+    description: OperationIds should use PascalCase (AWS Directory Service convention)
+    severity: warn
+    given: $.paths[*][get,post,put,delete,patch].operationId
+    then:
+      function: pattern
+      functionOptions:
+        match: "^[A-Z][a-zA-Z0-9]*$"
+
+  operation-tags-required:
+    description: All operations must have at least one tag
+    severity: warn
+    given: $.paths[*][get,post,put,delete,patch]
+    then:
+      field: tags
+      function: truthy
+
+  post-should-have-request-body:
+    description: POST operations should have a request body
+    severity: info
+    given: $.paths[*].post
+    then:
+      field: requestBody
+      function: truthy
+
+  response-success-required:
+    description: Operations must have at least one 2xx response
+    severity: error
+    given: $.paths[*][get,post,put,delete,patch].responses
+    then:
+      function: schema
+      functionOptions:
+        schema:
+          type: object
+          anyOf:
+            - required: ["200"]
+            - required: ["201"]
+            - required: ["204"]
+
+  response-description-required:
+    description: All responses must have a description
+    severity: error
+    given: $.paths[*][get,post,put,delete,patch].responses[*]
+    then:
+      field: description
+      function: truthy
+
+  schema-description-required:
+    description: Top-level schemas should have descriptions
+    severity: info
+    given: $.components.schemas[*]
+    then:
+      field: description
+      function: truthy
+
+  get-no-request-body:
+    description: GET operations must not have a request body
+    severity: error
+    given: $.paths[*].get
+    then:
+      field: requestBody
+      function: falsy
+
+  no-empty-descriptions:
+    description: Descriptions must not be empty strings
+    severity: error
+    given: $..description
+    then:
+      function: truthy
+
+  external-docs-encouraged:
+    description: API should reference external documentation
+    severity: info
+    given: $
+    then:
+      field: externalDocs
+      function: truthy

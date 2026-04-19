@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/json-schema/amazon-directory-service-directory-limits-schema.json",
+  "title": "DirectoryLimits",
+  "description": "Contains directory limit information for a Region.",
+  "type": "object",
+  "properties": {
+    "CloudOnlyDirectoriesLimit": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Limit"
+        },
+        {
+          "description": "The maximum number of cloud directories allowed in the Region."
+        }
+      ]
+    },
+    "CloudOnlyDirectoriesCurrentCount": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Limit"
+        },
+        {
+          "description": "The current number of cloud directories in the Region."
+        }
+      ]
+    },
+    "CloudOnlyDirectoriesLimitReached": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CloudOnlyDirectoriesLimitReached"
+        },
+        {
+          "description": "Indicates if the cloud directory limit has been reached."
+        }
+      ]
+    },
+    "CloudOnlyMicrosoftADLimit": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Limit"
+        },
+        {
+          "description": "The maximum number of Managed Microsoft AD directories allowed in the region."
+        }
+      ]
+    },
+    "CloudOnlyMicrosoftADCurrentCount": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Limit"
+        },
+        {
+          "description": "The current number of Managed Microsoft AD directories in the region."
+        }
+      ]
+    },
+    "CloudOnlyMicrosoftADLimitReached": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/CloudOnlyDirectoriesLimitReached"
+        },
+        {
+          "description": "Indicates if the Managed Microsoft AD directory limit has been reached."
+        }
+      ]
+    },
+    "ConnectedDirectoriesLimit": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Limit"
+        },
+        {
+          "description": "The maximum number of connected directories allowed in the Region."
+        }
+      ]
+    },
+    "ConnectedDirectoriesCurrentCount": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/Limit"
+        },
+        {
+          "description": "The current number of connected directories in the Region."
+        }
+      ]
+    },
+    "ConnectedDirectoriesLimitReached": {
+      "allOf": [
+        {
+          "$ref": "#/components/schemas/ConnectedDirectoriesLimitReached"
+        },
+        {
+          "description": "Indicates if the connected directory limit has been reached."
+        }
+      ]
+    }
+  }
+}
