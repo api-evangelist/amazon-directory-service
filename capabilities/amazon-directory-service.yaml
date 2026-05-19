@@ -1,0 +1,3558 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: AWS Directory Service
+  description: 'AWS Directory Service. 67 operations. Lead operation: AWS Directory Service. Self-contained Naftiko capability
+    covering one Amazon Directory Service business surface.'
+  tags:
+  - Amazon Directory Service
+  - AWS Directory Service
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    AMAZON_DIRECTORY_SERVICE_API_KEY: AMAZON_DIRECTORY_SERVICE_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: amazon-directory-service
+    baseUri: http://ds.{region}.amazonaws.com
+    description: AWS Directory Service business capability. Self-contained, no shared references.
+    resources:
+    - name: '#X-Amz-Target=DirectoryService_20150416.AcceptSharedDirectory'
+      path: /#X-Amz-Target=DirectoryService_20150416.AcceptSharedDirectory
+      operations:
+      - name: acceptshareddirectory
+        method: POST
+        description: Accepts a directory sharing request that was sent from the directory owner account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.AddIpRoutes'
+      path: /#X-Amz-Target=DirectoryService_20150416.AddIpRoutes
+      operations:
+      - name: addiproutes
+        method: POST
+        description: <p>If the DNS server for your self-managed domain uses a publicly addressable IP address, you must add
+          a CIDR address block to correctly route traffic to and from your Microsoft AD on Amazon Web Services. <i>AddIpRoutes</i>
+          adds this addres
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.AddRegion'
+      path: /#X-Amz-Target=DirectoryService_20150416.AddRegion
+      operations:
+      - name: addregion
+        method: POST
+        description: Adds two domain controllers in the specified Region for the specified directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.AddTagsToResource'
+      path: /#X-Amz-Target=DirectoryService_20150416.AddTagsToResource
+      operations:
+      - name: addtagstoresource
+        method: POST
+        description: Adds or overwrites one or more tags for the specified directory. Each directory can have a maximum of
+          50 tags. Each tag consists of a key and optional value. Tag keys must be unique to each resource.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.CancelSchemaExtension'
+      path: /#X-Amz-Target=DirectoryService_20150416.CancelSchemaExtension
+      operations:
+      - name: cancelschemaextension
+        method: POST
+        description: Cancels an in-progress schema extension to a Microsoft AD directory. Once a schema extension has started
+          replicating to all domain controllers, the task can no longer be canceled. A schema extension can be canceled during
+          any of the followi
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.ConnectDirectory'
+      path: /#X-Amz-Target=DirectoryService_20150416.ConnectDirectory
+      operations:
+      - name: connectdirectory
+        method: POST
+        description: <p>Creates an AD Connector to connect to a self-managed directory.</p> <p>Before you call <code>ConnectDirectory</code>,
+          ensure that all of the required permissions have been explicitly granted through a policy. For details about what
+          permi
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.CreateAlias'
+      path: /#X-Amz-Target=DirectoryService_20150416.CreateAlias
+      operations:
+      - name: createalias
+        method: POST
+        description: <p>Creates an alias for a directory and assigns the alias to the directory. The alias is used to construct
+          the access URL for the directory, such as <code>http://&lt;alias&gt;.awsapps.com</code>.</p> <important> <p>After
+          an alias has been c
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.CreateComputer'
+      path: /#X-Amz-Target=DirectoryService_20150416.CreateComputer
+      operations:
+      - name: createcomputer
+        method: POST
+        description: Creates an Active Directory computer object in the specified directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.CreateConditionalForwarder'
+      path: /#X-Amz-Target=DirectoryService_20150416.CreateConditionalForwarder
+      operations:
+      - name: createconditionalforwarder
+        method: POST
+        description: Creates a conditional forwarder associated with your Amazon Web Services directory. Conditional forwarders
+          are required in order to set up a trust relationship with another domain. The conditional forwarder points to the
+          trusted domain.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.CreateDirectory'
+      path: /#X-Amz-Target=DirectoryService_20150416.CreateDirectory
+      operations:
+      - name: createdirectory
+        method: POST
+        description: <p>Creates a Simple AD directory. For more information, see <a href="https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_simple_ad.html">Simple
+          Active Directory</a> in the <i>Directory Service Admin Guide</i>.</p> <p>B
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.CreateLogSubscription'
+      path: /#X-Amz-Target=DirectoryService_20150416.CreateLogSubscription
+      operations:
+      - name: createlogsubscription
+        method: POST
+        description: Creates a subscription to forward real-time Directory Service domain controller security logs to the
+          specified Amazon CloudWatch log group in your Amazon Web Services account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD'
+      path: /#X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD
+      operations:
+      - name: createmicrosoftad
+        method: POST
+        description: <p>Creates a Microsoft AD directory in the Amazon Web Services Cloud. For more information, see <a href="https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html">Managed
+          Microsoft AD</a> in the <i>Directo
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.CreateSnapshot'
+      path: /#X-Amz-Target=DirectoryService_20150416.CreateSnapshot
+      operations:
+      - name: createsnapshot
+        method: POST
+        description: <p>Creates a snapshot of a Simple AD or Microsoft AD directory in the Amazon Web Services cloud.</p>
+          <note> <p>You cannot take snapshots of AD Connector directories.</p> </note>
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.CreateTrust'
+      path: /#X-Amz-Target=DirectoryService_20150416.CreateTrust
+      operations:
+      - name: createtrust
+        method: POST
+        description: '<p>Directory Service for Microsoft Active Directory allows you to configure trust relationships. For
+          example, you can establish a trust between your Managed Microsoft AD directory, and your existing self-managed Microsoft
+          Active Directory. '
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DeleteConditionalForwarder'
+      path: /#X-Amz-Target=DirectoryService_20150416.DeleteConditionalForwarder
+      operations:
+      - name: deleteconditionalforwarder
+        method: POST
+        description: Deletes a conditional forwarder that has been set up for your Amazon Web Services directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DeleteDirectory'
+      path: /#X-Amz-Target=DirectoryService_20150416.DeleteDirectory
+      operations:
+      - name: deletedirectory
+        method: POST
+        description: <p>Deletes an Directory Service directory.</p> <p>Before you call <code>DeleteDirectory</code>, ensure
+          that all of the required permissions have been explicitly granted through a policy. For details about what permissions
+          are required to ru
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DeleteLogSubscription'
+      path: /#X-Amz-Target=DirectoryService_20150416.DeleteLogSubscription
+      operations:
+      - name: deletelogsubscription
+        method: POST
+        description: Deletes the specified log subscription.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DeleteSnapshot'
+      path: /#X-Amz-Target=DirectoryService_20150416.DeleteSnapshot
+      operations:
+      - name: deletesnapshot
+        method: POST
+        description: Deletes a directory snapshot.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DeleteTrust'
+      path: /#X-Amz-Target=DirectoryService_20150416.DeleteTrust
+      operations:
+      - name: deletetrust
+        method: POST
+        description: Deletes an existing trust relationship between your Managed Microsoft AD directory and an external domain.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DeregisterCertificate'
+      path: /#X-Amz-Target=DirectoryService_20150416.DeregisterCertificate
+      operations:
+      - name: deregistercertificate
+        method: POST
+        description: Deletes from the system the certificate that was registered for secure LDAP or client certificate authentication.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DeregisterEventTopic'
+      path: /#X-Amz-Target=DirectoryService_20150416.DeregisterEventTopic
+      operations:
+      - name: deregistereventtopic
+        method: POST
+        description: Removes the specified directory as a publisher to the specified Amazon SNS topic.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeCertificate'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeCertificate
+      operations:
+      - name: describecertificate
+        method: POST
+        description: Displays information about the certificate registered for secure LDAP or client certificate authentication.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeClientAuthenticationSettings'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeClientAuthenticationSettings
+      operations:
+      - name: describeclientauthenticationsettings
+        method: POST
+        description: Retrieves information about the type of client authentication for the specified directory, if the type
+          is specified. If no type is specified, information about all client authentication types that are supported for
+          the specified directory i
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeConditionalForwarders'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeConditionalForwarders
+      operations:
+      - name: describeconditionalforwarders
+        method: POST
+        description: <p>Obtains information about the conditional forwarders for this account.</p> <p>If no input parameters
+          are provided for RemoteDomainNames, this request describes all conditional forwarders for the specified directory
+          ID.</p>
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeDirectories'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeDirectories
+      operations:
+      - name: describedirectories
+        method: POST
+        description: <p>Obtains information about the directories that belong to this account.</p> <p>You can retrieve information
+          about specific directories by passing the directory identifiers in the <code>DirectoryIds</code> parameter. Otherwise,
+          all directo
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeDomainControllers'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeDomainControllers
+      operations:
+      - name: describedomaincontrollers
+        method: POST
+        description: Provides information about any domain controllers in your directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeEventTopics'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeEventTopics
+      operations:
+      - name: describeeventtopics
+        method: POST
+        description: <p>Obtains information about which Amazon SNS topics receive status messages from the specified directory.</p>
+          <p>If no input parameters are provided, such as DirectoryId or TopicName, this request describes all of the associations
+          in the a
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeLDAPSSettings'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeLDAPSSettings
+      operations:
+      - name: describeldapssettings
+        method: POST
+        description: Describes the status of LDAP security for the specified directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeRegions'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeRegions
+      operations:
+      - name: describeregions
+        method: POST
+        description: Provides information about the Regions that are configured for multi-Region replication.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeSettings'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeSettings
+      operations:
+      - name: describesettings
+        method: POST
+        description: Retrieves information about the configurable settings for the specified directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeSharedDirectories'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeSharedDirectories
+      operations:
+      - name: describeshareddirectories
+        method: POST
+        description: Returns the shared directories in your account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeSnapshots'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeSnapshots
+      operations:
+      - name: describesnapshots
+        method: POST
+        description: <p>Obtains information about the directory snapshots that belong to this account.</p> <p>This operation
+          supports pagination with the use of the <i>NextToken</i> request and response parameters. If more results are available,
+          the <i>Describe
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeTrusts'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeTrusts
+      operations:
+      - name: describetrusts
+        method: POST
+        description: <p>Obtains information about the trust relationships for this account.</p> <p>If no input parameters
+          are provided, such as DirectoryId or TrustIds, this request describes all the trust relationships belonging to the
+          account.</p>
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DescribeUpdateDirectory'
+      path: /#X-Amz-Target=DirectoryService_20150416.DescribeUpdateDirectory
+      operations:
+      - name: describeupdatedirectory
+        method: POST
+        description: Describes the updates of a directory for a particular update type.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DisableClientAuthentication'
+      path: /#X-Amz-Target=DirectoryService_20150416.DisableClientAuthentication
+      operations:
+      - name: disableclientauthentication
+        method: POST
+        description: Disables alternative client authentication methods for the specified directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DisableLDAPS'
+      path: /#X-Amz-Target=DirectoryService_20150416.DisableLDAPS
+      operations:
+      - name: disableldaps
+        method: POST
+        description: Deactivates LDAP secure calls for the specified directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DisableRadius'
+      path: /#X-Amz-Target=DirectoryService_20150416.DisableRadius
+      operations:
+      - name: disableradius
+        method: POST
+        description: Disables multi-factor authentication (MFA) with the Remote Authentication Dial In User Service (RADIUS)
+          server for an AD Connector or Microsoft AD directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.DisableSso'
+      path: /#X-Amz-Target=DirectoryService_20150416.DisableSso
+      operations:
+      - name: disablesso
+        method: POST
+        description: Disables single-sign on for a directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.EnableClientAuthentication'
+      path: /#X-Amz-Target=DirectoryService_20150416.EnableClientAuthentication
+      operations:
+      - name: enableclientauthentication
+        method: POST
+        description: Enables alternative client authentication methods for the specified directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.EnableLDAPS'
+      path: /#X-Amz-Target=DirectoryService_20150416.EnableLDAPS
+      operations:
+      - name: enableldaps
+        method: POST
+        description: Activates the switch for the specific directory to always use LDAP secure calls.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.EnableRadius'
+      path: /#X-Amz-Target=DirectoryService_20150416.EnableRadius
+      operations:
+      - name: enableradius
+        method: POST
+        description: Enables multi-factor authentication (MFA) with the Remote Authentication Dial In User Service (RADIUS)
+          server for an AD Connector or Microsoft AD directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.EnableSso'
+      path: /#X-Amz-Target=DirectoryService_20150416.EnableSso
+      operations:
+      - name: enablesso
+        method: POST
+        description: Enables single sign-on for a directory. Single sign-on allows users in your directory to access certain
+          Amazon Web Services services from a computer joined to the directory without having to enter their credentials separately.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.GetDirectoryLimits'
+      path: /#X-Amz-Target=DirectoryService_20150416.GetDirectoryLimits
+      operations:
+      - name: getdirectorylimits
+        method: POST
+        description: Obtains directory limit information for the current Region.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.GetSnapshotLimits'
+      path: /#X-Amz-Target=DirectoryService_20150416.GetSnapshotLimits
+      operations:
+      - name: getsnapshotlimits
+        method: POST
+        description: Obtains the manual snapshot limits for a directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.ListCertificates'
+      path: /#X-Amz-Target=DirectoryService_20150416.ListCertificates
+      operations:
+      - name: listcertificates
+        method: POST
+        description: For the specified directory, lists all the certificates registered for a secure LDAP or client certificate
+          authentication.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.ListIpRoutes'
+      path: /#X-Amz-Target=DirectoryService_20150416.ListIpRoutes
+      operations:
+      - name: listiproutes
+        method: POST
+        description: Lists the address blocks that you have added to a directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.ListLogSubscriptions'
+      path: /#X-Amz-Target=DirectoryService_20150416.ListLogSubscriptions
+      operations:
+      - name: listlogsubscriptions
+        method: POST
+        description: Lists the active log subscriptions for the Amazon Web Services account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.ListSchemaExtensions'
+      path: /#X-Amz-Target=DirectoryService_20150416.ListSchemaExtensions
+      operations:
+      - name: listschemaextensions
+        method: POST
+        description: Lists all schema extensions applied to a Microsoft AD Directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.ListTagsForResource'
+      path: /#X-Amz-Target=DirectoryService_20150416.ListTagsForResource
+      operations:
+      - name: listtagsforresource
+        method: POST
+        description: Lists all tags on a directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: Limit
+          in: query
+          type: string
+          description: Pagination limit
+        - name: NextToken
+          in: query
+          type: string
+          description: Pagination token
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.RegisterCertificate'
+      path: /#X-Amz-Target=DirectoryService_20150416.RegisterCertificate
+      operations:
+      - name: registercertificate
+        method: POST
+        description: Registers a certificate for a secure LDAP or client certificate authentication.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.RegisterEventTopic'
+      path: /#X-Amz-Target=DirectoryService_20150416.RegisterEventTopic
+      operations:
+      - name: registereventtopic
+        method: POST
+        description: 'Associates a directory with an Amazon SNS topic. This establishes the directory as a publisher to the
+          specified Amazon SNS topic. You can then receive email or text (SMS) messages when the status of your directory
+          changes. You get notified '
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.RejectSharedDirectory'
+      path: /#X-Amz-Target=DirectoryService_20150416.RejectSharedDirectory
+      operations:
+      - name: rejectshareddirectory
+        method: POST
+        description: Rejects a directory sharing request that was sent from the directory owner account.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.RemoveIpRoutes'
+      path: /#X-Amz-Target=DirectoryService_20150416.RemoveIpRoutes
+      operations:
+      - name: removeiproutes
+        method: POST
+        description: Removes IP address blocks from a directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.RemoveRegion'
+      path: /#X-Amz-Target=DirectoryService_20150416.RemoveRegion
+      operations:
+      - name: removeregion
+        method: POST
+        description: Stops all replication and removes the domain controllers from the specified Region. You cannot remove
+          the primary Region with this operation. Instead, use the <code>DeleteDirectory</code> API.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.RemoveTagsFromResource'
+      path: /#X-Amz-Target=DirectoryService_20150416.RemoveTagsFromResource
+      operations:
+      - name: removetagsfromresource
+        method: POST
+        description: Removes tags from a directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.ResetUserPassword'
+      path: /#X-Amz-Target=DirectoryService_20150416.ResetUserPassword
+      operations:
+      - name: resetuserpassword
+        method: POST
+        description: <p>Resets the password for any user in your Managed Microsoft AD or Simple AD directory.</p> <p>You can
+          reset the password for any user in your directory with the following exceptions:</p> <ul> <li> <p>For Simple AD,
+          you cannot reset the pa
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.RestoreFromSnapshot'
+      path: /#X-Amz-Target=DirectoryService_20150416.RestoreFromSnapshot
+      operations:
+      - name: restorefromsnapshot
+        method: POST
+        description: '<p>Restores a directory using an existing directory snapshot.</p> <p>When you restore a directory from
+          a snapshot, any changes made to the directory after the snapshot date are overwritten.</p> <p>This action returns
+          as soon as the restore '
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.ShareDirectory'
+      path: /#X-Amz-Target=DirectoryService_20150416.ShareDirectory
+      operations:
+      - name: sharedirectory
+        method: POST
+        description: <p>Shares a specified directory (<code>DirectoryId</code>) in your Amazon Web Services account (directory
+          owner) with another Amazon Web Services account (directory consumer). With this operation you can use your directory
+          from any Amazon W
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.StartSchemaExtension'
+      path: /#X-Amz-Target=DirectoryService_20150416.StartSchemaExtension
+      operations:
+      - name: startschemaextension
+        method: POST
+        description: Applies a schema extension to a Microsoft AD directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.UnshareDirectory'
+      path: /#X-Amz-Target=DirectoryService_20150416.UnshareDirectory
+      operations:
+      - name: unsharedirectory
+        method: POST
+        description: Stops the directory sharing between the directory owner and consumer accounts.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.UpdateConditionalForwarder'
+      path: /#X-Amz-Target=DirectoryService_20150416.UpdateConditionalForwarder
+      operations:
+      - name: updateconditionalforwarder
+        method: POST
+        description: Updates a conditional forwarder that has been set up for your Amazon Web Services directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.UpdateDirectorySetup'
+      path: /#X-Amz-Target=DirectoryService_20150416.UpdateDirectorySetup
+      operations:
+      - name: updatedirectorysetup
+        method: POST
+        description: Updates the directory for a particular update type.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.UpdateNumberOfDomainControllers'
+      path: /#X-Amz-Target=DirectoryService_20150416.UpdateNumberOfDomainControllers
+      operations:
+      - name: updatenumberofdomaincontrollers
+        method: POST
+        description: Adds or removes domain controllers to or from the directory. Based on the difference between current
+          value and new value (provided through this API call), domain controllers will be added or removed. It may take up
+          to 45 minutes for any new
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.UpdateRadius'
+      path: /#X-Amz-Target=DirectoryService_20150416.UpdateRadius
+      operations:
+      - name: updateradius
+        method: POST
+        description: Updates the Remote Authentication Dial In User Service (RADIUS) server information for an AD Connector
+          or Microsoft AD directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.UpdateSettings'
+      path: /#X-Amz-Target=DirectoryService_20150416.UpdateSettings
+      operations:
+      - name: updatesettings
+        method: POST
+        description: Updates the configurable settings for the specified directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.UpdateTrust'
+      path: /#X-Amz-Target=DirectoryService_20150416.UpdateTrust
+      operations:
+      - name: updatetrust
+        method: POST
+        description: Updates the trust that has been set up between your Managed Microsoft AD directory and an self-managed
+          Active Directory.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    - name: '#X-Amz-Target=DirectoryService_20150416.VerifyTrust'
+      path: /#X-Amz-Target=DirectoryService_20150416.VerifyTrust
+      operations:
+      - name: verifytrust
+        method: POST
+        description: <p>Directory Service for Microsoft Active Directory allows you to configure and verify trust relationships.</p>
+          <p>This action verifies a trust relationship between your Managed Microsoft AD directory and an external domain.</p>
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: X-Amz-Target
+          in: header
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{env.AMAZON_DIRECTORY_SERVICE_API_KEY}}'
+      placement: header
+  exposes:
+  - type: rest
+    namespace: amazon-directory-service-rest
+    port: 8080
+    description: REST adapter for AWS Directory Service. One Spectral-compliant resource per consumed operation, prefixed
+      with /v1.
+    resources:
+    - path: /v1/x-amz-target-directoryservice-20150416-acceptshareddirectory
+      name: x-amz-target-directoryservice-20150416-acceptshareddirectory
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.AcceptSharedDirectory.'
+      operations:
+      - method: POST
+        name: acceptshareddirectory
+        description: Accepts a directory sharing request that was sent from the directory owner account.
+        call: amazon-directory-service.acceptshareddirectory
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-addiproutes
+      name: x-amz-target-directoryservice-20150416-addiproutes
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.AddIpRoutes.'
+      operations:
+      - method: POST
+        name: addiproutes
+        description: <p>If the DNS server for your self-managed domain uses a publicly addressable IP address, you must add
+          a CIDR address block to correctly route traffic to and from your Microsoft AD on Amazon Web Services. <i>AddIpRoutes</i>
+          adds this addres
+        call: amazon-directory-service.addiproutes
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-addregion
+      name: x-amz-target-directoryservice-20150416-addregion
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.AddRegion.'
+      operations:
+      - method: POST
+        name: addregion
+        description: Adds two domain controllers in the specified Region for the specified directory.
+        call: amazon-directory-service.addregion
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-addtagstoresource
+      name: x-amz-target-directoryservice-20150416-addtagstoresource
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.AddTagsToResource.'
+      operations:
+      - method: POST
+        name: addtagstoresource
+        description: Adds or overwrites one or more tags for the specified directory. Each directory can have a maximum of
+          50 tags. Each tag consists of a key and optional value. Tag keys must be unique to each resource.
+        call: amazon-directory-service.addtagstoresource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-cancelschemaextension
+      name: x-amz-target-directoryservice-20150416-cancelschemaextension
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.CancelSchemaExtension.'
+      operations:
+      - method: POST
+        name: cancelschemaextension
+        description: Cancels an in-progress schema extension to a Microsoft AD directory. Once a schema extension has started
+          replicating to all domain controllers, the task can no longer be canceled. A schema extension can be canceled during
+          any of the followi
+        call: amazon-directory-service.cancelschemaextension
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-connectdirectory
+      name: x-amz-target-directoryservice-20150416-connectdirectory
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.ConnectDirectory.'
+      operations:
+      - method: POST
+        name: connectdirectory
+        description: <p>Creates an AD Connector to connect to a self-managed directory.</p> <p>Before you call <code>ConnectDirectory</code>,
+          ensure that all of the required permissions have been explicitly granted through a policy. For details about what
+          permi
+        call: amazon-directory-service.connectdirectory
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-createalias
+      name: x-amz-target-directoryservice-20150416-createalias
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.CreateAlias.'
+      operations:
+      - method: POST
+        name: createalias
+        description: <p>Creates an alias for a directory and assigns the alias to the directory. The alias is used to construct
+          the access URL for the directory, such as <code>http://&lt;alias&gt;.awsapps.com</code>.</p> <important> <p>After
+          an alias has been c
+        call: amazon-directory-service.createalias
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-createcomputer
+      name: x-amz-target-directoryservice-20150416-createcomputer
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.CreateComputer.'
+      operations:
+      - method: POST
+        name: createcomputer
+        description: Creates an Active Directory computer object in the specified directory.
+        call: amazon-directory-service.createcomputer
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-createconditionalforwarder
+      name: x-amz-target-directoryservice-20150416-createconditionalforwarder
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.CreateConditionalForwarder.'
+      operations:
+      - method: POST
+        name: createconditionalforwarder
+        description: Creates a conditional forwarder associated with your Amazon Web Services directory. Conditional forwarders
+          are required in order to set up a trust relationship with another domain. The conditional forwarder points to the
+          trusted domain.
+        call: amazon-directory-service.createconditionalforwarder
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-createdirectory
+      name: x-amz-target-directoryservice-20150416-createdirectory
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.CreateDirectory.'
+      operations:
+      - method: POST
+        name: createdirectory
+        description: <p>Creates a Simple AD directory. For more information, see <a href="https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_simple_ad.html">Simple
+          Active Directory</a> in the <i>Directory Service Admin Guide</i>.</p> <p>B
+        call: amazon-directory-service.createdirectory
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-createlogsubscription
+      name: x-amz-target-directoryservice-20150416-createlogsubscription
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.CreateLogSubscription.'
+      operations:
+      - method: POST
+        name: createlogsubscription
+        description: Creates a subscription to forward real-time Directory Service domain controller security logs to the
+          specified Amazon CloudWatch log group in your Amazon Web Services account.
+        call: amazon-directory-service.createlogsubscription
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-createmicrosoftad
+      name: x-amz-target-directoryservice-20150416-createmicrosoftad
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD.'
+      operations:
+      - method: POST
+        name: createmicrosoftad
+        description: <p>Creates a Microsoft AD directory in the Amazon Web Services Cloud. For more information, see <a href="https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html">Managed
+          Microsoft AD</a> in the <i>Directo
+        call: amazon-directory-service.createmicrosoftad
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-createsnapshot
+      name: x-amz-target-directoryservice-20150416-createsnapshot
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.CreateSnapshot.'
+      operations:
+      - method: POST
+        name: createsnapshot
+        description: <p>Creates a snapshot of a Simple AD or Microsoft AD directory in the Amazon Web Services cloud.</p>
+          <note> <p>You cannot take snapshots of AD Connector directories.</p> </note>
+        call: amazon-directory-service.createsnapshot
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-createtrust
+      name: x-amz-target-directoryservice-20150416-createtrust
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.CreateTrust.'
+      operations:
+      - method: POST
+        name: createtrust
+        description: '<p>Directory Service for Microsoft Active Directory allows you to configure trust relationships. For
+          example, you can establish a trust between your Managed Microsoft AD directory, and your existing self-managed Microsoft
+          Active Directory. '
+        call: amazon-directory-service.createtrust
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-deleteconditionalforwarder
+      name: x-amz-target-directoryservice-20150416-deleteconditionalforwarder
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DeleteConditionalForwarder.'
+      operations:
+      - method: POST
+        name: deleteconditionalforwarder
+        description: Deletes a conditional forwarder that has been set up for your Amazon Web Services directory.
+        call: amazon-directory-service.deleteconditionalforwarder
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-deletedirectory
+      name: x-amz-target-directoryservice-20150416-deletedirectory
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DeleteDirectory.'
+      operations:
+      - method: POST
+        name: deletedirectory
+        description: <p>Deletes an Directory Service directory.</p> <p>Before you call <code>DeleteDirectory</code>, ensure
+          that all of the required permissions have been explicitly granted through a policy. For details about what permissions
+          are required to ru
+        call: amazon-directory-service.deletedirectory
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-deletelogsubscription
+      name: x-amz-target-directoryservice-20150416-deletelogsubscription
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DeleteLogSubscription.'
+      operations:
+      - method: POST
+        name: deletelogsubscription
+        description: Deletes the specified log subscription.
+        call: amazon-directory-service.deletelogsubscription
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-deletesnapshot
+      name: x-amz-target-directoryservice-20150416-deletesnapshot
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DeleteSnapshot.'
+      operations:
+      - method: POST
+        name: deletesnapshot
+        description: Deletes a directory snapshot.
+        call: amazon-directory-service.deletesnapshot
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-deletetrust
+      name: x-amz-target-directoryservice-20150416-deletetrust
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DeleteTrust.'
+      operations:
+      - method: POST
+        name: deletetrust
+        description: Deletes an existing trust relationship between your Managed Microsoft AD directory and an external domain.
+        call: amazon-directory-service.deletetrust
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-deregistercertificate
+      name: x-amz-target-directoryservice-20150416-deregistercertificate
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DeregisterCertificate.'
+      operations:
+      - method: POST
+        name: deregistercertificate
+        description: Deletes from the system the certificate that was registered for secure LDAP or client certificate authentication.
+        call: amazon-directory-service.deregistercertificate
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-deregistereventtopic
+      name: x-amz-target-directoryservice-20150416-deregistereventtopic
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DeregisterEventTopic.'
+      operations:
+      - method: POST
+        name: deregistereventtopic
+        description: Removes the specified directory as a publisher to the specified Amazon SNS topic.
+        call: amazon-directory-service.deregistereventtopic
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describecertificate
+      name: x-amz-target-directoryservice-20150416-describecertificate
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeCertificate.'
+      operations:
+      - method: POST
+        name: describecertificate
+        description: Displays information about the certificate registered for secure LDAP or client certificate authentication.
+        call: amazon-directory-service.describecertificate
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describeclientauthenticationsettings
+      name: x-amz-target-directoryservice-20150416-describeclientauthenticationsettings
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeClientAuthenticationSettings.'
+      operations:
+      - method: POST
+        name: describeclientauthenticationsettings
+        description: Retrieves information about the type of client authentication for the specified directory, if the type
+          is specified. If no type is specified, information about all client authentication types that are supported for
+          the specified directory i
+        call: amazon-directory-service.describeclientauthenticationsettings
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describeconditionalforwarders
+      name: x-amz-target-directoryservice-20150416-describeconditionalforwarders
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeConditionalForwarders.'
+      operations:
+      - method: POST
+        name: describeconditionalforwarders
+        description: <p>Obtains information about the conditional forwarders for this account.</p> <p>If no input parameters
+          are provided for RemoteDomainNames, this request describes all conditional forwarders for the specified directory
+          ID.</p>
+        call: amazon-directory-service.describeconditionalforwarders
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describedirectories
+      name: x-amz-target-directoryservice-20150416-describedirectories
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeDirectories.'
+      operations:
+      - method: POST
+        name: describedirectories
+        description: <p>Obtains information about the directories that belong to this account.</p> <p>You can retrieve information
+          about specific directories by passing the directory identifiers in the <code>DirectoryIds</code> parameter. Otherwise,
+          all directo
+        call: amazon-directory-service.describedirectories
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describedomaincontrollers
+      name: x-amz-target-directoryservice-20150416-describedomaincontrollers
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeDomainControllers.'
+      operations:
+      - method: POST
+        name: describedomaincontrollers
+        description: Provides information about any domain controllers in your directory.
+        call: amazon-directory-service.describedomaincontrollers
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describeeventtopics
+      name: x-amz-target-directoryservice-20150416-describeeventtopics
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeEventTopics.'
+      operations:
+      - method: POST
+        name: describeeventtopics
+        description: <p>Obtains information about which Amazon SNS topics receive status messages from the specified directory.</p>
+          <p>If no input parameters are provided, such as DirectoryId or TopicName, this request describes all of the associations
+          in the a
+        call: amazon-directory-service.describeeventtopics
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describeldapssettings
+      name: x-amz-target-directoryservice-20150416-describeldapssettings
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeLDAPSSettings.'
+      operations:
+      - method: POST
+        name: describeldapssettings
+        description: Describes the status of LDAP security for the specified directory.
+        call: amazon-directory-service.describeldapssettings
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describeregions
+      name: x-amz-target-directoryservice-20150416-describeregions
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeRegions.'
+      operations:
+      - method: POST
+        name: describeregions
+        description: Provides information about the Regions that are configured for multi-Region replication.
+        call: amazon-directory-service.describeregions
+        with:
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describesettings
+      name: x-amz-target-directoryservice-20150416-describesettings
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeSettings.'
+      operations:
+      - method: POST
+        name: describesettings
+        description: Retrieves information about the configurable settings for the specified directory.
+        call: amazon-directory-service.describesettings
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describeshareddirectories
+      name: x-amz-target-directoryservice-20150416-describeshareddirectories
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeSharedDirectories.'
+      operations:
+      - method: POST
+        name: describeshareddirectories
+        description: Returns the shared directories in your account.
+        call: amazon-directory-service.describeshareddirectories
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describesnapshots
+      name: x-amz-target-directoryservice-20150416-describesnapshots
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeSnapshots.'
+      operations:
+      - method: POST
+        name: describesnapshots
+        description: <p>Obtains information about the directory snapshots that belong to this account.</p> <p>This operation
+          supports pagination with the use of the <i>NextToken</i> request and response parameters. If more results are available,
+          the <i>Describe
+        call: amazon-directory-service.describesnapshots
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describetrusts
+      name: x-amz-target-directoryservice-20150416-describetrusts
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeTrusts.'
+      operations:
+      - method: POST
+        name: describetrusts
+        description: <p>Obtains information about the trust relationships for this account.</p> <p>If no input parameters
+          are provided, such as DirectoryId or TrustIds, this request describes all the trust relationships belonging to the
+          account.</p>
+        call: amazon-directory-service.describetrusts
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-describeupdatedirectory
+      name: x-amz-target-directoryservice-20150416-describeupdatedirectory
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DescribeUpdateDirectory.'
+      operations:
+      - method: POST
+        name: describeupdatedirectory
+        description: Describes the updates of a directory for a particular update type.
+        call: amazon-directory-service.describeupdatedirectory
+        with:
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-disableclientauthentication
+      name: x-amz-target-directoryservice-20150416-disableclientauthentication
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DisableClientAuthentication.'
+      operations:
+      - method: POST
+        name: disableclientauthentication
+        description: Disables alternative client authentication methods for the specified directory.
+        call: amazon-directory-service.disableclientauthentication
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-disableldaps
+      name: x-amz-target-directoryservice-20150416-disableldaps
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DisableLDAPS.'
+      operations:
+      - method: POST
+        name: disableldaps
+        description: Deactivates LDAP secure calls for the specified directory.
+        call: amazon-directory-service.disableldaps
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-disableradius
+      name: x-amz-target-directoryservice-20150416-disableradius
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DisableRadius.'
+      operations:
+      - method: POST
+        name: disableradius
+        description: Disables multi-factor authentication (MFA) with the Remote Authentication Dial In User Service (RADIUS)
+          server for an AD Connector or Microsoft AD directory.
+        call: amazon-directory-service.disableradius
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-disablesso
+      name: x-amz-target-directoryservice-20150416-disablesso
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.DisableSso.'
+      operations:
+      - method: POST
+        name: disablesso
+        description: Disables single-sign on for a directory.
+        call: amazon-directory-service.disablesso
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-enableclientauthentication
+      name: x-amz-target-directoryservice-20150416-enableclientauthentication
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.EnableClientAuthentication.'
+      operations:
+      - method: POST
+        name: enableclientauthentication
+        description: Enables alternative client authentication methods for the specified directory.
+        call: amazon-directory-service.enableclientauthentication
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-enableldaps
+      name: x-amz-target-directoryservice-20150416-enableldaps
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.EnableLDAPS.'
+      operations:
+      - method: POST
+        name: enableldaps
+        description: Activates the switch for the specific directory to always use LDAP secure calls.
+        call: amazon-directory-service.enableldaps
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-enableradius
+      name: x-amz-target-directoryservice-20150416-enableradius
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.EnableRadius.'
+      operations:
+      - method: POST
+        name: enableradius
+        description: Enables multi-factor authentication (MFA) with the Remote Authentication Dial In User Service (RADIUS)
+          server for an AD Connector or Microsoft AD directory.
+        call: amazon-directory-service.enableradius
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-enablesso
+      name: x-amz-target-directoryservice-20150416-enablesso
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.EnableSso.'
+      operations:
+      - method: POST
+        name: enablesso
+        description: Enables single sign-on for a directory. Single sign-on allows users in your directory to access certain
+          Amazon Web Services services from a computer joined to the directory without having to enter their credentials separately.
+        call: amazon-directory-service.enablesso
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-getdirectorylimits
+      name: x-amz-target-directoryservice-20150416-getdirectorylimits
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.GetDirectoryLimits.'
+      operations:
+      - method: POST
+        name: getdirectorylimits
+        description: Obtains directory limit information for the current Region.
+        call: amazon-directory-service.getdirectorylimits
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-getsnapshotlimits
+      name: x-amz-target-directoryservice-20150416-getsnapshotlimits
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.GetSnapshotLimits.'
+      operations:
+      - method: POST
+        name: getsnapshotlimits
+        description: Obtains the manual snapshot limits for a directory.
+        call: amazon-directory-service.getsnapshotlimits
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-listcertificates
+      name: x-amz-target-directoryservice-20150416-listcertificates
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.ListCertificates.'
+      operations:
+      - method: POST
+        name: listcertificates
+        description: For the specified directory, lists all the certificates registered for a secure LDAP or client certificate
+          authentication.
+        call: amazon-directory-service.listcertificates
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-listiproutes
+      name: x-amz-target-directoryservice-20150416-listiproutes
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.ListIpRoutes.'
+      operations:
+      - method: POST
+        name: listiproutes
+        description: Lists the address blocks that you have added to a directory.
+        call: amazon-directory-service.listiproutes
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-listlogsubscriptions
+      name: x-amz-target-directoryservice-20150416-listlogsubscriptions
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.ListLogSubscriptions.'
+      operations:
+      - method: POST
+        name: listlogsubscriptions
+        description: Lists the active log subscriptions for the Amazon Web Services account.
+        call: amazon-directory-service.listlogsubscriptions
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-listschemaextensions
+      name: x-amz-target-directoryservice-20150416-listschemaextensions
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.ListSchemaExtensions.'
+      operations:
+      - method: POST
+        name: listschemaextensions
+        description: Lists all schema extensions applied to a Microsoft AD Directory.
+        call: amazon-directory-service.listschemaextensions
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-listtagsforresource
+      name: x-amz-target-directoryservice-20150416-listtagsforresource
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.ListTagsForResource.'
+      operations:
+      - method: POST
+        name: listtagsforresource
+        description: Lists all tags on a directory.
+        call: amazon-directory-service.listtagsforresource
+        with:
+          Limit: rest.Limit
+          NextToken: rest.NextToken
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-registercertificate
+      name: x-amz-target-directoryservice-20150416-registercertificate
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.RegisterCertificate.'
+      operations:
+      - method: POST
+        name: registercertificate
+        description: Registers a certificate for a secure LDAP or client certificate authentication.
+        call: amazon-directory-service.registercertificate
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-registereventtopic
+      name: x-amz-target-directoryservice-20150416-registereventtopic
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.RegisterEventTopic.'
+      operations:
+      - method: POST
+        name: registereventtopic
+        description: 'Associates a directory with an Amazon SNS topic. This establishes the directory as a publisher to the
+          specified Amazon SNS topic. You can then receive email or text (SMS) messages when the status of your directory
+          changes. You get notified '
+        call: amazon-directory-service.registereventtopic
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-rejectshareddirectory
+      name: x-amz-target-directoryservice-20150416-rejectshareddirectory
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.RejectSharedDirectory.'
+      operations:
+      - method: POST
+        name: rejectshareddirectory
+        description: Rejects a directory sharing request that was sent from the directory owner account.
+        call: amazon-directory-service.rejectshareddirectory
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-removeiproutes
+      name: x-amz-target-directoryservice-20150416-removeiproutes
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.RemoveIpRoutes.'
+      operations:
+      - method: POST
+        name: removeiproutes
+        description: Removes IP address blocks from a directory.
+        call: amazon-directory-service.removeiproutes
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-removeregion
+      name: x-amz-target-directoryservice-20150416-removeregion
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.RemoveRegion.'
+      operations:
+      - method: POST
+        name: removeregion
+        description: Stops all replication and removes the domain controllers from the specified Region. You cannot remove
+          the primary Region with this operation. Instead, use the <code>DeleteDirectory</code> API.
+        call: amazon-directory-service.removeregion
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-removetagsfromresource
+      name: x-amz-target-directoryservice-20150416-removetagsfromresource
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.RemoveTagsFromResource.'
+      operations:
+      - method: POST
+        name: removetagsfromresource
+        description: Removes tags from a directory.
+        call: amazon-directory-service.removetagsfromresource
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-resetuserpassword
+      name: x-amz-target-directoryservice-20150416-resetuserpassword
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.ResetUserPassword.'
+      operations:
+      - method: POST
+        name: resetuserpassword
+        description: <p>Resets the password for any user in your Managed Microsoft AD or Simple AD directory.</p> <p>You can
+          reset the password for any user in your directory with the following exceptions:</p> <ul> <li> <p>For Simple AD,
+          you cannot reset the pa
+        call: amazon-directory-service.resetuserpassword
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-restorefromsnapshot
+      name: x-amz-target-directoryservice-20150416-restorefromsnapshot
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.RestoreFromSnapshot.'
+      operations:
+      - method: POST
+        name: restorefromsnapshot
+        description: '<p>Restores a directory using an existing directory snapshot.</p> <p>When you restore a directory from
+          a snapshot, any changes made to the directory after the snapshot date are overwritten.</p> <p>This action returns
+          as soon as the restore '
+        call: amazon-directory-service.restorefromsnapshot
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-sharedirectory
+      name: x-amz-target-directoryservice-20150416-sharedirectory
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.ShareDirectory.'
+      operations:
+      - method: POST
+        name: sharedirectory
+        description: <p>Shares a specified directory (<code>DirectoryId</code>) in your Amazon Web Services account (directory
+          owner) with another Amazon Web Services account (directory consumer). With this operation you can use your directory
+          from any Amazon W
+        call: amazon-directory-service.sharedirectory
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-startschemaextension
+      name: x-amz-target-directoryservice-20150416-startschemaextension
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.StartSchemaExtension.'
+      operations:
+      - method: POST
+        name: startschemaextension
+        description: Applies a schema extension to a Microsoft AD directory.
+        call: amazon-directory-service.startschemaextension
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-unsharedirectory
+      name: x-amz-target-directoryservice-20150416-unsharedirectory
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.UnshareDirectory.'
+      operations:
+      - method: POST
+        name: unsharedirectory
+        description: Stops the directory sharing between the directory owner and consumer accounts.
+        call: amazon-directory-service.unsharedirectory
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-updateconditionalforwarder
+      name: x-amz-target-directoryservice-20150416-updateconditionalforwarder
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.UpdateConditionalForwarder.'
+      operations:
+      - method: POST
+        name: updateconditionalforwarder
+        description: Updates a conditional forwarder that has been set up for your Amazon Web Services directory.
+        call: amazon-directory-service.updateconditionalforwarder
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-updatedirectorysetup
+      name: x-amz-target-directoryservice-20150416-updatedirectorysetup
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.UpdateDirectorySetup.'
+      operations:
+      - method: POST
+        name: updatedirectorysetup
+        description: Updates the directory for a particular update type.
+        call: amazon-directory-service.updatedirectorysetup
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-updatenumberofdomaincontrollers
+      name: x-amz-target-directoryservice-20150416-updatenumberofdomaincontrollers
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.UpdateNumberOfDomainControllers.'
+      operations:
+      - method: POST
+        name: updatenumberofdomaincontrollers
+        description: Adds or removes domain controllers to or from the directory. Based on the difference between current
+          value and new value (provided through this API call), domain controllers will be added or removed. It may take up
+          to 45 minutes for any new
+        call: amazon-directory-service.updatenumberofdomaincontrollers
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-updateradius
+      name: x-amz-target-directoryservice-20150416-updateradius
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.UpdateRadius.'
+      operations:
+      - method: POST
+        name: updateradius
+        description: Updates the Remote Authentication Dial In User Service (RADIUS) server information for an AD Connector
+          or Microsoft AD directory.
+        call: amazon-directory-service.updateradius
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-updatesettings
+      name: x-amz-target-directoryservice-20150416-updatesettings
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.UpdateSettings.'
+      operations:
+      - method: POST
+        name: updatesettings
+        description: Updates the configurable settings for the specified directory.
+        call: amazon-directory-service.updatesettings
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-updatetrust
+      name: x-amz-target-directoryservice-20150416-updatetrust
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.UpdateTrust.'
+      operations:
+      - method: POST
+        name: updatetrust
+        description: Updates the trust that has been set up between your Managed Microsoft AD directory and an self-managed
+          Active Directory.
+        call: amazon-directory-service.updatetrust
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/x-amz-target-directoryservice-20150416-verifytrust
+      name: x-amz-target-directoryservice-20150416-verifytrust
+      description: 'REST surface for #X-Amz-Target=DirectoryService_20150416.VerifyTrust.'
+      operations:
+      - method: POST
+        name: verifytrust
+        description: <p>Directory Service for Microsoft Active Directory allows you to configure and verify trust relationships.</p>
+          <p>This action verifies a trust relationship between your Managed Microsoft AD directory and an external domain.</p>
+        call: amazon-directory-service.verifytrust
+        with:
+          X-Amz-Target: rest.X-Amz-Target
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: amazon-directory-service-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for AWS Directory Service. One tool per consumed operation, routed inline through this capability's
+      consumes block.
+    tools:
+    - name: accepts-directory-sharing-request-that
+      description: Accepts a directory sharing request that was sent from the directory owner account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.acceptshareddirectory
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-if-dns-server-your-self
+      description: <p>If the DNS server for your self-managed domain uses a publicly addressable IP address, you must add
+        a CIDR address block to correctly route traffic to and from your Microsoft AD on Amazon Web Services. <i>AddIpRoutes</i>
+        adds this addres
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.addiproutes
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: adds-two-domain-controllers-specified
+      description: Adds two domain controllers in the specified Region for the specified directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.addregion
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: adds-overwrites-one-more-tags
+      description: Adds or overwrites one or more tags for the specified directory. Each directory can have a maximum of 50
+        tags. Each tag consists of a key and optional value. Tag keys must be unique to each resource.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.addtagstoresource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: cancels-progress-schema-extension-microsoft
+      description: Cancels an in-progress schema extension to a Microsoft AD directory. Once a schema extension has started
+        replicating to all domain controllers, the task can no longer be canceled. A schema extension can be canceled during
+        any of the followi
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.cancelschemaextension
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-creates-ad-connector-connect-self
+      description: <p>Creates an AD Connector to connect to a self-managed directory.</p> <p>Before you call <code>ConnectDirectory</code>,
+        ensure that all of the required permissions have been explicitly granted through a policy. For details about what
+        permi
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.connectdirectory
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-creates-alias-directory-and-assigns
+      description: <p>Creates an alias for a directory and assigns the alias to the directory. The alias is used to construct
+        the access URL for the directory, such as <code>http://&lt;alias&gt;.awsapps.com</code>.</p> <important> <p>After
+        an alias has been c
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.createalias
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-active-directory-computer-object
+      description: Creates an Active Directory computer object in the specified directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.createcomputer
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-conditional-forwarder-associated-your
+      description: Creates a conditional forwarder associated with your Amazon Web Services directory. Conditional forwarders
+        are required in order to set up a trust relationship with another domain. The conditional forwarder points to the
+        trusted domain.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.createconditionalforwarder
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-creates-simple-ad-directory-more
+      description: <p>Creates a Simple AD directory. For more information, see <a href="https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_simple_ad.html">Simple
+        Active Directory</a> in the <i>Directory Service Admin Guide</i>.</p> <p>B
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.createdirectory
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: creates-subscription-forward-real-time
+      description: Creates a subscription to forward real-time Directory Service domain controller security logs to the specified
+        Amazon CloudWatch log group in your Amazon Web Services account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.createlogsubscription
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-creates-microsoft-ad-directory-amazon
+      description: <p>Creates a Microsoft AD directory in the Amazon Web Services Cloud. For more information, see <a href="https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html">Managed
+        Microsoft AD</a> in the <i>Directo
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.createmicrosoftad
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-creates-snapshot-simple-ad-microsoft
+      description: <p>Creates a snapshot of a Simple AD or Microsoft AD directory in the Amazon Web Services cloud.</p> <note>
+        <p>You cannot take snapshots of AD Connector directories.</p> </note>
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.createsnapshot
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-directory-service-microsoft-active-directory
+      description: '<p>Directory Service for Microsoft Active Directory allows you to configure trust relationships. For example,
+        you can establish a trust between your Managed Microsoft AD directory, and your existing self-managed Microsoft Active
+        Directory. '
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.createtrust
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-conditional-forwarder-that-has
+      description: Deletes a conditional forwarder that has been set up for your Amazon Web Services directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.deleteconditionalforwarder
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-deletes-directory-service-directory-p
+      description: <p>Deletes an Directory Service directory.</p> <p>Before you call <code>DeleteDirectory</code>, ensure
+        that all of the required permissions have been explicitly granted through a policy. For details about what permissions
+        are required to ru
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.deletedirectory
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-specified-log-subscription
+      description: Deletes the specified log subscription.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.deletelogsubscription
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-directory-snapshot
+      description: Deletes a directory snapshot.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.deletesnapshot
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-existing-trust-relationship-between
+      description: Deletes an existing trust relationship between your Managed Microsoft AD directory and an external domain.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.deletetrust
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deletes-system-certificate-that-was
+      description: Deletes from the system the certificate that was registered for secure LDAP or client certificate authentication.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.deregistercertificate
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: removes-specified-directory-publisher-specified
+      description: Removes the specified directory as a publisher to the specified Amazon SNS topic.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.deregistereventtopic
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: displays-information-about-certificate-registered
+      description: Displays information about the certificate registered for secure LDAP or client certificate authentication.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describecertificate
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: retrieves-information-about-type-client
+      description: Retrieves information about the type of client authentication for the specified directory, if the type
+        is specified. If no type is specified, information about all client authentication types that are supported for the
+        specified directory i
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describeclientauthenticationsettings
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-obtains-information-about-conditional-forwarders
+      description: <p>Obtains information about the conditional forwarders for this account.</p> <p>If no input parameters
+        are provided for RemoteDomainNames, this request describes all conditional forwarders for the specified directory
+        ID.</p>
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describeconditionalforwarders
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-obtains-information-about-directories-that
+      description: <p>Obtains information about the directories that belong to this account.</p> <p>You can retrieve information
+        about specific directories by passing the directory identifiers in the <code>DirectoryIds</code> parameter. Otherwise,
+        all directo
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describedirectories
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: provides-information-about-any-domain
+      description: Provides information about any domain controllers in your directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describedomaincontrollers
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-obtains-information-about-which-amazon
+      description: <p>Obtains information about which Amazon SNS topics receive status messages from the specified directory.</p>
+        <p>If no input parameters are provided, such as DirectoryId or TopicName, this request describes all of the associations
+        in the a
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describeeventtopics
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: describes-status-ldap-security-specified
+      description: Describes the status of LDAP security for the specified directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describeldapssettings
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: provides-information-about-regions-that
+      description: Provides information about the Regions that are configured for multi-Region replication.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describeregions
+      with:
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: retrieves-information-about-configurable-settings
+      description: Retrieves information about the configurable settings for the specified directory.
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describesettings
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: returns-shared-directories-your-account
+      description: Returns the shared directories in your account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describeshareddirectories
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-obtains-information-about-directory-snapshots
+      description: <p>Obtains information about the directory snapshots that belong to this account.</p> <p>This operation
+        supports pagination with the use of the <i>NextToken</i> request and response parameters. If more results are available,
+        the <i>Describe
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describesnapshots
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-obtains-information-about-trust-relationships
+      description: <p>Obtains information about the trust relationships for this account.</p> <p>If no input parameters are
+        provided, such as DirectoryId or TrustIds, this request describes all the trust relationships belonging to the account.</p>
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describetrusts
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: describes-updates-directory-particular-update
+      description: Describes the updates of a directory for a particular update type.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.describeupdatedirectory
+      with:
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: disables-alternative-client-authentication-methods
+      description: Disables alternative client authentication methods for the specified directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.disableclientauthentication
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: deactivates-ldap-secure-calls-specified
+      description: Deactivates LDAP secure calls for the specified directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.disableldaps
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: disables-multi-factor-authentication-mfa
+      description: Disables multi-factor authentication (MFA) with the Remote Authentication Dial In User Service (RADIUS)
+        server for an AD Connector or Microsoft AD directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.disableradius
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: disables-single-sign-directory
+      description: Disables single-sign on for a directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.disablesso
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: enables-alternative-client-authentication-methods
+      description: Enables alternative client authentication methods for the specified directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.enableclientauthentication
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: activates-switch-specific-directory-always
+      description: Activates the switch for the specific directory to always use LDAP secure calls.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.enableldaps
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: enables-multi-factor-authentication-mfa
+      description: Enables multi-factor authentication (MFA) with the Remote Authentication Dial In User Service (RADIUS)
+        server for an AD Connector or Microsoft AD directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.enableradius
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: enables-single-sign-directory-single
+      description: Enables single sign-on for a directory. Single sign-on allows users in your directory to access certain
+        Amazon Web Services services from a computer joined to the directory without having to enter their credentials separately.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.enablesso
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: obtains-directory-limit-information-current
+      description: Obtains directory limit information for the current Region.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.getdirectorylimits
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: obtains-manual-snapshot-limits-directory
+      description: Obtains the manual snapshot limits for a directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.getsnapshotlimits
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: specified-directory-lists-all-certificates
+      description: For the specified directory, lists all the certificates registered for a secure LDAP or client certificate
+        authentication.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.listcertificates
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: lists-address-blocks-that-you
+      description: Lists the address blocks that you have added to a directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.listiproutes
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: lists-active-log-subscriptions-amazon
+      description: Lists the active log subscriptions for the Amazon Web Services account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.listlogsubscriptions
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: lists-all-schema-extensions-applied
+      description: Lists all schema extensions applied to a Microsoft AD Directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.listschemaextensions
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: lists-all-tags-directory
+      description: Lists all tags on a directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.listtagsforresource
+      with:
+        Limit: tools.Limit
+        NextToken: tools.NextToken
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: registers-certificate-secure-ldap-client
+      description: Registers a certificate for a secure LDAP or client certificate authentication.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.registercertificate
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: associates-directory-amazon-sns-topic
+      description: 'Associates a directory with an Amazon SNS topic. This establishes the directory as a publisher to the
+        specified Amazon SNS topic. You can then receive email or text (SMS) messages when the status of your directory changes.
+        You get notified '
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.registereventtopic
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: rejects-directory-sharing-request-that
+      description: Rejects a directory sharing request that was sent from the directory owner account.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.rejectshareddirectory
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: removes-ip-address-blocks-directory
+      description: Removes IP address blocks from a directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.removeiproutes
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: stops-all-replication-and-removes
+      description: Stops all replication and removes the domain controllers from the specified Region. You cannot remove the
+        primary Region with this operation. Instead, use the <code>DeleteDirectory</code> API.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.removeregion
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: removes-tags-directory
+      description: Removes tags from a directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.removetagsfromresource
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-resets-password-any-user-your
+      description: <p>Resets the password for any user in your Managed Microsoft AD or Simple AD directory.</p> <p>You can
+        reset the password for any user in your directory with the following exceptions:</p> <ul> <li> <p>For Simple AD, you
+        cannot reset the pa
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.resetuserpassword
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-restores-directory-using-existing-directory
+      description: '<p>Restores a directory using an existing directory snapshot.</p> <p>When you restore a directory from
+        a snapshot, any changes made to the directory after the snapshot date are overwritten.</p> <p>This action returns
+        as soon as the restore '
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.restorefromsnapshot
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-shares-specified-directory-code-directoryid-code
+      description: <p>Shares a specified directory (<code>DirectoryId</code>) in your Amazon Web Services account (directory
+        owner) with another Amazon Web Services account (directory consumer). With this operation you can use your directory
+        from any Amazon W
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.sharedirectory
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: applies-schema-extension-microsoft-ad
+      description: Applies a schema extension to a Microsoft AD directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.startschemaextension
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: stops-directory-sharing-between-directory
+      description: Stops the directory sharing between the directory owner and consumer accounts.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.unsharedirectory
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-conditional-forwarder-that-has
+      description: Updates a conditional forwarder that has been set up for your Amazon Web Services directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.updateconditionalforwarder
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-directory-particular-update-type
+      description: Updates the directory for a particular update type.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.updatedirectorysetup
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: adds-removes-domain-controllers-directory
+      description: Adds or removes domain controllers to or from the directory. Based on the difference between current value
+        and new value (provided through this API call), domain controllers will be added or removed. It may take up to 45
+        minutes for any new
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.updatenumberofdomaincontrollers
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-remote-authentication-dial-user
+      description: Updates the Remote Authentication Dial In User Service (RADIUS) server information for an AD Connector
+        or Microsoft AD directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.updateradius
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-configurable-settings-specified-directory
+      description: Updates the configurable settings for the specified directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.updatesettings
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: updates-trust-that-has-been
+      description: Updates the trust that has been set up between your Managed Microsoft AD directory and an self-managed
+        Active Directory.
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.updatetrust
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: p-directory-service-microsoft-active-directory-2
+      description: <p>Directory Service for Microsoft Active Directory allows you to configure and verify trust relationships.</p>
+        <p>This action verifies a trust relationship between your Managed Microsoft AD directory and an external domain.</p>
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: amazon-directory-service.verifytrust
+      with:
+        X-Amz-Target: tools.X-Amz-Target
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
