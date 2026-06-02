@@ -2,12 +2,20 @@
   "repo": "amazon-directory-service",
   "feeds": [
     {
-      "source": "https://aws.amazon.com/blogs/security/tag/aws-directory-service/",
+      "source": "https://aws.amazon.com/blogs/security/tag/aws-directory-service/feed/",
       "feed_url": "https://aws.amazon.com/blogs/security/tag/aws-directory-service/feed/",
-      "title": "AWS Directory Service \u2013 AWS Security Blog",
-      "saved": 15
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://aws.amazon.com/premiumsupport/",
+      "feed_url": "https://aws.amazon.com/premiumsupport/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "post_count": 25,
-  "fetched": "2026-05-17T20:20:35Z"
+  "post_count": 26,
+  "fetched": "2026-06-01T23:35:02Z"
 }
