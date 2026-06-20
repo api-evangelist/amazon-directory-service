@@ -6,7 +6,7 @@ description: AWS Directory Service for Microsoft Active Directory, also known as
   sharing.
 type: Index
 kind: company
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Active Directory
 - Authentication
