@@ -35,7 +35,7 @@ apis:
     url: https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/openapi/amazon-directory-service-openapi.yaml
   - type: GettingStarted
     url: https://aws.amazon.com/directoryservice/getting-started/
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/amazon-directory-service.yaml
 common:
 - type: Portal
@@ -56,7 +56,7 @@ common:
   url: https://github.com/aws
 - type: Console
   url: https://console.aws.amazon.com/directoryservicev2/
-- type: SignUp
+- type: Signup
   url: https://portal.aws.amazon.com/billing/signup
 - type: Login
   url: https://signin.aws.amazon.com/
