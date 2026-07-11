@@ -38,6 +38,14 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-directory-service.yaml
 common:
+- type: TrustCenter
+  url: security/amazon-directory-service-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/amazon-directory-service-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amazon-directory-service-domain-security.yml
+- type: Authentication
+  url: authentication/amazon-directory-service-authentication.yml
 - type: Portal
   url: https://aws.amazon.com/directoryservice/
 - type: Website
