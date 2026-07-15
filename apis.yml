@@ -38,6 +38,8 @@ apis:
   - type: X-NaftikoCapability
     url: capabilities/amazon-directory-service.yaml
 common:
+- type: AgenticAccess
+  url: agentic-access/amazon-directory-service-agentic-access.yml
 - type: TrustCenter
   url: security/amazon-directory-service-trust-center.yml
 - type: VulnerabilityDisclosure
