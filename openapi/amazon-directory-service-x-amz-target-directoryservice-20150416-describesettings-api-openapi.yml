@@ -1,0 +1,369 @@
+openapi: 3.0.0
+info:
+  version: 2015-04-16
+  x-release: v4
+  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeSettings API'
+  description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: ds
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/ds-2015-04-16.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://ds.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Directory Service multi-region endpoint
+- url: https://ds.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Directory Service multi-region endpoint
+- url: http://ds.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Directory Service endpoint for China (Beijing) and China (Ningxia)
+- url: https://ds.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Directory Service endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=DirectoryService 20150416.DescribeSettings'
+paths:
+  /#X-Amz-Target=DirectoryService_20150416.DescribeSettings:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: DescribeSettings
+      description: Retrieves information about the configurable settings for the specified directory.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DescribeSettingsResult'
+        '480':
+          description: DirectoryDoesNotExistException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DirectoryDoesNotExistException'
+        '481':
+          description: UnsupportedOperationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnsupportedOperationException'
+        '482':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+        '483':
+          description: InvalidNextTokenException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidNextTokenException'
+        '484':
+          description: ClientException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientException'
+        '485':
+          description: ServiceException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServiceException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DescribeSettingsRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - DirectoryService_20150416.DescribeSettings
+      tags:
+      - '#X Amz Target=DirectoryService 20150416.DescribeSettings'
+components:
+  schemas:
+    SettingEntry:
+      type: object
+      properties:
+        Type:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationSettingType'
+          - description: The type of directory setting. For example, <code>Protocol</code> or <code>Cipher</code>.
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationSettingName'
+          - description: <p>The name of the directory setting. For example:</p> <p> <code>TLS_1_0</code> </p>
+        AllowedValues:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationSettingAllowedValues'
+          - description: The valid range of values for the directory setting.
+        AppliedValue:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationSettingValue'
+          - description: The value of the directory setting that is applied to the directory.
+        RequestedValue:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationSettingValue'
+          - description: The value that was last requested for the directory setting.
+        RequestStatus:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationStatus'
+          - description: The overall status of the request to update the directory setting request. If the directory setting is deployed in more than one region, and the request fails in any region, the overall status is <code>Failed</code>.
+        RequestDetailedStatus:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationSettingRequestDetailedStatus'
+          - description: Details about the status of the request to update the directory setting. If the directory setting is deployed in more than one region, status is returned for the request in each region where the setting is deployed.
+        RequestStatusMessage:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationSettingRequestStatusMessage'
+          - description: The last status message for the directory status request.
+        LastUpdatedDateTime:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationSettingLastUpdatedDateTime'
+          - description: The date and time when the directory setting was last updated.
+        LastRequestedDateTime:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationSettingLastRequestedDateTime'
+          - description: The date and time when the request to update a directory setting was last submitted.
+      description: Contains information about the specified configurable setting for a directory.
+    DirectoryConfigurationSettingLastUpdatedDateTime:
+      type: string
+      format: date-time
+    SettingEntries:
+      type: array
+      items:
+        $ref: '#/components/schemas/SettingEntry'
+    ClientException: {}
+    DirectoryConfigurationSettingName:
+      type: string
+      pattern: ^[a-zA-Z0-9-/. _]*$
+      minLength: 1
+      maxLength: 255
+    DescribeSettingsResult:
+      type: object
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The identifier of the directory.
+        SettingEntries:
+          allOf:
+          - $ref: '#/components/schemas/SettingEntries'
+          - description: <p>The list of <a>SettingEntry</a> objects that were retrieved.</p> <p>It is possible that this list contains less than the number of items specified in the <code>Limit</code> member of the request. This occurs if there are less than the requested number of items left to retrieve, or if the limitations of the operation have been exceeded.</p>
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: 'If not null, token that indicates that more results are available. Pass this value for the <code>NextToken</code> parameter in a subsequent call to <code>DescribeSettings</code> to retrieve the next set of items. '
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{10}$
+    DescribeSettingsRequest:
+      type: object
+      required:
+      - DirectoryId
+      title: DescribeSettingsRequest
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The identifier of the directory for which to retrieve information.
+        Status:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationStatus'
+          - description: The status of the directory settings for which to retrieve information.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: The <code>DescribeSettingsResult.NextToken</code> value from a previous call to <a>DescribeSettings</a>. Pass null if this is the first call.
+    DirectoryConfigurationSettingValue:
+      type: string
+      pattern: ^[a-zA-Z0-9]*$
+      minLength: 1
+      maxLength: 255
+    DirectoryConfigurationStatus:
+      type: string
+      enum:
+      - Requested
+      - Updating
+      - Updated
+      - Failed
+      - Default
+    DirectoryConfigurationSettingRequestDetailedStatus:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/DirectoryConfigurationStatus'
+    UnsupportedOperationException: {}
+    DirectoryDoesNotExistException: {}
+    NextToken:
+      type: string
+    ServiceException: {}
+    DirectoryConfigurationSettingRequestStatusMessage:
+      type: string
+    InvalidParameterException: {}
+    DirectoryConfigurationSettingAllowedValues:
+      type: string
+    DirectoryConfigurationSettingType:
+      type: string
+    DirectoryConfigurationSettingLastRequestedDateTime:
+      type: string
+      format: date-time
+    InvalidNextTokenException: {}
+  parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/ds/
+x-hasEquivalentPaths: true

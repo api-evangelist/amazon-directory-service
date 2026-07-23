@@ -1,0 +1,357 @@
+openapi: 3.0.0
+info:
+  version: 2015-04-16
+  x-release: v4
+  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateDirectory API'
+  description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: ds
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/ds-2015-04-16.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://ds.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Directory Service multi-region endpoint
+- url: https://ds.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Directory Service multi-region endpoint
+- url: http://ds.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Directory Service endpoint for China (Beijing) and China (Ningxia)
+- url: https://ds.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Directory Service endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=DirectoryService 20150416.CreateDirectory'
+paths:
+  /#X-Amz-Target=DirectoryService_20150416.CreateDirectory:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: CreateDirectory
+      description: '<p>Creates a Simple AD directory. For more information, see <a href="https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_simple_ad.html">Simple Active Directory</a> in the <i>Directory Service Admin Guide</i>.</p> <p>Before you call <code>CreateDirectory</code>, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the <code>CreateDirectory</code> operation, see <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/UsingWithDS_IAM_ResourcePermissions.html">Directory Service API Permissions: Actions, Resources, and Conditions Reference</a>.</p>'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateDirectoryResult'
+        '480':
+          description: DirectoryLimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DirectoryLimitExceededException'
+        '481':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+        '482':
+          description: ClientException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientException'
+        '483':
+          description: ServiceException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServiceException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateDirectoryRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - DirectoryService_20150416.CreateDirectory
+      tags:
+      - '#X Amz Target=DirectoryService 20150416.CreateDirectory'
+components:
+  schemas:
+    DirectoryName:
+      type: string
+      pattern: ^([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+$
+    Password:
+      type: string
+      pattern: (?=^.{8,64}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9\s])(?=.*[a-z])|(?=.*[^A-Za-z0-9\s])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9\s]))^.*
+      format: password
+    SubnetId:
+      type: string
+      pattern: ^(subnet-[0-9a-f]{8}|subnet-[0-9a-f]{17})$
+    DirectoryShortName:
+      type: string
+      pattern: ^[^\\/:*?"<>|.]+[^\\/:*?"<>|]*$
+    CreateDirectoryResult:
+      type: object
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The identifier of the directory that was created.
+      description: Contains the results of the <a>CreateDirectory</a> operation.
+    ClientException: {}
+    DirectoryLimitExceededException: {}
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{10}$
+    DirectoryVpcSettings:
+      type: object
+      required:
+      - VpcId
+      - SubnetIds
+      properties:
+        VpcId:
+          allOf:
+          - $ref: '#/components/schemas/VpcId'
+          - description: The identifier of the VPC in which to create the directory.
+        SubnetIds:
+          allOf:
+          - $ref: '#/components/schemas/SubnetIds'
+          - description: The identifiers of the subnets for the directory servers. The two subnets must be in different Availability Zones. Directory Service creates a directory server and a DNS server in each of these subnets.
+      description: Contains VPC information for the <a>CreateDirectory</a> or <a>CreateMicrosoftAD</a> operation.
+    CreateDirectoryRequest:
+      type: object
+      required:
+      - Name
+      - Password
+      - Size
+      title: CreateDirectoryRequest
+      properties:
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryName'
+          - description: The fully qualified name for the directory, such as <code>corp.example.com</code>.
+        ShortName:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryShortName'
+          - description: The NetBIOS name of the directory, such as <code>CORP</code>.
+        Password:
+          allOf:
+          - $ref: '#/components/schemas/Password'
+          - description: <p>The password for the directory administrator. The directory creation process creates a directory administrator account with the user name <code>Administrator</code> and this password.</p> <p>If you need to change the password for the administrator account, you can use the <a>ResetUserPassword</a> API call.</p> <p>The regex pattern for this string is made up of the following conditions:</p> <ul> <li> <p>Length (?=^.{8,64}$) – Must be between 8 and 64 characters</p> </li> </ul> <p>AND any 3 of the following password complexity rules required by Active Directory:</p> <ul> <li> <p>Numbers and upper case and lowercase (?=.*\d)(?=.*[A-Z])(?=.*[a-z])</p> </li> <li> <p>Numbers and special characters and lower case (?=.*\d)(?=.*[^A-Za-z0-9\s])(?=.*[a-z])</p> </li> <li> <p>Special characters and upper case and lower case (?=.*[^A-Za-z0-9\s])(?=.*[A-Z])(?=.*[a-z])</p> </li> <li> <p>Numbers and upper case and special characters (?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9\s])</p> </li> </ul> <p>For additional information about how Active Directory passwords are enforced, see <a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements">Password must meet complexity requirements</a> on the Microsoft website.</p>
+        Description:
+          allOf:
+          - $ref: '#/components/schemas/Description'
+          - description: A description for the directory.
+        Size:
+          allOf:
+          - $ref: '#/components/schemas/DirectorySize'
+          - description: The size of the directory.
+        VpcSettings:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryVpcSettings'
+          - description: A <a>DirectoryVpcSettings</a> object that contains additional information for the operation.
+        Tags:
+          allOf:
+          - $ref: '#/components/schemas/Tags'
+          - description: The tags to be assigned to the Simple AD directory.
+      description: 'Contains the inputs for the <a>CreateDirectory</a> operation. '
+    TagKey:
+      type: string
+      pattern: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$
+      minLength: 1
+      maxLength: 128
+    ServiceException: {}
+    InvalidParameterException: {}
+    TagValue:
+      type: string
+      pattern: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$
+      minLength: 0
+      maxLength: 256
+    DirectorySize:
+      type: string
+      enum:
+      - Small
+      - Large
+    SubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SubnetId'
+    Tags:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+    VpcId:
+      type: string
+      pattern: ^(vpc-[0-9a-f]{8}|vpc-[0-9a-f]{17})$
+    Description:
+      type: string
+      pattern: ^([a-zA-Z0-9_])[\\a-zA-Z0-9_@#%*+=:?./!\s-]*$
+      minLength: 0
+      maxLength: 128
+    Tag:
+      type: object
+      required:
+      - Key
+      - Value
+      properties:
+        Key:
+          allOf:
+          - $ref: '#/components/schemas/TagKey'
+          - description: 'Required name of the tag. The string value can be Unicode characters and cannot be prefixed with "aws:". The string can contain only the set of Unicode letters, digits, white-space, ''_'', ''.'', ''/'', ''='', ''+'', ''-'' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").'
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/TagValue'
+          - description: 'The optional value of the tag. The string value can be Unicode characters. The string can contain only the set of Unicode letters, digits, white-space, ''_'', ''.'', ''/'', ''='', ''+'', ''-'' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").'
+      description: Metadata assigned to a directory consisting of a key-value pair.
+  parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/ds/
+x-hasEquivalentPaths: true

@@ -1,0 +1,318 @@
+openapi: 3.0.0
+info:
+  version: 2015-04-16
+  x-release: v4
+  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.UpdateDirectorySetup API'
+  description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: ds
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/ds-2015-04-16.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://ds.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Directory Service multi-region endpoint
+- url: https://ds.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Directory Service multi-region endpoint
+- url: http://ds.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Directory Service endpoint for China (Beijing) and China (Ningxia)
+- url: https://ds.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Directory Service endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=DirectoryService 20150416.UpdateDirectorySetup'
+paths:
+  /#X-Amz-Target=DirectoryService_20150416.UpdateDirectorySetup:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: UpdateDirectorySetup
+      description: ' Updates the directory for a particular update type. '
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateDirectorySetupResult'
+        '480':
+          description: UnsupportedOperationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnsupportedOperationException'
+        '481':
+          description: DirectoryInDesiredStateException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DirectoryInDesiredStateException'
+        '482':
+          description: DirectoryUnavailableException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DirectoryUnavailableException'
+        '483':
+          description: SnapshotLimitExceededException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SnapshotLimitExceededException'
+        '484':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+        '485':
+          description: DirectoryDoesNotExistException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DirectoryDoesNotExistException'
+        '486':
+          description: AccessDeniedException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccessDeniedException'
+        '487':
+          description: ClientException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientException'
+        '488':
+          description: ServiceException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServiceException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateDirectorySetupRequest'
+      parameters:
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - DirectoryService_20150416.UpdateDirectorySetup
+      tags:
+      - '#X Amz Target=DirectoryService 20150416.UpdateDirectorySetup'
+components:
+  schemas:
+    UpdateType:
+      type: string
+      enum:
+      - OS
+    DirectoryUnavailableException: {}
+    SnapshotLimitExceededException: {}
+    UpdateDirectorySetupRequest:
+      type: object
+      required:
+      - DirectoryId
+      - UpdateType
+      title: UpdateDirectorySetupRequest
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: ' The identifier of the directory on which you want to perform the update. '
+        UpdateType:
+          allOf:
+          - $ref: '#/components/schemas/UpdateType'
+          - description: ' The type of update that needs to be performed on the directory. For example, OS. '
+        OSUpdateSettings:
+          allOf:
+          - $ref: '#/components/schemas/OSUpdateSettings'
+          - description: ' The settings for the OS update that needs to be performed on the directory. '
+        CreateSnapshotBeforeUpdate:
+          allOf:
+          - $ref: '#/components/schemas/CreateSnapshotBeforeUpdate'
+          - description: ' The boolean that specifies if a snapshot for the directory needs to be taken before updating the directory. '
+    ClientException: {}
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{10}$
+    DirectoryInDesiredStateException: {}
+    UnsupportedOperationException: {}
+    OSUpdateSettings:
+      type: object
+      properties:
+        OSVersion:
+          allOf:
+          - $ref: '#/components/schemas/OSVersion'
+          - description: ' OS version that the directory needs to be updated to. '
+      description: ' OS version that the directory needs to be updated to. '
+    OSVersion:
+      type: string
+      enum:
+      - SERVER_2012
+      - SERVER_2019
+    DirectoryDoesNotExistException: {}
+    ServiceException: {}
+    InvalidParameterException: {}
+    AccessDeniedException: {}
+    UpdateDirectorySetupResult:
+      type: object
+      properties: {}
+    CreateSnapshotBeforeUpdate:
+      type: boolean
+  parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/ds/
+x-hasEquivalentPaths: true

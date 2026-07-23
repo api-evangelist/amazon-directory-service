@@ -1,0 +1,713 @@
+openapi: 3.0.0
+info:
+  version: 2015-04-16
+  x-release: v4
+  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeDirectories API'
+  description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: ds
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/ds-2015-04-16.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://ds.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Directory Service multi-region endpoint
+- url: https://ds.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Directory Service multi-region endpoint
+- url: http://ds.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Directory Service endpoint for China (Beijing) and China (Ningxia)
+- url: https://ds.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Directory Service endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=DirectoryService 20150416.DescribeDirectories'
+paths:
+  /#X-Amz-Target=DirectoryService_20150416.DescribeDirectories:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: DescribeDirectories
+      description: <p>Obtains information about the directories that belong to this account.</p> <p>You can retrieve information about specific directories by passing the directory identifiers in the <code>DirectoryIds</code> parameter. Otherwise, all directories that belong to the current account are returned.</p> <p>This operation supports pagination with the use of the <code>NextToken</code> request and response parameters. If more results are available, the <code>DescribeDirectoriesResult.NextToken</code> member contains a token that you pass in the next call to <a>DescribeDirectories</a> to retrieve the next set of items.</p> <p>You can also specify a maximum number of return results with the <code>Limit</code> parameter.</p>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DescribeDirectoriesResult'
+        '480':
+          description: EntityDoesNotExistException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityDoesNotExistException'
+        '481':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+        '482':
+          description: InvalidNextTokenException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidNextTokenException'
+        '483':
+          description: ClientException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientException'
+        '484':
+          description: ServiceException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServiceException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DescribeDirectoriesRequest'
+      parameters:
+      - name: Limit
+        in: query
+        schema:
+          type: string
+        description: Pagination limit
+        required: false
+      - name: NextToken
+        in: query
+        schema:
+          type: string
+        description: Pagination token
+        required: false
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - DirectoryService_20150416.DescribeDirectories
+      tags:
+      - '#X Amz Target=DirectoryService 20150416.DescribeDirectories'
+components:
+  schemas:
+    RadiusTimeout:
+      type: integer
+      minimum: 1
+      maximum: 20
+    DirectoryName:
+      type: string
+      pattern: ^([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+$
+    SecurityGroupId:
+      type: string
+      pattern: ^(sg-[0-9a-f]{8}|sg-[0-9a-f]{17})$
+    SubnetId:
+      type: string
+      pattern: ^(subnet-[0-9a-f]{8}|subnet-[0-9a-f]{17})$
+    DescribeDirectoriesRequest:
+      type: object
+      title: DescribeDirectoriesRequest
+      properties:
+        DirectoryIds:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryIds'
+          - description: <p>A list of identifiers of the directories for which to obtain the information. If this member is null, all directories that belong to the current account are returned.</p> <p>An empty list results in an <code>InvalidParameterException</code> being thrown.</p>
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: The <code>DescribeDirectoriesResult.NextToken</code> value from a previous call to <a>DescribeDirectories</a>. Pass null if this is the first call.
+        Limit:
+          allOf:
+          - $ref: '#/components/schemas/Limit'
+          - description: The maximum number of items to return. If this value is zero, the maximum number of items is specified by the limitations of the operation.
+      description: Contains the inputs for the <a>DescribeDirectories</a> operation.
+    DirectoryShortName:
+      type: string
+      pattern: ^[^\\/:*?"<>|.]+[^\\/:*?"<>|]*$
+    AvailabilityZone:
+      type: string
+    IpAddrs:
+      type: array
+      items:
+        $ref: '#/components/schemas/IpAddr'
+    ClientException: {}
+    RadiusRetries:
+      type: integer
+      minimum: 0
+      maximum: 10
+    DirectoryType:
+      type: string
+      enum:
+      - SimpleAD
+      - ADConnector
+      - MicrosoftAD
+      - SharedMicrosoftAD
+    IpAddr:
+      type: string
+      pattern: ^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
+    RegionsInfo:
+      type: object
+      properties:
+        PrimaryRegion:
+          allOf:
+          - $ref: '#/components/schemas/RegionName'
+          - description: The Region where the Managed Microsoft AD directory was originally created.
+        AdditionalRegions:
+          allOf:
+          - $ref: '#/components/schemas/AdditionalRegions'
+          - description: Lists the Regions where the directory has been replicated, excluding the primary Region.
+      description: Provides information about the Regions that are configured for multi-Region replication.
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{10}$
+    CustomerId:
+      type: string
+      pattern: ^(\d{12})$
+    ShareStatus:
+      type: string
+      enum:
+      - Shared
+      - PendingAcceptance
+      - Rejected
+      - Rejecting
+      - RejectFailed
+      - Sharing
+      - ShareFailed
+      - Deleted
+      - Deleting
+    DirectoryConnectSettingsDescription:
+      type: object
+      properties:
+        VpcId:
+          allOf:
+          - $ref: '#/components/schemas/VpcId'
+          - description: The identifier of the VPC that the AD Connector is in.
+        SubnetIds:
+          allOf:
+          - $ref: '#/components/schemas/SubnetIds'
+          - description: A list of subnet identifiers in the VPC that the AD Connector is in.
+        CustomerUserName:
+          allOf:
+          - $ref: '#/components/schemas/UserName'
+          - description: The user name of the service account in your self-managed directory.
+        SecurityGroupId:
+          allOf:
+          - $ref: '#/components/schemas/SecurityGroupId'
+          - description: The security group identifier for the AD Connector directory.
+        AvailabilityZones:
+          allOf:
+          - $ref: '#/components/schemas/AvailabilityZones'
+          - description: A list of the Availability Zones that the directory is in.
+        ConnectIps:
+          allOf:
+          - $ref: '#/components/schemas/IpAddrs'
+          - description: The IP addresses of the AD Connector servers.
+      description: Contains information about an AD Connector directory.
+    Servers:
+      type: array
+      items:
+        $ref: '#/components/schemas/Server'
+    RadiusStatus:
+      type: string
+      enum:
+      - Creating
+      - Completed
+      - Failed
+    DirectoryStage:
+      type: string
+      enum:
+      - Requested
+      - Creating
+      - Created
+      - Active
+      - Inoperable
+      - Impaired
+      - Restoring
+      - RestoreFailed
+      - Deleting
+      - Deleted
+      - Failed
+    AdditionalRegions:
+      type: array
+      items:
+        $ref: '#/components/schemas/RegionName'
+    Server:
+      type: string
+      minLength: 1
+      maxLength: 256
+    UseSameUsername:
+      type: boolean
+    DesiredNumberOfDomainControllers:
+      type: integer
+      minimum: 2
+    RadiusAuthenticationProtocol:
+      type: string
+      enum:
+      - PAP
+      - CHAP
+      - MS-CHAPv1
+      - MS-CHAPv2
+    DnsIpAddrs:
+      type: array
+      items:
+        $ref: '#/components/schemas/IpAddr'
+    ShareMethod:
+      type: string
+      enum:
+      - ORGANIZATIONS
+      - HANDSHAKE
+    OwnerDirectoryDescription:
+      type: object
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: Identifier of the Managed Microsoft AD directory in the directory owner account.
+        AccountId:
+          allOf:
+          - $ref: '#/components/schemas/CustomerId'
+          - description: Identifier of the directory owner account.
+        DnsIpAddrs:
+          allOf:
+          - $ref: '#/components/schemas/DnsIpAddrs'
+          - description: IP address of the directory’s domain controllers.
+        VpcSettings:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryVpcSettingsDescription'
+          - description: Information about the VPC settings for the directory.
+        RadiusSettings:
+          allOf:
+          - $ref: '#/components/schemas/RadiusSettings'
+          - description: A <a>RadiusSettings</a> object that contains information about the RADIUS server.
+        RadiusStatus:
+          allOf:
+          - $ref: '#/components/schemas/RadiusStatus'
+          - description: Information about the status of the RADIUS server.
+      description: Describes the directory owner account details that have been shared to the directory consumer account.
+    DirectoryIds:
+      type: array
+      description: A list of directory identifiers.
+      items:
+        $ref: '#/components/schemas/DirectoryId'
+    Description:
+      type: string
+      pattern: ^([a-zA-Z0-9_])[\\a-zA-Z0-9_@#%*+=:?./!\s-]*$
+      minLength: 0
+      maxLength: 128
+    AvailabilityZones:
+      type: array
+      items:
+        $ref: '#/components/schemas/AvailabilityZone'
+    OSVersion:
+      type: string
+      enum:
+      - SERVER_2012
+      - SERVER_2019
+    RadiusSettings:
+      type: object
+      properties:
+        RadiusServers:
+          allOf:
+          - $ref: '#/components/schemas/Servers'
+          - description: An array of strings that contains the fully qualified domain name (FQDN) or IP addresses of the RADIUS server endpoints, or the FQDN or IP addresses of your RADIUS server load balancer.
+        RadiusPort:
+          allOf:
+          - $ref: '#/components/schemas/PortNumber'
+          - description: The port that your RADIUS server is using for communications. Your self-managed network must allow inbound traffic over this port from the Directory Service servers.
+        RadiusTimeout:
+          allOf:
+          - $ref: '#/components/schemas/RadiusTimeout'
+          - description: The amount of time, in seconds, to wait for the RADIUS server to respond.
+        RadiusRetries:
+          allOf:
+          - $ref: '#/components/schemas/RadiusRetries'
+          - description: The maximum number of times that communication with the RADIUS server is attempted.
+        SharedSecret:
+          allOf:
+          - $ref: '#/components/schemas/RadiusSharedSecret'
+          - description: Required for enabling RADIUS on the directory.
+        AuthenticationProtocol:
+          allOf:
+          - $ref: '#/components/schemas/RadiusAuthenticationProtocol'
+          - description: The protocol specified for your RADIUS endpoints.
+        DisplayLabel:
+          allOf:
+          - $ref: '#/components/schemas/RadiusDisplayLabel'
+          - description: Not currently used.
+        UseSameUsername:
+          allOf:
+          - $ref: '#/components/schemas/UseSameUsername'
+          - description: Not currently used.
+      description: Contains information about a Remote Authentication Dial In User Service (RADIUS) server.
+    NextToken:
+      type: string
+    DirectoryVpcSettingsDescription:
+      type: object
+      properties:
+        VpcId:
+          allOf:
+          - $ref: '#/components/schemas/VpcId'
+          - description: The identifier of the VPC that the directory is in.
+        SubnetIds:
+          allOf:
+          - $ref: '#/components/schemas/SubnetIds'
+          - description: The identifiers of the subnets for the directory servers.
+        SecurityGroupId:
+          allOf:
+          - $ref: '#/components/schemas/SecurityGroupId'
+          - description: The domain controller security group identifier for the directory.
+        AvailabilityZones:
+          allOf:
+          - $ref: '#/components/schemas/AvailabilityZones'
+          - description: The list of Availability Zones that the directory is in.
+      description: Contains information about the directory.
+    RadiusDisplayLabel:
+      type: string
+      minLength: 1
+      maxLength: 64
+    Limit:
+      type: integer
+      minimum: 0
+    PortNumber:
+      type: integer
+      minimum: 1025
+      maximum: 65535
+    ServiceException: {}
+    EntityDoesNotExistException: {}
+    DirectoryEdition:
+      type: string
+      enum:
+      - Enterprise
+      - Standard
+    VpcId:
+      type: string
+      pattern: ^(vpc-[0-9a-f]{8}|vpc-[0-9a-f]{17})$
+    DescribeDirectoriesResult:
+      type: object
+      properties:
+        DirectoryDescriptions:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryDescriptions'
+          - description: <p>The list of <a>DirectoryDescription</a> objects that were retrieved.</p> <p>It is possible that this list contains less than the number of items specified in the <code>Limit</code> member of the request. This occurs if there are less than the requested number of items left to retrieve, or if the limitations of the operation have been exceeded.</p>
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: If not null, more results are available. Pass this value for the <code>NextToken</code> parameter in a subsequent call to <a>DescribeDirectories</a> to retrieve the next set of items.
+      description: Contains the results of the <a>DescribeDirectories</a> operation.
+    LastUpdatedDateTime:
+      type: string
+      format: date-time
+    AliasName:
+      type: string
+      pattern: ^(?!D-|d-)([\da-zA-Z]+)([-]*[\da-zA-Z])*
+      minLength: 1
+      maxLength: 62
+    UserName:
+      type: string
+      pattern: '[a-zA-Z0-9._-]+'
+      minLength: 1
+    InvalidParameterException: {}
+    DirectoryDescriptions:
+      type: array
+      description: A list of directory descriptions.
+      items:
+        $ref: '#/components/schemas/DirectoryDescription'
+    SsoEnabled:
+      type: boolean
+    Notes:
+      type: string
+      maxLength: 1024
+      format: password
+    AccessUrl:
+      type: string
+      minLength: 1
+      maxLength: 128
+    RadiusSharedSecret:
+      type: string
+      pattern: ^(\p{LD}|\p{Punct}| )+$
+      minLength: 8
+      maxLength: 512
+      format: password
+    StageReason:
+      type: string
+    DirectorySize:
+      type: string
+      enum:
+      - Small
+      - Large
+    SubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SubnetId'
+    RegionName:
+      type: string
+      minLength: 8
+      maxLength: 32
+    DirectoryDescription:
+      type: object
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The directory identifier.
+        Name:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryName'
+          - description: The fully qualified name of the directory.
+        ShortName:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryShortName'
+          - description: The short name of the directory.
+        Size:
+          allOf:
+          - $ref: '#/components/schemas/DirectorySize'
+          - description: The directory size.
+        Edition:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryEdition'
+          - description: The edition associated with this directory.
+        Alias:
+          allOf:
+          - $ref: '#/components/schemas/AliasName'
+          - description: The alias for the directory. If no alias has been created for the directory, the alias is the directory identifier, such as <code>d-XXXXXXXXXX</code>.
+        AccessUrl:
+          allOf:
+          - $ref: '#/components/schemas/AccessUrl'
+          - description: The access URL for the directory, such as <code>http://&lt;alias&gt;.awsapps.com</code>. If no alias has been created for the directory, <code>&lt;alias&gt;</code> is the directory identifier, such as <code>d-XXXXXXXXXX</code>.
+        Description:
+          allOf:
+          - $ref: '#/components/schemas/Description'
+          - description: The description for the directory.
+        DnsIpAddrs:
+          allOf:
+          - $ref: '#/components/schemas/DnsIpAddrs'
+          - description: The IP addresses of the DNS servers for the directory. For a Simple AD or Microsoft AD directory, these are the IP addresses of the Simple AD or Microsoft AD directory servers. For an AD Connector directory, these are the IP addresses of the DNS servers or domain controllers in your self-managed directory to which the AD Connector is connected.
+        Stage:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryStage'
+          - description: The current stage of the directory.
+        ShareStatus:
+          allOf:
+          - $ref: '#/components/schemas/ShareStatus'
+          - description: Current directory status of the shared Managed Microsoft AD directory.
+        ShareMethod:
+          allOf:
+          - $ref: '#/components/schemas/ShareMethod'
+          - description: The method used when sharing a directory to determine whether the directory should be shared within your Amazon Web Services organization (<code>ORGANIZATIONS</code>) or with any Amazon Web Services account by sending a shared directory request (<code>HANDSHAKE</code>).
+        ShareNotes:
+          allOf:
+          - $ref: '#/components/schemas/Notes'
+          - description: A directory share request that is sent by the directory owner to the directory consumer. The request includes a typed message to help the directory consumer administrator determine whether to approve or reject the share invitation.
+        LaunchTime:
+          allOf:
+          - $ref: '#/components/schemas/LaunchTime'
+          - description: Specifies when the directory was created.
+        StageLastUpdatedDateTime:
+          allOf:
+          - $ref: '#/components/schemas/LastUpdatedDateTime'
+          - description: The date and time that the stage was last updated.
+        Type:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryType'
+          - description: The directory size.
+        VpcSettings:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryVpcSettingsDescription'
+          - description: A <a>DirectoryVpcSettingsDescription</a> object that contains additional information about a directory. This member is only present if the directory is a Simple AD or Managed Microsoft AD directory.
+        ConnectSettings:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConnectSettingsDescription'
+          - description: A <a>DirectoryConnectSettingsDescription</a> object that contains additional information about an AD Connector directory. This member is only present if the directory is an AD Connector directory.
+        RadiusSettings:
+          allOf:
+          - $ref: '#/components/schemas/RadiusSettings'
+          - description: A <a>RadiusSettings</a> object that contains information about the RADIUS server configured for this directory.
+        RadiusStatus:
+          allOf:
+          - $ref: '#/components/schemas/RadiusStatus'
+          - description: The status of the RADIUS MFA server connection.
+        StageReason:
+          allOf:
+          - $ref: '#/components/schemas/StageReason'
+          - description: Additional information about the directory stage.
+        SsoEnabled:
+          allOf:
+          - $ref: '#/components/schemas/SsoEnabled'
+          - description: Indicates if single sign-on is enabled for the directory. For more information, see <a>EnableSso</a> and <a>DisableSso</a>.
+        DesiredNumberOfDomainControllers:
+          allOf:
+          - $ref: '#/components/schemas/DesiredNumberOfDomainControllers'
+          - description: The desired number of domain controllers in the directory if the directory is Microsoft AD.
+        OwnerDirectoryDescription:
+          allOf:
+          - $ref: '#/components/schemas/OwnerDirectoryDescription'
+          - description: Describes the Managed Microsoft AD directory in the directory owner account.
+        RegionsInfo:
+          allOf:
+          - $ref: '#/components/schemas/RegionsInfo'
+          - description: Lists the Regions where the directory has replicated.
+        OsVersion:
+          allOf:
+          - $ref: '#/components/schemas/OSVersion'
+          - description: The operating system (OS) version of the directory.
+      description: Contains information about an Directory Service directory.
+    InvalidNextTokenException: {}
+    LaunchTime:
+      type: string
+      format: date-time
+  parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/ds/
+x-hasEquivalentPaths: true

@@ -1,0 +1,405 @@
+openapi: 3.0.0
+info:
+  version: 2015-04-16
+  x-release: v4
+  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeTrusts API'
+  description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
+  x-logo:
+    url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
+    backgroundColor: '#FFFFFF'
+  termsOfService: https://aws.amazon.com/service-terms/
+  contact:
+    name: Mike Ralphson
+    email: mike.ralphson@gmail.com
+    url: https://github.com/mermade/aws2openapi
+    x-twitter: PermittedSoc
+  license:
+    name: Apache 2.0 License
+    url: http://www.apache.org/licenses/
+  x-providerName: amazonaws.com
+  x-serviceName: ds
+  x-origin:
+  - contentType: application/json
+    url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/ds-2015-04-16.normal.json
+    converter:
+      url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
+    x-apisguru-driver: external
+  x-apiClientRegistration:
+    url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
+  x-apisguru-categories:
+  - cloud
+  x-preferred: true
+servers:
+- url: http://ds.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Directory Service multi-region endpoint
+- url: https://ds.{region}.amazonaws.com
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - us-east-1
+      - us-east-2
+      - us-west-1
+      - us-west-2
+      - us-gov-west-1
+      - us-gov-east-1
+      - ca-central-1
+      - eu-north-1
+      - eu-west-1
+      - eu-west-2
+      - eu-west-3
+      - eu-central-1
+      - eu-south-1
+      - af-south-1
+      - ap-northeast-1
+      - ap-northeast-2
+      - ap-northeast-3
+      - ap-southeast-1
+      - ap-southeast-2
+      - ap-east-1
+      - ap-south-1
+      - sa-east-1
+      - me-south-1
+      default: us-east-1
+  description: The Directory Service multi-region endpoint
+- url: http://ds.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Directory Service endpoint for China (Beijing) and China (Ningxia)
+- url: https://ds.{region}.amazonaws.com.cn
+  variables:
+    region:
+      description: The AWS region
+      enum:
+      - cn-north-1
+      - cn-northwest-1
+      default: cn-north-1
+  description: The Directory Service endpoint for China (Beijing) and China (Ningxia)
+security:
+- hmac: []
+tags:
+- name: '#X Amz Target=DirectoryService 20150416.DescribeTrusts'
+paths:
+  /#X-Amz-Target=DirectoryService_20150416.DescribeTrusts:
+    parameters:
+    - $ref: '#/components/parameters/X-Amz-Content-Sha256'
+    - $ref: '#/components/parameters/X-Amz-Date'
+    - $ref: '#/components/parameters/X-Amz-Algorithm'
+    - $ref: '#/components/parameters/X-Amz-Credential'
+    - $ref: '#/components/parameters/X-Amz-Security-Token'
+    - $ref: '#/components/parameters/X-Amz-Signature'
+    - $ref: '#/components/parameters/X-Amz-SignedHeaders'
+    post:
+      operationId: DescribeTrusts
+      description: <p>Obtains information about the trust relationships for this account.</p> <p>If no input parameters are provided, such as DirectoryId or TrustIds, this request describes all the trust relationships belonging to the account.</p>
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DescribeTrustsResult'
+        '480':
+          description: EntityDoesNotExistException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityDoesNotExistException'
+        '481':
+          description: InvalidNextTokenException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidNextTokenException'
+        '482':
+          description: InvalidParameterException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InvalidParameterException'
+        '483':
+          description: ClientException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientException'
+        '484':
+          description: ServiceException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServiceException'
+        '485':
+          description: UnsupportedOperationException
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnsupportedOperationException'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DescribeTrustsRequest'
+      parameters:
+      - name: Limit
+        in: query
+        schema:
+          type: string
+        description: Pagination limit
+        required: false
+      - name: NextToken
+        in: query
+        schema:
+          type: string
+        description: Pagination token
+        required: false
+      - name: X-Amz-Target
+        in: header
+        required: true
+        schema:
+          type: string
+          enum:
+          - DirectoryService_20150416.DescribeTrusts
+      tags:
+      - '#X Amz Target=DirectoryService 20150416.DescribeTrusts'
+components:
+  parameters:
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Credential:
+      name: X-Amz-Credential
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
+      in: header
+      schema:
+        type: string
+      required: false
+  schemas:
+    ClientException: {}
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{10}$
+    CreatedDateTime:
+      type: string
+      format: date-time
+    TrustType:
+      type: string
+      enum:
+      - Forest
+      - External
+    Trusts:
+      type: array
+      items:
+        $ref: '#/components/schemas/Trust'
+    TrustIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/TrustId'
+    TrustId:
+      type: string
+      pattern: ^t-[0-9a-f]{10}$
+    TrustStateReason:
+      type: string
+    SelectiveAuth:
+      type: string
+      enum:
+      - Enabled
+      - Disabled
+    UnsupportedOperationException: {}
+    Trust:
+      type: object
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The Directory ID of the Amazon Web Services directory involved in the trust relationship.
+        TrustId:
+          allOf:
+          - $ref: '#/components/schemas/TrustId'
+          - description: The unique ID of the trust relationship.
+        RemoteDomainName:
+          allOf:
+          - $ref: '#/components/schemas/RemoteDomainName'
+          - description: The Fully Qualified Domain Name (FQDN) of the external domain involved in the trust relationship.
+        TrustType:
+          allOf:
+          - $ref: '#/components/schemas/TrustType'
+          - description: The trust relationship type. <code>Forest</code> is the default.
+        TrustDirection:
+          allOf:
+          - $ref: '#/components/schemas/TrustDirection'
+          - description: The trust relationship direction.
+        TrustState:
+          allOf:
+          - $ref: '#/components/schemas/TrustState'
+          - description: The trust relationship state.
+        CreatedDateTime:
+          allOf:
+          - $ref: '#/components/schemas/CreatedDateTime'
+          - description: The date and time that the trust relationship was created.
+        LastUpdatedDateTime:
+          allOf:
+          - $ref: '#/components/schemas/LastUpdatedDateTime'
+          - description: The date and time that the trust relationship was last updated.
+        StateLastUpdatedDateTime:
+          allOf:
+          - $ref: '#/components/schemas/StateLastUpdatedDateTime'
+          - description: The date and time that the TrustState was last updated.
+        TrustStateReason:
+          allOf:
+          - $ref: '#/components/schemas/TrustStateReason'
+          - description: The reason for the TrustState.
+        SelectiveAuth:
+          allOf:
+          - $ref: '#/components/schemas/SelectiveAuth'
+          - description: Current state of selective authentication for the trust.
+      description: Describes a trust relationship between an Managed Microsoft AD directory and an external domain.
+    NextToken:
+      type: string
+    Limit:
+      type: integer
+      minimum: 0
+    ServiceException: {}
+    TrustDirection:
+      type: string
+      enum:
+      - 'One-Way: Outgoing'
+      - 'One-Way: Incoming'
+      - Two-Way
+    EntityDoesNotExistException: {}
+    LastUpdatedDateTime:
+      type: string
+      format: date-time
+    StateLastUpdatedDateTime:
+      type: string
+      format: date-time
+    InvalidParameterException: {}
+    DescribeTrustsResult:
+      type: object
+      properties:
+        Trusts:
+          allOf:
+          - $ref: '#/components/schemas/Trusts'
+          - description: <p>The list of Trust objects that were retrieved.</p> <p>It is possible that this list contains less than the number of items specified in the <i>Limit</i> member of the request. This occurs if there are less than the requested number of items left to retrieve, or if the limitations of the operation have been exceeded.</p>
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: If not null, more results are available. Pass this value for the <i>NextToken</i> parameter in a subsequent call to <a>DescribeTrusts</a> to retrieve the next set of items.
+      description: The result of a DescribeTrust request.
+    RemoteDomainName:
+      type: string
+      pattern: ^([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+[.]?$
+    InvalidNextTokenException: {}
+    TrustState:
+      type: string
+      enum:
+      - Creating
+      - Created
+      - Verifying
+      - VerifyFailed
+      - Verified
+      - Updating
+      - UpdateFailed
+      - Updated
+      - Deleting
+      - Deleted
+      - Failed
+    DescribeTrustsRequest:
+      type: object
+      title: DescribeTrustsRequest
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The Directory ID of the Amazon Web Services directory that is a part of the requested trust relationship.
+        TrustIds:
+          allOf:
+          - $ref: '#/components/schemas/TrustIds'
+          - description: <p>A list of identifiers of the trust relationships for which to obtain the information. If this member is null, all trust relationships that belong to the current account are returned.</p> <p>An empty list results in an <code>InvalidParameterException</code> being thrown.</p>
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: The <i>DescribeTrustsResult.NextToken</i> value from a previous call to <a>DescribeTrusts</a>. Pass null if this is the first call.
+        Limit:
+          allOf:
+          - $ref: '#/components/schemas/Limit'
+          - description: The maximum number of objects to return.
+      description: Describes the trust relationships for a particular Managed Microsoft AD directory. If no input parameters are provided, such as directory ID or trust ID, this request describes all the trust relationships.
+  securitySchemes:
+    hmac:
+      type: apiKey
+      name: Authorization
+      in: header
+      description: Amazon Signature authorization v4
+      x-amazon-apigateway-authtype: awsSigv4
+externalDocs:
+  description: Amazon Web Services documentation
+  url: https://docs.aws.amazon.com/ds/
+x-hasEquivalentPaths: true
