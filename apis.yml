@@ -6,7 +6,20 @@ description: AWS Directory Service for Microsoft Active Directory, also known as
   sharing.
 type: Index
 kind: company
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-directory-service.png
 tags:
 - Active Directory
 - Authentication
@@ -18,26 +31,1374 @@ created: '2026-03-16'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-- aid: amazon-directory-service:aws-directory-service-api
-  name: AWS Directory Service API
-  description: The AWS Directory Service API provides programmatic access to create and manage directories, trusts, snapshots,
-    and domain controllers for Microsoft Active Directory in the AWS Cloud.
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.acceptshareddirectory.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
   tags:
-  - Active Directory
-  - Directory Services
-  - Identity Management
+  - '#X Amz Target=DirectoryService 20150416.AcceptSharedDirectory'
   properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api-openapi.yml
   - type: Documentation
     url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-addiproutes-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.AddIpRoutes API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.AddIpRoutes API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.addiproutes.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.AddIpRoutes'
+  properties:
   - type: OpenAPI
-    url: https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/openapi/amazon-directory-service-openapi.yaml
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addiproutes-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-addregion-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.AddRegion API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.AddRegion API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.addregion.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.AddRegion'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addregion-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-addtagstoresource-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.AddTagsToResource API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.AddTagsToResource API from Amazon Directory Service —
+    1 operation(s) for #x amz target=directoryservice 20150416.addtagstoresource.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.AddTagsToResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addtagstoresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-cancelschemaextension-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.CancelSchemaExtension API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.CancelSchemaExtension API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.cancelschemaextension.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.CancelSchemaExtension'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-cancelschemaextension-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.ConnectDirectory API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.ConnectDirectory API from Amazon Directory Service — 1
+    operation(s) for #x amz target=directoryservice 20150416.connectdirectory.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.ConnectDirectory'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-createalias-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.CreateAlias API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.CreateAlias API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.createalias.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.CreateAlias'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createalias-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-createcomputer-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.CreateComputer API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.CreateComputer API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.createcomputer.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.CreateComputer'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createcomputer-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-createconditionalforwarder-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.CreateConditionalForwarder API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.CreateConditionalForwarder API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.createconditionalforwarder.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.CreateConditionalForwarder'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createconditionalforwarder-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-createdirectory-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.CreateDirectory API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.CreateDirectory API from Amazon Directory Service — 1
+    operation(s) for #x amz target=directoryservice 20150416.createdirectory.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.CreateDirectory'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createdirectory-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-createlogsubscription-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.CreateLogSubscription API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.CreateLogSubscription API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.createlogsubscription.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.CreateLogSubscription'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createlogsubscription-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-createmicrosoftad-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.CreateMicrosoftAD API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.CreateMicrosoftAD API from Amazon Directory Service —
+    1 operation(s) for #x amz target=directoryservice 20150416.createmicrosoftad.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.CreateMicrosoftAD'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createmicrosoftad-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-createsnapshot-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.CreateSnapshot API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.CreateSnapshot API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.createsnapshot.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.CreateSnapshot'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createsnapshot-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-createtrust-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.CreateTrust API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.CreateTrust API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.createtrust.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.CreateTrust'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createtrust-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-deleteconditionalforwarder-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.DeleteConditionalForwarder API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DeleteConditionalForwarder API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.deleteconditionalforwarder.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DeleteConditionalForwarder'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deleteconditionalforwarder-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-deletedirectory-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DeleteDirectory API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DeleteDirectory API from Amazon Directory Service — 1
+    operation(s) for #x amz target=directoryservice 20150416.deletedirectory.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DeleteDirectory'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletedirectory-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-deletelogsubscription-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.DeleteLogSubscription API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DeleteLogSubscription API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.deletelogsubscription.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DeleteLogSubscription'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletelogsubscription-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-deletesnapshot-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DeleteSnapshot API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DeleteSnapshot API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.deletesnapshot.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DeleteSnapshot'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletesnapshot-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-deletetrust-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DeleteTrust API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DeleteTrust API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.deletetrust.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DeleteTrust'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletetrust-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-deregistercertificate-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.DeregisterCertificate API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DeregisterCertificate API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.deregistercertificate.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DeregisterCertificate'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistercertificate-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-deregistereventtopic-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.DeregisterEventTopic API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DeregisterEventTopic API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.deregistereventtopic.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DeregisterEventTopic'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistereventtopic-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describecertificate-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeCertificate API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeCertificate API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.describecertificate.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeCertificate'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describecertificate-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describeclientauthenticationsettings-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeClientAuthenticationSettings
+    API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeClientAuthenticationSettings API from Amazon Directory
+    Service — 1 operation(s) for #x amz target=directoryservice 20150416.describeclientauthenticationsettings.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeClientAuthenticationSettings'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeclientauthenticationsettings-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describeconditionalforwarders-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeConditionalForwarders API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeConditionalForwarders API from Amazon Directory
+    Service — 1 operation(s) for #x amz target=directoryservice 20150416.describeconditionalforwarders.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeConditionalForwarders'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeconditionalforwarders-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describedirectories-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeDirectories API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeDirectories API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.describedirectories.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeDirectories'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describedirectories-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describedomaincontrollers-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeDomainControllers API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeDomainControllers API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.describedomaincontrollers.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeDomainControllers'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describedomaincontrollers-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describeeventtopics-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeEventTopics API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeEventTopics API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.describeeventtopics.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeEventTopics'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeeventtopics-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describeldapssettings-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeLDAPSSettings API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeLDAPSSettings API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.describeldapssettings.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeLDAPSSettings'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeldapssettings-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describeregions-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeRegions API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeRegions API from Amazon Directory Service — 1
+    operation(s) for #x amz target=directoryservice 20150416.describeregions.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeRegions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeregions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describesettings-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeSettings API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeSettings API from Amazon Directory Service — 1
+    operation(s) for #x amz target=directoryservice 20150416.describesettings.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeSettings'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describesettings-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describeshareddirectories-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeSharedDirectories API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeSharedDirectories API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.describeshareddirectories.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeSharedDirectories'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeshareddirectories-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describesnapshots-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeSnapshots API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeSnapshots API from Amazon Directory Service —
+    1 operation(s) for #x amz target=directoryservice 20150416.describesnapshots.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeSnapshots'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describesnapshots-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describetrusts-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeTrusts API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeTrusts API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.describetrusts.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeTrusts'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describetrusts-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-describeupdatedirectory-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.DescribeUpdateDirectory API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DescribeUpdateDirectory API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.describeupdatedirectory.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DescribeUpdateDirectory'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeupdatedirectory-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-disableclientauthentication-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.DisableClientAuthentication API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DisableClientAuthentication API from Amazon Directory
+    Service — 1 operation(s) for #x amz target=directoryservice 20150416.disableclientauthentication.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DisableClientAuthentication'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableclientauthentication-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-disableldaps-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DisableLDAPS API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DisableLDAPS API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.disableldaps.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DisableLDAPS'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableldaps-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-disableradius-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DisableRadius API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DisableRadius API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.disableradius.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DisableRadius'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableradius-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-disablesso-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.DisableSso API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.DisableSso API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.disablesso.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.DisableSso'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disablesso-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-enableclientauthentication-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.EnableClientAuthentication API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.EnableClientAuthentication API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.enableclientauthentication.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.EnableClientAuthentication'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableclientauthentication-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-enableldaps-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.EnableLDAPS API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.EnableLDAPS API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.enableldaps.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.EnableLDAPS'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableldaps-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-enableradius-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.EnableRadius API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.EnableRadius API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.enableradius.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.EnableRadius'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableradius-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-enablesso-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.EnableSso API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.EnableSso API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.enablesso.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.EnableSso'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enablesso-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-getdirectorylimits-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.GetDirectoryLimits API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.GetDirectoryLimits API from Amazon Directory Service —
+    1 operation(s) for #x amz target=directoryservice 20150416.getdirectorylimits.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.GetDirectoryLimits'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-getdirectorylimits-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-getsnapshotlimits-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.GetSnapshotLimits API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.GetSnapshotLimits API from Amazon Directory Service —
+    1 operation(s) for #x amz target=directoryservice 20150416.getsnapshotlimits.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.GetSnapshotLimits'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-getsnapshotlimits-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-listcertificates-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.ListCertificates API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.ListCertificates API from Amazon Directory Service — 1
+    operation(s) for #x amz target=directoryservice 20150416.listcertificates.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.ListCertificates'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listcertificates-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-listiproutes-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.ListIpRoutes API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.ListIpRoutes API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.listiproutes.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.ListIpRoutes'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listiproutes-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-listlogsubscriptions-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.ListLogSubscriptions API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.ListLogSubscriptions API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.listlogsubscriptions.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.ListLogSubscriptions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listlogsubscriptions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-listschemaextensions-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.ListSchemaExtensions API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.ListSchemaExtensions API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.listschemaextensions.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.ListSchemaExtensions'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listschemaextensions-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-listtagsforresource-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.ListTagsForResource API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.ListTagsForResource API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.listtagsforresource.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.ListTagsForResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listtagsforresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-registercertificate-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.RegisterCertificate API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.RegisterCertificate API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.registercertificate.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.RegisterCertificate'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-registercertificate-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-registereventtopic-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.RegisterEventTopic API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.RegisterEventTopic API from Amazon Directory Service —
+    1 operation(s) for #x amz target=directoryservice 20150416.registereventtopic.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.RegisterEventTopic'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-registereventtopic-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-rejectshareddirectory-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.RejectSharedDirectory API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.RejectSharedDirectory API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.rejectshareddirectory.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.RejectSharedDirectory'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-rejectshareddirectory-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-removeiproutes-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.RemoveIpRoutes API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.RemoveIpRoutes API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.removeiproutes.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.RemoveIpRoutes'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removeiproutes-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-removeregion-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.RemoveRegion API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.RemoveRegion API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.removeregion.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.RemoveRegion'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removeregion-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-removetagsfromresource-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.RemoveTagsFromResource API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.RemoveTagsFromResource API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.removetagsfromresource.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.RemoveTagsFromResource'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removetagsfromresource-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-resetuserpassword-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.ResetUserPassword API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.ResetUserPassword API from Amazon Directory Service —
+    1 operation(s) for #x amz target=directoryservice 20150416.resetuserpassword.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.ResetUserPassword'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-resetuserpassword-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-restorefromsnapshot-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.RestoreFromSnapshot API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.RestoreFromSnapshot API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.restorefromsnapshot.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.RestoreFromSnapshot'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-restorefromsnapshot-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-sharedirectory-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.ShareDirectory API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.ShareDirectory API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.sharedirectory.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.ShareDirectory'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-sharedirectory-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-startschemaextension-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.StartSchemaExtension API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.StartSchemaExtension API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.startschemaextension.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.StartSchemaExtension'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-startschemaextension-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-unsharedirectory-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.UnshareDirectory API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.UnshareDirectory API from Amazon Directory Service — 1
+    operation(s) for #x amz target=directoryservice 20150416.unsharedirectory.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.UnshareDirectory'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-unsharedirectory-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-updateconditionalforwarder-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.UpdateConditionalForwarder API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.UpdateConditionalForwarder API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.updateconditionalforwarder.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.UpdateConditionalForwarder'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updateconditionalforwarder-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-updatedirectorysetup-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.UpdateDirectorySetup API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.UpdateDirectorySetup API from Amazon Directory Service
+    — 1 operation(s) for #x amz target=directoryservice 20150416.updatedirectorysetup.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.UpdateDirectorySetup'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatedirectorysetup-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-updatenumberofdomaincontrollers-api
+  name: >-
+    Amazon Directory Service #X Amz Target=DirectoryService 20150416.UpdateNumberOfDomainControllers API
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.UpdateNumberOfDomainControllers API from Amazon Directory
+    Service — 1 operation(s) for #x amz target=directoryservice 20150416.updatenumberofdomaincontrollers.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.UpdateNumberOfDomainControllers'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatenumberofdomaincontrollers-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-updateradius-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.UpdateRadius API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.UpdateRadius API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.updateradius.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.UpdateRadius'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updateradius-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-updatesettings-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.UpdateSettings API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.UpdateSettings API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.updatesettings.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.UpdateSettings'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatesettings-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-updatetrust-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.UpdateTrust API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.UpdateTrust API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.updatetrust.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.UpdateTrust'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatetrust-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: X-NaftikoCapability
+    url: capabilities/amazon-directory-service.yaml
+- aid: >-
+    amazon-directory-service:amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api
+  name: 'Amazon Directory Service #X Amz Target=DirectoryService 20150416.VerifyTrust API'
+  description: >-
+    The #X Amz Target=DirectoryService 20150416.VerifyTrust API from Amazon Directory Service — 1 operation(s)
+    for #x amz target=directoryservice 20150416.verifytrust.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - '#X Amz Target=DirectoryService 20150416.VerifyTrust'
+  properties:
+  - type: OpenAPI
+    url: >-
+      openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
   - type: GettingStarted
     url: https://aws.amazon.com/directoryservice/getting-started/
   - type: X-NaftikoCapability
     url: capabilities/amazon-directory-service.yaml
 common:
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/amazon-directory-service/overview
 - type: AgenticAccess
   url: agentic-access/amazon-directory-service-agentic-access.yml
 - type: TrustCenter
