@@ -1,0 +1,662 @@
+{
+  "info": {
+    "_postman_id": "58840ea4-d5b3-46ee-bc68-0260f6937011",
+    "name": "AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateMicrosoftAD API",
+    "description": "<fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:17:07.000Z",
+    "updatedAt": "2026-07-28T10:17:07.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-58840ea4-d5b3-46ee-bc68-0260f6937011"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD",
+      "item": [
+        {
+          "name": "Create Microsoft AD",
+          "id": "f994f83e-86c4-4320-a10b-32d36eaf9c4a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "DirectoryService_20150416.CreateMicrosoftAD"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"Name\": \"fEWWav3\\\\QIl\\\\Z.O-y1qd76HS-SkStSDkE5-0FSh\\\\dnIH3BAs1Ti\",\n  \"Password\": \"YB%wX\",\n  \"VpcSettings\": {\n    \"VpcId\": \"vpc-df1e66334f2b58131\",\n    \"SubnetIds\": [\n      \"subnet-3b900bdefe685d3b6\",\n      \"subnet-ca5727f8\"\n    ]\n  },\n  \"ShortName\": \"PGxCt0sQ4kR5\",\n  \"Description\": \"Fs\",\n  \"Edition\": \"Standard\",\n  \"Tags\": [\n    {\n      \"Key\": \"NN{LLp__\",\n      \"Value\": \"@}-L}Lp{L\"\n    },\n    {\n      \"Key\": \"L=/L-@pN.@\",\n      \"Value\": \"+/_{:Z}Z::\"\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/#X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "hash": "X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD"
+            },
+            "description": "<p>Creates a Microsoft AD directory in the Amazon Web Services Cloud. For more information, see <a href=\"https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html\">Managed Microsoft AD</a> in the <i>Directory Service Admin Guide</i>.</p> <p>Before you call <i>CreateMicrosoftAD</i>, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the <i>CreateMicrosoftAD</i> operation, see <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/UsingWithDS_IAM_ResourcePermissions.html\">Directory Service API Permissions: Actions, Resources, and Conditions Reference</a>.</p>"
+          },
+          "response": [
+            {
+              "id": "3858cd42-2ca7-4fc6-99e7-ec8b7b9b4e5c",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.CreateMicrosoftAD"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"Name\": \"fEWWav3\\\\QIl\\\\Z.O-y1qd76HS-SkStSDkE5-0FSh\\\\dnIH3BAs1Ti\",\n  \"Password\": \"YB%wX\",\n  \"VpcSettings\": {\n    \"VpcId\": \"vpc-df1e66334f2b58131\",\n    \"SubnetIds\": [\n      \"subnet-3b900bdefe685d3b6\",\n      \"subnet-ca5727f8\"\n    ]\n  },\n  \"ShortName\": \"PGxCt0sQ4kR5\",\n  \"Description\": \"Fs\",\n  \"Edition\": \"Standard\",\n  \"Tags\": [\n    {\n      \"Key\": \"NN{LLp__\",\n      \"Value\": \"@}-L}Lp{L\"\n    },\n    {\n      \"Key\": \"L=/L-@pN.@\",\n      \"Value\": \"+/_{:Z}Z::\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"DirectoryId\": \"d-566a00a495\"\n}",
+              "createdAt": "2026-07-28T10:17:07.000Z",
+              "updatedAt": "2026-07-28T10:17:07.000Z",
+              "uid": "35240-3858cd42-2ca7-4fc6-99e7-ec8b7b9b4e5c"
+            },
+            {
+              "id": "3490b3a8-d85d-485a-99d9-2e4021ddb531",
+              "name": "DirectoryLimitExceededException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.CreateMicrosoftAD"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"Name\": \"fEWWav3\\\\QIl\\\\Z.O-y1qd76HS-SkStSDkE5-0FSh\\\\dnIH3BAs1Ti\",\n  \"Password\": \"YB%wX\",\n  \"VpcSettings\": {\n    \"VpcId\": \"vpc-df1e66334f2b58131\",\n    \"SubnetIds\": [\n      \"subnet-3b900bdefe685d3b6\",\n      \"subnet-ca5727f8\"\n    ]\n  },\n  \"ShortName\": \"PGxCt0sQ4kR5\",\n  \"Description\": \"Fs\",\n  \"Edition\": \"Standard\",\n  \"Tags\": [\n    {\n      \"Key\": \"NN{LLp__\",\n      \"Value\": \"@}-L}Lp{L\"\n    },\n    {\n      \"Key\": \"L=/L-@pN.@\",\n      \"Value\": \"+/_{:Z}Z::\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:07.000Z",
+              "updatedAt": "2026-07-28T10:17:07.000Z",
+              "uid": "35240-3490b3a8-d85d-485a-99d9-2e4021ddb531"
+            },
+            {
+              "id": "aa56198f-6138-45cd-9ab1-459920b7bf53",
+              "name": "InvalidParameterException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.CreateMicrosoftAD"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"Name\": \"fEWWav3\\\\QIl\\\\Z.O-y1qd76HS-SkStSDkE5-0FSh\\\\dnIH3BAs1Ti\",\n  \"Password\": \"YB%wX\",\n  \"VpcSettings\": {\n    \"VpcId\": \"vpc-df1e66334f2b58131\",\n    \"SubnetIds\": [\n      \"subnet-3b900bdefe685d3b6\",\n      \"subnet-ca5727f8\"\n    ]\n  },\n  \"ShortName\": \"PGxCt0sQ4kR5\",\n  \"Description\": \"Fs\",\n  \"Edition\": \"Standard\",\n  \"Tags\": [\n    {\n      \"Key\": \"NN{LLp__\",\n      \"Value\": \"@}-L}Lp{L\"\n    },\n    {\n      \"Key\": \"L=/L-@pN.@\",\n      \"Value\": \"+/_{:Z}Z::\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:07.000Z",
+              "updatedAt": "2026-07-28T10:17:07.000Z",
+              "uid": "35240-aa56198f-6138-45cd-9ab1-459920b7bf53"
+            },
+            {
+              "id": "717b2381-6f2d-49e6-963b-3276ed602bbf",
+              "name": "ClientException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.CreateMicrosoftAD"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"Name\": \"fEWWav3\\\\QIl\\\\Z.O-y1qd76HS-SkStSDkE5-0FSh\\\\dnIH3BAs1Ti\",\n  \"Password\": \"YB%wX\",\n  \"VpcSettings\": {\n    \"VpcId\": \"vpc-df1e66334f2b58131\",\n    \"SubnetIds\": [\n      \"subnet-3b900bdefe685d3b6\",\n      \"subnet-ca5727f8\"\n    ]\n  },\n  \"ShortName\": \"PGxCt0sQ4kR5\",\n  \"Description\": \"Fs\",\n  \"Edition\": \"Standard\",\n  \"Tags\": [\n    {\n      \"Key\": \"NN{LLp__\",\n      \"Value\": \"@}-L}Lp{L\"\n    },\n    {\n      \"Key\": \"L=/L-@pN.@\",\n      \"Value\": \"+/_{:Z}Z::\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:07.000Z",
+              "updatedAt": "2026-07-28T10:17:07.000Z",
+              "uid": "35240-717b2381-6f2d-49e6-963b-3276ed602bbf"
+            },
+            {
+              "id": "b5cb9182-aff1-41c4-b0e2-a920544c9a0c",
+              "name": "ServiceException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.CreateMicrosoftAD"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"Name\": \"fEWWav3\\\\QIl\\\\Z.O-y1qd76HS-SkStSDkE5-0FSh\\\\dnIH3BAs1Ti\",\n  \"Password\": \"YB%wX\",\n  \"VpcSettings\": {\n    \"VpcId\": \"vpc-df1e66334f2b58131\",\n    \"SubnetIds\": [\n      \"subnet-3b900bdefe685d3b6\",\n      \"subnet-ca5727f8\"\n    ]\n  },\n  \"ShortName\": \"PGxCt0sQ4kR5\",\n  \"Description\": \"Fs\",\n  \"Edition\": \"Standard\",\n  \"Tags\": [\n    {\n      \"Key\": \"NN{LLp__\",\n      \"Value\": \"@}-L}Lp{L\"\n    },\n    {\n      \"Key\": \"L=/L-@pN.@\",\n      \"Value\": \"+/_{:Z}Z::\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:07.000Z",
+              "updatedAt": "2026-07-28T10:17:07.000Z",
+              "uid": "35240-b5cb9182-aff1-41c4-b0e2-a920544c9a0c"
+            },
+            {
+              "id": "43be8991-6484-4699-8204-1fba9b2e6a0c",
+              "name": "UnsupportedOperationException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.CreateMicrosoftAD"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"Name\": \"fEWWav3\\\\QIl\\\\Z.O-y1qd76HS-SkStSDkE5-0FSh\\\\dnIH3BAs1Ti\",\n  \"Password\": \"YB%wX\",\n  \"VpcSettings\": {\n    \"VpcId\": \"vpc-df1e66334f2b58131\",\n    \"SubnetIds\": [\n      \"subnet-3b900bdefe685d3b6\",\n      \"subnet-ca5727f8\"\n    ]\n  },\n  \"ShortName\": \"PGxCt0sQ4kR5\",\n  \"Description\": \"Fs\",\n  \"Edition\": \"Standard\",\n  \"Tags\": [\n    {\n      \"Key\": \"NN{LLp__\",\n      \"Value\": \"@}-L}Lp{L\"\n    },\n    {\n      \"Key\": \"L=/L-@pN.@\",\n      \"Value\": \"+/_{:Z}Z::\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/#X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.CreateMicrosoftAD"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:07.000Z",
+              "updatedAt": "2026-07-28T10:17:07.000Z",
+              "uid": "35240-43be8991-6484-4699-8204-1fba9b2e6a0c"
+            }
+          ],
+          "createdAt": "2026-07-28T10:17:07.000Z",
+          "updatedAt": "2026-07-28T10:17:07.000Z",
+          "uid": "35240-f994f83e-86c4-4320-a10b-32d36eaf9c4a"
+        }
+      ],
+      "id": "1a0a6f50-88f2-4028-82a4-1d5aba8afbed",
+      "createdAt": "2026-07-28T10:17:07.000Z",
+      "updatedAt": "2026-07-28T10:17:07.000Z",
+      "uid": "35240-1a0a6f50-88f2-4028-82a4-1d5aba8afbed"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://ds.{{region}}.amazonaws.com"
+    }
+  ]
+}

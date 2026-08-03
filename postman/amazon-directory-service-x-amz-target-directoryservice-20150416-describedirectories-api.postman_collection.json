@@ -1,0 +1,746 @@
+{
+  "info": {
+    "_postman_id": "08ce0465-9c67-4102-93eb-a109b8a66f39",
+    "name": "AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeDirectories API",
+    "description": "<fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href=\"https://aws.amazon.com/directoryservice/\">Directory Service</a> and the <a href=\"http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html\">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href=\"http://aws.amazon.com/tools/\">Tools for Amazon Web Services</a>.</p> </note>\n\nContact Support:\n Name: Mike Ralphson\n Email: mike.ralphson@gmail.com",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-07-28T10:17:21.000Z",
+    "updatedAt": "2026-07-28T10:17:21.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-08ce0465-9c67-4102-93eb-a109b8a66f39"
+  },
+  "item": [
+    {
+      "name": "#X-Amz-Target=DirectoryService_20150416.DescribeDirectories",
+      "item": [
+        {
+          "name": "Describe Directories",
+          "id": "dfb034b9-184c-496d-89c0-5ce9c7cfe22e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "description": "(Required) ",
+                "key": "X-Amz-Target",
+                "value": "DirectoryService_20150416.DescribeDirectories"
+              },
+              {
+                "key": "X-Amz-Content-Sha256",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Date",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Algorithm",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Credential",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Security-Token",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-Signature",
+                "value": "<string>"
+              },
+              {
+                "key": "X-Amz-SignedHeaders",
+                "value": "<string>"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"DirectoryIds\": [\n    \"d-0119c2231d\",\n    \"d-072e815d04\"\n  ],\n  \"NextToken\": \"<string>\",\n  \"Limit\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/?Limit=<string>&NextToken=<string>#X-Amz-Target=DirectoryService_20150416.DescribeDirectories",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                ""
+              ],
+              "query": [
+                {
+                  "description": "Pagination limit",
+                  "key": "Limit",
+                  "value": "<string>"
+                },
+                {
+                  "description": "Pagination token",
+                  "key": "NextToken",
+                  "value": "<string>"
+                }
+              ],
+              "hash": "X-Amz-Target=DirectoryService_20150416.DescribeDirectories"
+            },
+            "description": "<p>Obtains information about the directories that belong to this account.</p> <p>You can retrieve information about specific directories by passing the directory identifiers in the <code>DirectoryIds</code> parameter. Otherwise, all directories that belong to the current account are returned.</p> <p>This operation supports pagination with the use of the <code>NextToken</code> request and response parameters. If more results are available, the <code>DescribeDirectoriesResult.NextToken</code> member contains a token that you pass in the next call to <a>DescribeDirectories</a> to retrieve the next set of items.</p> <p>You can also specify a maximum number of return results with the <code>Limit</code> parameter.</p>"
+          },
+          "response": [
+            {
+              "id": "29ab8019-1a77-4863-83fd-6701bbdb1808",
+              "name": "Success",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.DescribeDirectories"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"DirectoryIds\": [\n    \"d-0119c2231d\",\n    \"d-072e815d04\"\n  ],\n  \"NextToken\": \"<string>\",\n  \"Limit\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?Limit=<string>&NextToken=<string>#X-Amz-Target=DirectoryService_20150416.DescribeDirectories",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "Limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.DescribeDirectories"
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"DirectoryDescriptions\": [\n    {\n      \"DirectoryId\": \"d-98fbaf787a\",\n      \"Name\": \"f4sERqqDeQ6.joP\\\\Hu\\\\TdaI-KfSTQY9Hg-oIo23Qs\\\\wgZ.omVL.TWSTbHC3.elw2Or\\\\ZppU\",\n      \"ShortName\": \"(_N0,zA92NB6x9V\",\n      \"Size\": \"Large\",\n      \"Edition\": \"Standard\",\n      \"Alias\": \"W3\",\n      \"AccessUrl\": \"<string>\",\n      \"Description\": \"gP9t\u2000\",\n      \"DnsIpAddrs\": [\n        \"247.95.228.252\",\n        \"03.203.238.253\"\n      ],\n      \"Stage\": \"Failed\",\n      \"ShareStatus\": \"RejectFailed\",\n      \"ShareMethod\": \"HANDSHAKE\",\n      \"ShareNotes\": \"<string>\",\n      \"LaunchTime\": \"<dateTime>\",\n      \"StageLastUpdatedDateTime\": \"<dateTime>\",\n      \"Type\": \"MicrosoftAD\",\n      \"VpcSettings\": {\n        \"VpcId\": \"vpc-4d04fe8ad38f28bc8\",\n        \"SubnetIds\": [\n          \"subnet-6eeda528\",\n          \"subnet-53f07981970cbefa6\"\n        ],\n        \"SecurityGroupId\": \"sg-ed34be50\",\n        \"AvailabilityZones\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      \"ConnectSettings\": {\n        \"VpcId\": \"vpc-e9cdbd59\",\n        \"SubnetIds\": [\n          \"subnet-642be58d\",\n          \"subnet-7247bdb126e01e38b\"\n        ],\n        \"CustomerUserName\": \"9fkmtzig-g\",\n        \"SecurityGroupId\": \"sg-49d748e660ef6bed6\",\n        \"AvailabilityZones\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"ConnectIps\": [\n          \"1.255.8.252\",\n          \"254.254.156.252\"\n        ]\n      },\n      \"RadiusSettings\": {\n        \"RadiusServers\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"RadiusPort\": \"<integer>\",\n        \"RadiusTimeout\": \"<integer>\",\n        \"RadiusRetries\": \"<integer>\",\n        \"SharedSecret\": \"   p{Punct}\",\n        \"AuthenticationProtocol\": \"PAP\",\n        \"DisplayLabel\": \"<string>\",\n        \"UseSameUsername\": \"<boolean>\"\n      },\n      \"RadiusStatus\": \"Completed\",\n      \"StageReason\": \"<string>\",\n      \"SsoEnabled\": \"<boolean>\",\n      \"DesiredNumberOfDomainControllers\": \"<integer>\",\n      \"OwnerDirectoryDescription\": {\n        \"DirectoryId\": \"d-c455cf27dd\",\n        \"AccountId\": \"785632354186\",\n        \"DnsIpAddrs\": [\n          \"59.255.254.190\",\n          \"12.250.19.255\"\n        ],\n        \"VpcSettings\": {\n          \"VpcId\": \"vpc-794ed2fc1dbedc51d\",\n          \"SubnetIds\": [\n            \"subnet-6e4d796d\",\n            \"subnet-d93220b3\"\n          ],\n          \"SecurityGroupId\": \"sg-e51f07f8\",\n          \"AvailabilityZones\": [\n            \"<string>\",\n            \"<string>\"\n          ]\n        },\n        \"RadiusSettings\": {\n          \"RadiusServers\": [\n            \"<string>\",\n            \"<string>\"\n          ],\n          \"RadiusPort\": \"<integer>\",\n          \"RadiusTimeout\": \"<integer>\",\n          \"RadiusRetries\": \"<integer>\",\n          \"SharedSecret\": \"p{Punct}p{Punct}p{Punct}p{LD}p{Punct} p{Punct}p{Punct}p{LD}\",\n          \"AuthenticationProtocol\": \"MS-CHAPv2\",\n          \"DisplayLabel\": \"<string>\",\n          \"UseSameUsername\": \"<boolean>\"\n        },\n        \"RadiusStatus\": \"Failed\"\n      },\n      \"RegionsInfo\": {\n        \"PrimaryRegion\": \"<string>\",\n        \"AdditionalRegions\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      \"OsVersion\": \"SERVER_2019\"\n    },\n    {\n      \"DirectoryId\": \"d-66f3bdd25c\",\n      \"Name\": \"xKZR-908dLLcaxx\\\\3X\\\\Y\",\n      \"ShortName\": \"8=lR2q0B=.}pG\",\n      \"Size\": \"Large\",\n      \"Edition\": \"Enterprise\",\n      \"Alias\": \"WbgOeI7ow8t\",\n      \"AccessUrl\": \"<string>\",\n      \"Description\": \"Sra\",\n      \"DnsIpAddrs\": [\n        \"237.254.15.15\",\n        \"244.254.205.210\"\n      ],\n      \"Stage\": \"Created\",\n      \"ShareStatus\": \"Rejecting\",\n      \"ShareMethod\": \"HANDSHAKE\",\n      \"ShareNotes\": \"<string>\",\n      \"LaunchTime\": \"<dateTime>\",\n      \"StageLastUpdatedDateTime\": \"<dateTime>\",\n      \"Type\": \"SharedMicrosoftAD\",\n      \"VpcSettings\": {\n        \"VpcId\": \"vpc-31c684d8a8fcfe7d0\",\n        \"SubnetIds\": [\n          \"subnet-32114140\",\n          \"subnet-4a7e7bc6\"\n        ],\n        \"SecurityGroupId\": \"sg-49ffe78c7e6d14cd2\",\n        \"AvailabilityZones\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      \"ConnectSettings\": {\n        \"VpcId\": \"vpc-016d4cb19bc724514\",\n        \"SubnetIds\": [\n          \"subnet-3d97130a\",\n          \"subnet-f9c82cba7b174765f\"\n        ],\n        \"CustomerUserName\": \"qBMkF\",\n        \"SecurityGroupId\": \"sg-1370aa048705870fc\",\n        \"AvailabilityZones\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"ConnectIps\": [\n          \"255.06.5.252\",\n          \"255.8.250.255\"\n        ]\n      },\n      \"RadiusSettings\": {\n        \"RadiusServers\": [\n          \"<string>\",\n          \"<string>\"\n        ],\n        \"RadiusPort\": \"<integer>\",\n        \"RadiusTimeout\": \"<integer>\",\n        \"RadiusRetries\": \"<integer>\",\n        \"SharedSecret\": \"        \",\n        \"AuthenticationProtocol\": \"MS-CHAPv1\",\n        \"DisplayLabel\": \"<string>\",\n        \"UseSameUsername\": \"<boolean>\"\n      },\n      \"RadiusStatus\": \"Failed\",\n      \"StageReason\": \"<string>\",\n      \"SsoEnabled\": \"<boolean>\",\n      \"DesiredNumberOfDomainControllers\": \"<integer>\",\n      \"OwnerDirectoryDescription\": {\n        \"DirectoryId\": \"d-abd5e9f1b1\",\n        \"AccountId\": \"100248426750\",\n        \"DnsIpAddrs\": [\n          \"157.235.250.052\",\n          \"252.60.206.247\"\n        ],\n        \"VpcSettings\": {\n          \"VpcId\": \"vpc-169d812b2b31bd698\",\n          \"SubnetIds\": [\n            \"subnet-570ef335\",\n            \"subnet-829f2107\"\n          ],\n          \"SecurityGroupId\": \"sg-800b5c3c4121732da\",\n          \"AvailabilityZones\": [\n            \"<string>\",\n            \"<string>\"\n          ]\n        },\n        \"RadiusSettings\": {\n          \"RadiusServers\": [\n            \"<string>\",\n            \"<string>\"\n          ],\n          \"RadiusPort\": \"<integer>\",\n          \"RadiusTimeout\": \"<integer>\",\n          \"RadiusRetries\": \"<integer>\",\n          \"SharedSecret\": \"    p{Punct} \",\n          \"AuthenticationProtocol\": \"MS-CHAPv1\",\n          \"DisplayLabel\": \"<string>\",\n          \"UseSameUsername\": \"<boolean>\"\n        },\n        \"RadiusStatus\": \"Failed\"\n      },\n      \"RegionsInfo\": {\n        \"PrimaryRegion\": \"<string>\",\n        \"AdditionalRegions\": [\n          \"<string>\",\n          \"<string>\"\n        ]\n      },\n      \"OsVersion\": \"SERVER_2019\"\n    }\n  ],\n  \"NextToken\": \"<string>\"\n}",
+              "createdAt": "2026-07-28T10:17:21.000Z",
+              "updatedAt": "2026-07-28T10:17:21.000Z",
+              "uid": "35240-29ab8019-1a77-4863-83fd-6701bbdb1808"
+            },
+            {
+              "id": "08dc8c5a-7010-4417-9bd5-7d5d2d20e2a5",
+              "name": "EntityDoesNotExistException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.DescribeDirectories"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"DirectoryIds\": [\n    \"d-0119c2231d\",\n    \"d-072e815d04\"\n  ],\n  \"NextToken\": \"<string>\",\n  \"Limit\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?Limit=<string>&NextToken=<string>#X-Amz-Target=DirectoryService_20150416.DescribeDirectories",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "Limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.DescribeDirectories"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:21.000Z",
+              "updatedAt": "2026-07-28T10:17:21.000Z",
+              "uid": "35240-08dc8c5a-7010-4417-9bd5-7d5d2d20e2a5"
+            },
+            {
+              "id": "334e5178-adbf-40f5-9dbc-be98551b9240",
+              "name": "InvalidParameterException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.DescribeDirectories"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"DirectoryIds\": [\n    \"d-0119c2231d\",\n    \"d-072e815d04\"\n  ],\n  \"NextToken\": \"<string>\",\n  \"Limit\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?Limit=<string>&NextToken=<string>#X-Amz-Target=DirectoryService_20150416.DescribeDirectories",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "Limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.DescribeDirectories"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:21.000Z",
+              "updatedAt": "2026-07-28T10:17:21.000Z",
+              "uid": "35240-334e5178-adbf-40f5-9dbc-be98551b9240"
+            },
+            {
+              "id": "8f679378-5ed9-41e0-bfe0-17eec524de66",
+              "name": "InvalidNextTokenException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.DescribeDirectories"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"DirectoryIds\": [\n    \"d-0119c2231d\",\n    \"d-072e815d04\"\n  ],\n  \"NextToken\": \"<string>\",\n  \"Limit\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?Limit=<string>&NextToken=<string>#X-Amz-Target=DirectoryService_20150416.DescribeDirectories",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "Limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.DescribeDirectories"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:21.000Z",
+              "updatedAt": "2026-07-28T10:17:21.000Z",
+              "uid": "35240-8f679378-5ed9-41e0-bfe0-17eec524de66"
+            },
+            {
+              "id": "fd0a316c-1edc-4c7b-bf5b-a1992c25c7b9",
+              "name": "ClientException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.DescribeDirectories"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"DirectoryIds\": [\n    \"d-0119c2231d\",\n    \"d-072e815d04\"\n  ],\n  \"NextToken\": \"<string>\",\n  \"Limit\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?Limit=<string>&NextToken=<string>#X-Amz-Target=DirectoryService_20150416.DescribeDirectories",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "Limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.DescribeDirectories"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:21.000Z",
+              "updatedAt": "2026-07-28T10:17:21.000Z",
+              "uid": "35240-fd0a316c-1edc-4c7b-bf5b-a1992c25c7b9"
+            },
+            {
+              "id": "9840452d-d44d-4997-a05d-1d010e2d5fba",
+              "name": "ServiceException",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "description": "(Required) ",
+                    "key": "X-Amz-Target",
+                    "value": "DirectoryService_20150416.DescribeDirectories"
+                  },
+                  {
+                    "key": "X-Amz-Content-Sha256",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Date",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Algorithm",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Credential",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Security-Token",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-Signature",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "X-Amz-SignedHeaders",
+                    "value": "<string>"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"DirectoryIds\": [\n    \"d-0119c2231d\",\n    \"d-072e815d04\"\n  ],\n  \"NextToken\": \"<string>\",\n  \"Limit\": \"<integer>\"\n}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/?Limit=<string>&NextToken=<string>#X-Amz-Target=DirectoryService_20150416.DescribeDirectories",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "description": "Pagination limit",
+                      "key": "Limit",
+                      "value": "<string>"
+                    },
+                    {
+                      "description": "Pagination token",
+                      "key": "NextToken",
+                      "value": "<string>"
+                    }
+                  ],
+                  "hash": "X-Amz-Target=DirectoryService_20150416.DescribeDirectories"
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{}",
+              "createdAt": "2026-07-28T10:17:21.000Z",
+              "updatedAt": "2026-07-28T10:17:21.000Z",
+              "uid": "35240-9840452d-d44d-4997-a05d-1d010e2d5fba"
+            }
+          ],
+          "createdAt": "2026-07-28T10:17:21.000Z",
+          "updatedAt": "2026-07-28T10:17:21.000Z",
+          "uid": "35240-dfb034b9-184c-496d-89c0-5ce9c7cfe22e"
+        }
+      ],
+      "id": "c00b8160-f76e-487d-9ae0-7feab2dca005",
+      "createdAt": "2026-07-28T10:17:21.000Z",
+      "updatedAt": "2026-07-28T10:17:21.000Z",
+      "uid": "35240-c00b8160-f76e-487d-9ae0-7feab2dca005"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "region",
+      "value": "us-east-1"
+    },
+    {
+      "key": "baseUrl",
+      "value": "http://ds.{{region}}.amazonaws.com"
+    }
+  ]
+}
