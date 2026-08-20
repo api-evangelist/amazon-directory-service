@@ -40,7 +40,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.acceptshareddirectory.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.AcceptSharedDirectory'
   properties:
   - type: OpenAPI
@@ -113,7 +114,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.cancelschemaextension.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.CancelSchemaExtension'
   properties:
   - type: OpenAPI
@@ -186,7 +188,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.createconditionalforwarder.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.CreateConditionalForwarder'
   properties:
   - type: OpenAPI
@@ -223,7 +226,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.createlogsubscription.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.CreateLogSubscription'
   properties:
   - type: OpenAPI
@@ -296,7 +300,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.deleteconditionalforwarder.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.DeleteConditionalForwarder'
   properties:
   - type: OpenAPI
@@ -333,7 +338,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.deletelogsubscription.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.DeleteLogSubscription'
   properties:
   - type: OpenAPI
@@ -388,7 +394,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.deregistercertificate.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.DeregisterCertificate'
   properties:
   - type: OpenAPI
@@ -445,7 +452,8 @@ apis:
     Service — 1 operation(s) for #x amz target=directoryservice 20150416.describeclientauthenticationsettings.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.DescribeClientAuthenticationSettings'
   properties:
   - type: OpenAPI
@@ -464,7 +472,8 @@ apis:
     Service — 1 operation(s) for #x amz target=directoryservice 20150416.describeconditionalforwarders.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.DescribeConditionalForwarders'
   properties:
   - type: OpenAPI
@@ -501,7 +510,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.describedomaincontrollers.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.DescribeDomainControllers'
   properties:
   - type: OpenAPI
@@ -538,7 +548,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.describeldapssettings.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.DescribeLDAPSSettings'
   properties:
   - type: OpenAPI
@@ -593,7 +604,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.describeshareddirectories.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.DescribeSharedDirectories'
   properties:
   - type: OpenAPI
@@ -648,7 +660,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.describeupdatedirectory.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.DescribeUpdateDirectory'
   properties:
   - type: OpenAPI
@@ -667,7 +680,8 @@ apis:
     Service — 1 operation(s) for #x amz target=directoryservice 20150416.disableclientauthentication.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.DisableClientAuthentication'
   properties:
   - type: OpenAPI
@@ -740,7 +754,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.enableclientauthentication.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.EnableClientAuthentication'
   properties:
   - type: OpenAPI
@@ -977,7 +992,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.rejectshareddirectory.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.RejectSharedDirectory'
   properties:
   - type: OpenAPI
@@ -1032,7 +1048,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.removetagsfromresource.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.RemoveTagsFromResource'
   properties:
   - type: OpenAPI
@@ -1142,7 +1159,8 @@ apis:
     — 1 operation(s) for #x amz target=directoryservice 20150416.updateconditionalforwarder.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.UpdateConditionalForwarder'
   properties:
   - type: OpenAPI
@@ -1180,7 +1198,8 @@ apis:
     Service — 1 operation(s) for #x amz target=directoryservice 20150416.updatenumberofdomaincontrollers.
   humanURL: https://aws.amazon.com/directoryservice/
   baseURL: https://ds.amazonaws.com
-  tags:
+  tags: []
+  tags_raw:
   - '#X Amz Target=DirectoryService 20150416.UpdateNumberOfDomainControllers'
   properties:
   - type: OpenAPI
