@@ -1,0 +1,219 @@
+slug: amazon-directory-service
+provider: Amazon Directory Service
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 21
+edges:
+- tag: '#X Amz Target=DirectoryService 20150416.ResetUserPassword'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-resetuserpassword-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.85
+  evidence: ResetUserPassword; schemas CustomerUserName, UserPassword, InvalidPasswordException, UserDoesNotExistException
+  reason: Resetting a directory user's password is a core identity and access administration function.
+- tag: '#X Amz Target=DirectoryService 20150416.DisableSso'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-disablesso-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.82
+  evidence: DisableSso; schemas UserName, ConnectPassword, AuthenticationFailedException, InsufficientPermissionsException
+  reason: Disables single sign-on for the directory using supplied credentials — explicitly single sign-on
+    and authentication, i.e. Identity & Access Management.
+- tag: '#X Amz Target=DirectoryService 20150416.CreateMicrosoftAD'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-createmicrosoftad-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: 'CreateMicrosoftAD — schemas: DirectoryEdition, DirectoryVpcSettings, DirectoryShortName,
+    Password; "AWS Managed Microsoft AD, enables your directory-aware workloads ... to use managed Active
+    Directory"'
+  reason: Creates a managed Microsoft Active Directory — the corporate identity and access directory.
+    Clearly Identity & Access Management.
+- tag: '#X Amz Target=DirectoryService 20150416.CreateTrust'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-createtrust-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: 'CreateTrust — schemas: TrustType, TrustDirection, TrustPassword, SelectiveAuth, RemoteDomainName;
+    vendor: "features including trust relationships"'
+  reason: Establishes an Active Directory trust relationship (direction, type, selective authentication)
+    between directories — directory federation, squarely Identity & Access Management.
+- tag: '#X Amz Target=DirectoryService 20150416.DisableClientAuthentication'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-disableclientauthentication-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: DisableClientAuthentication; schemas ClientAuthenticationType, InvalidClientAuthStatusException,
+    NoAvailableCertificateException
+  reason: Enables/disables certificate-based client authentication against the directory — directly an
+    authentication control, i.e. Identity & Access Management.
+- tag: '#X Amz Target=DirectoryService 20150416.EnableClientAuthentication'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-enableclientauthentication-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: EnableClientAuthentication; schemas ClientAuthenticationType, NoAvailableCertificateException,
+    InvalidClientAuthStatusException
+  reason: Enables certificate-based client authentication for directory clients — an authentication control
+    operation, mapping to Identity & Access Management.
+- tag: '#X Amz Target=DirectoryService 20150416.EnableSso'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-enablesso-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.8
+  evidence: EnableSso; schemas UserName, ConnectPassword, AuthenticationFailedException
+  reason: Enables single sign-on against the managed directory, which is squarely identity and access
+    management (federation/SSO).
+- tag: '#X Amz Target=DirectoryService 20150416.DisableRadius'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-disableradius-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.78
+  evidence: DisableRadius; DisableRadiusRequest, DirectoryId
+  reason: RADIUS in AWS Directory Service provides multi-factor authentication for directory users; disabling
+    it is an authentication control change under Identity & Access Management.
+- tag: '#X Amz Target=DirectoryService 20150416.ConnectDirectory'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: 'ConnectDirectory — schemas: ConnectPassword, DirectoryShortName, DnsIpAddrs, ConnectDirectoryRequest;
+    "connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory"'
+  reason: Creates an AD Connector linking cloud workloads to an on-premises Active Directory — directory/identity
+    federation, i.e. Identity & Access Management rather than a generic infrastructure action.
+- tag: '#X Amz Target=DirectoryService 20150416.CreateDirectory'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-createdirectory-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: 'CreateDirectory — schemas: DirectoryName, DirectorySize, DirectoryVpcSettings, Password;
+    "makes it easy for you to setup and run directories in the Amazon Web Services cloud"'
+  reason: Provisions a managed directory (identity store) for directory-aware workloads. The directory
+    is the enterprise authentication/authorisation source, mapping to Identity & Access Management.
+- tag: '#X Amz Target=DirectoryService 20150416.DescribeClientAuthenticationSettings'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-describeclientauthenticationsettings-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: DescribeClientAuthenticationSettings ... ClientAuthenticationStatus, ClientAuthenticationType,
+    ClientAuthenticationSettingInfo
+  reason: Reads authentication settings for directory clients — directly authentication/access configuration,
+    i.e. identity and access management.
+- tag: '#X Amz Target=DirectoryService 20150416.DescribeTrusts'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-describetrusts-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: DescribeTrusts; schemas TrustType, TrustDirection, TrustState, RemoteDomainName
+  reason: Active Directory trust relationships between domains are a federation mechanism for authentication
+    and authorisation, squarely Identity & Access Management.
+- tag: '#X Amz Target=DirectoryService 20150416.EnableRadius'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-enableradius-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.75
+  evidence: EnableRadius; schemas RadiusAuthenticationProtocol, RadiusSharedSecret, RadiusSettings
+  reason: Configures RADIUS-based multi-factor authentication for directory users — an authentication/identity
+    capability.
+- tag: '#X Amz Target=DirectoryService 20150416.DisableLDAPS'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-disableldaps-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.72
+  evidence: DisableLDAPS; schemas LDAPSType, InvalidLDAPSStatusException, DirectoryId
+  reason: Turns off secure LDAP on a managed Active Directory — configuration of the directory's authentication/access
+    channel, an IAM control.
+- tag: '#X Amz Target=DirectoryService 20150416.AcceptSharedDirectory'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: AcceptSharedDirectory; schemas SharedDirectory, ShareStatus, ShareMethod, DirectoryAlreadySharedException
+    — "managed Active Directory ... multi-account sharing"
+  reason: Accepting a shared managed Active Directory is directory/identity infrastructure administration,
+    i.e. identity & access management.
+- tag: '#X Amz Target=DirectoryService 20150416.CreateComputer'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-createcomputer-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: 'CreateComputer — schemas: ComputerName, ComputerPassword, OrganizationalUnitDN, SID, AuthenticationFailedException'
+  reason: Creates a computer account object (with SID, OU DN, password) inside the managed Active Directory
+    — provisioning of directory principals used for authentication, which sits under Identity & Access
+    Management.
+- tag: '#X Amz Target=DirectoryService 20150416.DeleteTrust'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-deletetrust-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: 'DeleteTrust, TrustId, DeleteAssociatedConditionalForwarder; vendor: "features including trust
+    relationships, domain controllers, LDAPS"'
+  reason: Managing Active Directory trust relationships between domains is directory federation — squarely
+    identity and access management.
+- tag: '#X Amz Target=DirectoryService 20150416.DescribeLDAPSSettings'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-describeldapssettings-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: DescribeLDAPSSettings; schemas LDAPSType, LDAPSStatus, LDAPSSettingInfo, DirectoryId
+  reason: Operation inspects LDAPS (secure LDAP) configuration of a managed Active Directory — directory/identity
+    service security configuration, i.e. Identity & Access Management infrastructure rather than any line-of-business
+    capability.
+- tag: '#X Amz Target=DirectoryService 20150416.UpdateRadius'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-updateradius-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: POST UpdateRadius; schemas RadiusSettings, RadiusAuthenticationProtocol, RadiusSharedSecret,
+    DirectoryId — 'connect your Amazon Web Services resources with an existing self-managed Microsoft
+    Active Directory'
+  reason: Operation configures RADIUS (multi-factor) authentication settings on a managed Active Directory,
+    i.e. directory-based authentication/identity infrastructure, mapping to Identity & Access Management
+    rather than any business-domain capability.
+- tag: '#X Amz Target=DirectoryService 20150416.UpdateTrust'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-updatetrust-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: 'UpdateTrust; schemas TrustId, SelectiveAuth, UpdateTrustRequest — vendor: ''features including
+    trust relationships, domain controllers, LDAPS'''
+  reason: Manages Active Directory trust relationships and selective authentication between directories
+    — identity federation/access management infrastructure.
+- tag: '#X Amz Target=DirectoryService 20150416.VerifyTrust'
+  spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: VerifyTrust; schemas VerifyTrustRequest, TrustId, VerifyTrustResult
+  reason: Verifies an Active Directory trust relationship between directories, part of identity/directory
+    access management, not a business-domain capability.

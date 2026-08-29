@@ -1294,6 +1294,9 @@ apis:
   - type: GettingStarted
     url: https://aws.amazon.com/directoryservice/getting-started/
 common:
+- type: CapabilityMap
+  url: capabilities/amazon-directory-service-capability-edges.yml
+  name: Amazon Directory Service Business Capability Map
 - type: PostmanWorkspace
   url: https://www.postman.com/kinlaneapi/amazon-directory-service/overview
 - type: AgenticAccess
