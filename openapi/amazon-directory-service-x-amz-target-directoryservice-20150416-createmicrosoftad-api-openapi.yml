@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateMicrosoftAD API'
+  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateMicrosoftAD #X Amz Target=DirectoryService 20150416.CreateMicrosoftAD #X Amz Target=DirectoryService 20150416.CreateMicrosoftAD API'
   description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -180,35 +180,10 @@ paths:
       - '#X Amz Target=DirectoryService 20150416.CreateMicrosoftAD'
 components:
   schemas:
-    DirectoryName:
-      type: string
-      pattern: ^([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+$
-    SubnetId:
-      type: string
-      pattern: ^(subnet-[0-9a-f]{8}|subnet-[0-9a-f]{17})$
-    Tag:
-      type: object
-      required:
-      - Key
-      - Value
-      properties:
-        Key:
-          allOf:
-          - $ref: '#/components/schemas/TagKey'
-          - description: 'Required name of the tag. The string value can be Unicode characters and cannot be prefixed with "aws:". The string can contain only the set of Unicode letters, digits, white-space, ''_'', ''.'', ''/'', ''='', ''+'', ''-'' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").'
-        Value:
-          allOf:
-          - $ref: '#/components/schemas/TagValue'
-          - description: 'The optional value of the tag. The string value can be Unicode characters. The string can contain only the set of Unicode letters, digits, white-space, ''_'', ''.'', ''/'', ''='', ''+'', ''-'' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").'
-      description: Metadata assigned to a directory consisting of a key-value pair.
-    DirectoryShortName:
-      type: string
-      pattern: ^[^\\/:*?"<>|.]+[^\\/:*?"<>|]*$
     ClientException: {}
-    DirectoryLimitExceededException: {}
-    DirectoryId:
+    VpcId:
       type: string
-      pattern: ^d-[0-9a-f]{10}$
+      pattern: ^(vpc-[0-9a-f]{8}|vpc-[0-9a-f]{17})$
     CreateMicrosoftADRequest:
       type: object
       required:
@@ -246,7 +221,17 @@ components:
           - $ref: '#/components/schemas/Tags'
           - description: The tags to be assigned to the Managed Microsoft AD directory.
       description: Creates an Managed Microsoft AD directory.
+    DirectoryShortName:
+      type: string
+      pattern: ^[^\\/:*?"<>|.]+[^\\/:*?"<>|]*$
     UnsupportedOperationException: {}
+    TagValue:
+      type: string
+      pattern: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$
+      minLength: 0
+      maxLength: 256
+    InvalidParameterException: {}
+    ServiceException: {}
     DirectoryVpcSettings:
       type: object
       required:
@@ -267,34 +252,39 @@ components:
       pattern: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$
       minLength: 1
       maxLength: 128
-    ServiceException: {}
-    DirectoryEdition:
-      type: string
-      enum:
-      - Enterprise
-      - Standard
-    InvalidParameterException: {}
-    TagValue:
-      type: string
-      pattern: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$
-      minLength: 0
-      maxLength: 256
-    SubnetIds:
-      type: array
-      items:
-        $ref: '#/components/schemas/SubnetId'
-    Tags:
-      type: array
-      items:
-        $ref: '#/components/schemas/Tag'
-    VpcId:
-      type: string
-      pattern: ^(vpc-[0-9a-f]{8}|vpc-[0-9a-f]{17})$
     Description:
       type: string
       pattern: ^([a-zA-Z0-9_])[\\a-zA-Z0-9_@#%*+=:?./!\s-]*$
       minLength: 0
       maxLength: 128
+    DirectoryLimitExceededException: {}
+    Tag:
+      type: object
+      required:
+      - Key
+      - Value
+      properties:
+        Key:
+          allOf:
+          - $ref: '#/components/schemas/TagKey'
+          - description: 'Required name of the tag. The string value can be Unicode characters and cannot be prefixed with "aws:". The string can contain only the set of Unicode letters, digits, white-space, ''_'', ''.'', ''/'', ''='', ''+'', ''-'' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").'
+        Value:
+          allOf:
+          - $ref: '#/components/schemas/TagValue'
+          - description: 'The optional value of the tag. The string value can be Unicode characters. The string can contain only the set of Unicode letters, digits, white-space, ''_'', ''.'', ''/'', ''='', ''+'', ''-'' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").'
+      description: Metadata assigned to a directory consisting of a key-value pair.
+    DirectoryEdition:
+      type: string
+      enum:
+      - Enterprise
+      - Standard
+    Password:
+      type: string
+      pattern: (?=^.{8,64}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9\s])(?=.*[a-z])|(?=.*[^A-Za-z0-9\s])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9\s]))^.*
+      format: password
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{10}$
     CreateMicrosoftADResult:
       type: object
       properties:
@@ -303,13 +293,23 @@ components:
           - $ref: '#/components/schemas/DirectoryId'
           - description: The identifier of the directory that was created.
       description: Result of a CreateMicrosoftAD request.
-    Password:
+    SubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SubnetId'
+    SubnetId:
       type: string
-      pattern: (?=^.{8,64}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9\s])(?=.*[a-z])|(?=.*[^A-Za-z0-9\s])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9\s]))^.*
-      format: password
+      pattern: ^(subnet-[0-9a-f]{8}|subnet-[0-9a-f]{17})$
+    Tags:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+    DirectoryName:
+      type: string
+      pattern: ^([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+$
   parameters:
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -326,14 +326,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -344,8 +338,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string

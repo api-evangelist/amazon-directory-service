@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeCertificate API'
+  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeCertificate #X Amz Target=DirectoryService 20150416.DescribeCertificate #X Amz Target=DirectoryService 20150416.DescribeCertificate API'
   description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -186,6 +186,45 @@ paths:
       - '#X Amz Target=DirectoryService 20150416.DescribeCertificate'
 components:
   schemas:
+    ClientException: {}
+    UnsupportedOperationException: {}
+    ClientCertAuthSettings:
+      type: object
+      properties:
+        OCSPUrl:
+          allOf:
+          - $ref: '#/components/schemas/OCSPUrl'
+          - description: Specifies the URL of the default OCSP server used to check for revocation status. A secondary value to any OCSP address found in the AIA extension of the user certificate.
+      description: 'Contains information about the client certificate authentication settings for the <code>RegisterCertificate</code> and <code>DescribeCertificate</code> operations. '
+    InvalidParameterException: {}
+    DescribeCertificateResult:
+      type: object
+      properties:
+        Certificate:
+          allOf:
+          - $ref: '#/components/schemas/Certificate'
+          - description: Information about the certificate, including registered date time, certificate state, the reason for the state, expiration date time, and certificate common name.
+    ServiceException: {}
+    CertificateCN:
+      type: string
+    CertificateExpiryDateTime:
+      type: string
+      format: date-time
+    CertificateRegisteredDateTime:
+      type: string
+      format: date-time
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{10}$
+    OCSPUrl:
+      type: string
+      pattern: ^(https?|ftp|file|ldaps?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;()]*[-a-zA-Z0-9+&@#/%=~_|()]
+      minLength: 1
+      maxLength: 1024
+    CertificateId:
+      type: string
+      pattern: ^c-[0-9a-f]{10}$
+    CertificateDoesNotExistException: {}
     DescribeCertificateRequest:
       type: object
       required:
@@ -201,36 +240,21 @@ components:
           allOf:
           - $ref: '#/components/schemas/CertificateId'
           - description: The identifier of the certificate.
-    OCSPUrl:
+    CertificateState:
       type: string
-      pattern: ^(https?|ftp|file|ldaps?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;()]*[-a-zA-Z0-9+&@#/%=~_|()]
-      minLength: 1
-      maxLength: 1024
-    ClientCertAuthSettings:
-      type: object
-      properties:
-        OCSPUrl:
-          allOf:
-          - $ref: '#/components/schemas/OCSPUrl'
-          - description: Specifies the URL of the default OCSP server used to check for revocation status. A secondary value to any OCSP address found in the AIA extension of the user certificate.
-      description: 'Contains information about the client certificate authentication settings for the <code>RegisterCertificate</code> and <code>DescribeCertificate</code> operations. '
-    CertificateExpiryDateTime:
+      enum:
+      - Registering
+      - Registered
+      - RegisterFailed
+      - Deregistering
+      - Deregistered
+      - DeregisterFailed
+    CertificateType:
       type: string
-      format: date-time
-    ClientException: {}
-    CertificateRegisteredDateTime:
-      type: string
-      format: date-time
-    DescribeCertificateResult:
-      type: object
-      properties:
-        Certificate:
-          allOf:
-          - $ref: '#/components/schemas/Certificate'
-          - description: Information about the certificate, including registered date time, certificate state, the reason for the state, expiration date time, and certificate common name.
-    DirectoryId:
-      type: string
-      pattern: ^d-[0-9a-f]{10}$
+      enum:
+      - ClientCertAuth
+      - ClientLDAPS
+    DirectoryDoesNotExistException: {}
     Certificate:
       type: object
       properties:
@@ -267,35 +291,11 @@ components:
           - $ref: '#/components/schemas/ClientCertAuthSettings'
           - description: A <code>ClientCertAuthSettings</code> object that contains client certificate authentication settings.
       description: Information about the certificate.
-    CertificateState:
-      type: string
-      enum:
-      - Registering
-      - Registered
-      - RegisterFailed
-      - Deregistering
-      - Deregistered
-      - DeregisterFailed
-    UnsupportedOperationException: {}
-    DirectoryDoesNotExistException: {}
-    ServiceException: {}
-    CertificateDoesNotExistException: {}
-    CertificateType:
-      type: string
-      enum:
-      - ClientCertAuth
-      - ClientLDAPS
-    InvalidParameterException: {}
-    CertificateId:
-      type: string
-      pattern: ^c-[0-9a-f]{10}$
     CertificateStateReason:
       type: string
-    CertificateCN:
-      type: string
   parameters:
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -312,14 +312,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -330,8 +324,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string

@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AddTagsToResource API'
+  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AddTagsToResource #X Amz Target=DirectoryService 20150416.AddTagsToResource #X Amz Target=DirectoryService 20150416.AddTagsToResource API'
   description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -180,46 +180,23 @@ paths:
       - '#X Amz Target=DirectoryService 20150416.AddTagsToResource'
 components:
   schemas:
-    TagLimitExceededException: {}
     ClientException: {}
-    AddTagsToResourceRequest:
-      type: object
-      required:
-      - ResourceId
-      - Tags
-      title: AddTagsToResourceRequest
-      properties:
-        ResourceId:
-          allOf:
-          - $ref: '#/components/schemas/ResourceId'
-          - description: Identifier (ID) for the directory to which to add the tag.
-        Tags:
-          allOf:
-          - $ref: '#/components/schemas/Tags'
-          - description: The tags to be assigned to the directory.
-    ResourceId:
-      type: string
-      pattern: ^[d]-[0-9a-f]{10}$
-    AddTagsToResourceResult:
-      type: object
-      properties: {}
-    TagKey:
-      type: string
-      pattern: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$
-      minLength: 1
-      maxLength: 128
-    ServiceException: {}
-    EntityDoesNotExistException: {}
-    InvalidParameterException: {}
     TagValue:
       type: string
       pattern: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$
       minLength: 0
       maxLength: 256
-    Tags:
-      type: array
-      items:
-        $ref: '#/components/schemas/Tag'
+    InvalidParameterException: {}
+    ServiceException: {}
+    TagLimitExceededException: {}
+    ResourceId:
+      type: string
+      pattern: ^[d]-[0-9a-f]{10}$
+    TagKey:
+      type: string
+      pattern: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$
+      minLength: 1
+      maxLength: 128
     Tag:
       type: object
       required:
@@ -235,9 +212,32 @@ components:
           - $ref: '#/components/schemas/TagValue'
           - description: 'The optional value of the tag. The string value can be Unicode characters. The string can contain only the set of Unicode letters, digits, white-space, ''_'', ''.'', ''/'', ''='', ''+'', ''-'' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").'
       description: Metadata assigned to a directory consisting of a key-value pair.
+    AddTagsToResourceRequest:
+      type: object
+      required:
+      - ResourceId
+      - Tags
+      title: AddTagsToResourceRequest
+      properties:
+        ResourceId:
+          allOf:
+          - $ref: '#/components/schemas/ResourceId'
+          - description: Identifier (ID) for the directory to which to add the tag.
+        Tags:
+          allOf:
+          - $ref: '#/components/schemas/Tags'
+          - description: The tags to be assigned to the directory.
+    AddTagsToResourceResult:
+      type: object
+      properties: {}
+    EntityDoesNotExistException: {}
+    Tags:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
   parameters:
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -254,14 +254,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -272,8 +266,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string

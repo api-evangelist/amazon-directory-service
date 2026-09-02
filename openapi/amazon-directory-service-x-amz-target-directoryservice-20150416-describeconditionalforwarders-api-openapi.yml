@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: "1.0.0"
+  version: 1.0.0
   x-release: v4
-  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeConditionalForwarders API'
+  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeConditionalForwarders #X Amz Target=DirectoryService 20150416.DescribeConditionalForwarders #X Amz Target=DirectoryService 20150416.DescribeConditionalForwarders API'
   description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
@@ -186,37 +186,8 @@ paths:
       - '#X Amz Target=DirectoryService 20150416.DescribeConditionalForwarders'
 components:
   schemas:
-    DirectoryUnavailableException: {}
     ClientException: {}
-    IpAddr:
-      type: string
-      pattern: ^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
-    DirectoryId:
-      type: string
-      pattern: ^d-[0-9a-f]{10}$
-    DescribeConditionalForwardersResult:
-      type: object
-      properties:
-        ConditionalForwarders:
-          allOf:
-          - $ref: '#/components/schemas/ConditionalForwarders'
-          - description: The list of conditional forwarders that have been created.
-      description: The result of a DescribeConditionalForwarder request.
-    DescribeConditionalForwardersRequest:
-      type: object
-      required:
-      - DirectoryId
-      title: DescribeConditionalForwardersRequest
-      properties:
-        DirectoryId:
-          allOf:
-          - $ref: '#/components/schemas/DirectoryId'
-          - description: The directory ID for which to get the list of associated conditional forwarders.
-        RemoteDomainNames:
-          allOf:
-          - $ref: '#/components/schemas/RemoteDomainNames'
-          - description: The fully qualified domain names (FQDN) of the remote domains for which to get the list of associated conditional forwarders. If this member is null, all conditional forwarders are returned.
-      description: Describes a conditional forwarder.
+    UnsupportedOperationException: {}
     ConditionalForwarder:
       type: object
       properties:
@@ -233,32 +204,61 @@ components:
           - $ref: '#/components/schemas/ReplicationScope'
           - description: The replication scope of the conditional forwarder. The only allowed value is <code>Domain</code>, which will replicate the conditional forwarder to all of the domain controllers for your Amazon Web Services directory.
       description: Points to a remote domain with which you are setting up a trust relationship. Conditional forwarders are required in order to set up a trust relationship with another domain.
-    ReplicationScope:
-      type: string
-      enum:
-      - Domain
     DnsIpAddrs:
       type: array
       items:
         $ref: '#/components/schemas/IpAddr'
-    UnsupportedOperationException: {}
-    RemoteDomainNames:
-      type: array
-      items:
-        $ref: '#/components/schemas/RemoteDomainName'
-    ServiceException: {}
-    EntityDoesNotExistException: {}
     InvalidParameterException: {}
+    DirectoryUnavailableException: {}
+    ReplicationScope:
+      type: string
+      enum:
+      - Domain
+    ServiceException: {}
+    RemoteDomainName:
+      type: string
+      pattern: ^([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+[.]?$
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{10}$
+    IpAddr:
+      type: string
+      pattern: ^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
     ConditionalForwarders:
       type: array
       items:
         $ref: '#/components/schemas/ConditionalForwarder'
-    RemoteDomainName:
-      type: string
-      pattern: ^([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+[.]?$
+    EntityDoesNotExistException: {}
+    DescribeConditionalForwardersRequest:
+      type: object
+      required:
+      - DirectoryId
+      title: DescribeConditionalForwardersRequest
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The directory ID for which to get the list of associated conditional forwarders.
+        RemoteDomainNames:
+          allOf:
+          - $ref: '#/components/schemas/RemoteDomainNames'
+          - description: The fully qualified domain names (FQDN) of the remote domains for which to get the list of associated conditional forwarders. If this member is null, all conditional forwarders are returned.
+      description: Describes a conditional forwarder.
+    RemoteDomainNames:
+      type: array
+      items:
+        $ref: '#/components/schemas/RemoteDomainName'
+    DescribeConditionalForwardersResult:
+      type: object
+      properties:
+        ConditionalForwarders:
+          allOf:
+          - $ref: '#/components/schemas/ConditionalForwarders'
+          - description: The list of conditional forwarders that have been created.
+      description: The result of a DescribeConditionalForwarder request.
   parameters:
-    X-Amz-Date:
-      name: X-Amz-Date
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -275,14 +275,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
+    X-Amz-Security-Token:
+      name: X-Amz-Security-Token
       in: header
       schema:
         type: string
@@ -293,8 +287,14 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Security-Token:
-      name: X-Amz-Security-Token
+    X-Amz-Date:
+      name: X-Amz-Date
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
