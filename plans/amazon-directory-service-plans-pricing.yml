@@ -10,6 +10,10 @@ provenance:
   grounding: every price_text was found verbatim in the fetched page text
 audience: developer-api
 pricing_basis: usage-other
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-09-20'
 published: false
 note: No numeric price is published on the pricing page; General AWS pricing overview hub describing pay-as-you-go,
   flat rate, Savings Plans, tiered and Private Pricing models. No numeric prices shown on the page; no
