@@ -1295,6 +1295,10 @@ apis:
   - type: GettingStarted
     url: https://aws.amazon.com/directoryservice/getting-started/
 common:
+- type: Pricing
+  url: https://aws.amazon.com/pricing/?nc2=h_pr_hub
+- type: Plans
+  url: plans/amazon-directory-service-plans-pricing.yml
 - type: CapabilityMap
   url: capabilities/amazon-directory-service-capability-edges.yml
   name: Amazon Directory Service Business Capability Map
