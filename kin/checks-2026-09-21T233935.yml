@@ -2,16 +2,16 @@
 kin_checks:
   slug: amazon-directory-service
   schema_version: 0.22.0
-  scored_at: '2026-09-19'
-  run_ts: 2026-09-19T193153
+  scored_at: '2026-09-21'
+  run_ts: 2026-09-21T233935
   note: Actionable checks (missed + partial) in `checks`, plus the ids that did not
     apply in `na`. Everything else in rubric/scoring-0.22.0.yml was earned; counts
     below let you verify that.
   counts:
     total: 136
-    earned: 45
-    partial: 14
-    missed: 51
+    earned: 48
+    partial: 12
+    missed: 50
     na: 26
   checks:
   - id: tags_present
@@ -19,10 +19,6 @@ kin_checks:
   - id: maintainer_present
     status: missed
   - id: multiple_apis
-    status: missed
-  - id: human_url_per_api
-    status: missed
-  - id: base_url_per_api
     status: missed
   - id: well_known_published
     status: missed
@@ -77,7 +73,9 @@ kin_checks:
     status: missed
   - id: agent_skill_present
     status: missed
-  - id: pricing_link
+  - id: plans_present
+    status: missed
+  - id: plans_multiple
     status: missed
   - id: compliance_published
     status: missed
@@ -141,12 +139,6 @@ kin_checks:
   - id: postman_present
     status: partial
     earned: 0.5
-  - id: plans_present
-    status: partial
-    earned: 2.0
-  - id: plans_multiple
-    status: partial
-    earned: 1.0
   - id: sign_up_present
     status: partial
     earned: 2.5
