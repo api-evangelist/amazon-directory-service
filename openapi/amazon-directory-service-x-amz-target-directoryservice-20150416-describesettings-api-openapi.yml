@@ -1,9 +1,11 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-04-16
   x-release: v4
-  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeSettings #X Amz Target=DirectoryService 20150416.DescribeSettings #X Amz Target=DirectoryService 20150416.DescribeSettings API'
-  description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
+  title: 'AWS Directory Service #X Amz Target=DirectoryService…'
+  description: 'Directory Service
+
+    Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +25,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/ds-2015-04-16.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -184,69 +187,46 @@ paths:
           - DirectoryService_20150416.DescribeSettings
       tags:
       - '#X Amz Target=DirectoryService 20150416.DescribeSettings'
+      summary: Describe settings
+      x-summary-source: derived
 components:
   schemas:
-    ClientException: {}
-    DirectoryConfigurationSettingLastUpdatedDateTime:
-      type: string
-      format: date-time
-    DirectoryConfigurationSettingAllowedValues:
-      type: string
-    DirectoryConfigurationSettingRequestDetailedStatus:
-      type: object
-      additionalProperties:
-        $ref: '#/components/schemas/DirectoryConfigurationStatus'
-    UnsupportedOperationException: {}
-    InvalidNextTokenException: {}
-    InvalidParameterException: {}
-    ServiceException: {}
-    SettingEntries:
-      type: array
-      items:
-        $ref: '#/components/schemas/SettingEntry'
-    NextToken:
-      type: string
     DirectoryConfigurationSettingRequestStatusMessage:
+      type: string
+    DescribeSettingsRequest:
+      type: object
+      required:
+      - DirectoryId
+      title: DescribeSettingsRequest
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The identifier of the directory for which to retrieve information.
+        Status:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryConfigurationStatus'
+          - description: The status of the directory settings for which to retrieve information.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: The <code>DescribeSettingsResult.NextToken</code> value from a previous call to <a>DescribeSettings</a>. Pass null if this is the first call.
+    DirectoryConfigurationSettingAllowedValues:
       type: string
     DirectoryConfigurationSettingName:
       type: string
       pattern: ^[a-zA-Z0-9-/. _]*$
       minLength: 1
       maxLength: 255
-    DescribeSettingsResult:
-      type: object
-      properties:
-        DirectoryId:
-          allOf:
-          - $ref: '#/components/schemas/DirectoryId'
-          - description: The identifier of the directory.
-        SettingEntries:
-          allOf:
-          - $ref: '#/components/schemas/SettingEntries'
-          - description: <p>The list of <a>SettingEntry</a> objects that were retrieved.</p> <p>It is possible that this list contains less than the number of items specified in the <code>Limit</code> member of the request. This occurs if there are less than the requested number of items left to retrieve, or if the limitations of the operation have been exceeded.</p>
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/NextToken'
-          - description: 'If not null, token that indicates that more results are available. Pass this value for the <code>NextToken</code> parameter in a subsequent call to <code>DescribeSettings</code> to retrieve the next set of items. '
-    DirectoryId:
+    DirectoryConfigurationSettingType:
       type: string
-      pattern: ^d-[0-9a-f]{10}$
-    DirectoryConfigurationSettingValue:
-      type: string
-      pattern: ^[a-zA-Z0-9]*$
-      minLength: 1
-      maxLength: 255
-    DirectoryConfigurationStatus:
-      type: string
-      enum:
-      - Requested
-      - Updating
-      - Updated
-      - Failed
-      - Default
     DirectoryConfigurationSettingLastRequestedDateTime:
       type: string
       format: date-time
+    ClientException: {}
+    NextToken:
+      type: string
+    DirectoryDoesNotExistException: {}
     SettingEntry:
       type: object
       properties:
@@ -291,36 +271,73 @@ components:
           - $ref: '#/components/schemas/DirectoryConfigurationSettingLastRequestedDateTime'
           - description: The date and time when the request to update a directory setting was last submitted.
       description: Contains information about the specified configurable setting for a directory.
-    DirectoryConfigurationSettingType:
+    ServiceException: {}
+    DirectoryConfigurationSettingLastUpdatedDateTime:
       type: string
-    DescribeSettingsRequest:
+      format: date-time
+    DirectoryConfigurationStatus:
+      type: string
+      enum:
+      - Requested
+      - Updating
+      - Updated
+      - Failed
+      - Default
+    DescribeSettingsResult:
       type: object
-      required:
-      - DirectoryId
-      title: DescribeSettingsRequest
       properties:
         DirectoryId:
           allOf:
           - $ref: '#/components/schemas/DirectoryId'
-          - description: The identifier of the directory for which to retrieve information.
-        Status:
+          - description: The identifier of the directory.
+        SettingEntries:
           allOf:
-          - $ref: '#/components/schemas/DirectoryConfigurationStatus'
-          - description: The status of the directory settings for which to retrieve information.
+          - $ref: '#/components/schemas/SettingEntries'
+          - description: <p>The list of <a>SettingEntry</a> objects that were retrieved.</p> <p>It is possible that this list contains less than the number of items specified in the <code>Limit</code> member of the request. This occurs if there are less than the requested number of items left to retrieve, or if the limitations of the operation have been exceeded.</p>
         NextToken:
           allOf:
           - $ref: '#/components/schemas/NextToken'
-          - description: The <code>DescribeSettingsResult.NextToken</code> value from a previous call to <a>DescribeSettings</a>. Pass null if this is the first call.
-    DirectoryDoesNotExistException: {}
+          - description: 'If not null, token that indicates that more results are available. Pass this value for the <code>NextToken</code> parameter in a subsequent call to <code>DescribeSettings</code> to retrieve the next set of items. '
+    DirectoryConfigurationSettingRequestDetailedStatus:
+      type: object
+      additionalProperties:
+        $ref: '#/components/schemas/DirectoryConfigurationStatus'
+    InvalidParameterException: {}
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{10}$
+    SettingEntries:
+      type: array
+      items:
+        $ref: '#/components/schemas/SettingEntry'
+    UnsupportedOperationException: {}
+    DirectoryConfigurationSettingValue:
+      type: string
+      pattern: ^[a-zA-Z0-9]*$
+      minLength: 1
+      maxLength: 255
+    InvalidNextTokenException: {}
   parameters:
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
@@ -337,20 +354,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
       in: header
       schema:
         type: string

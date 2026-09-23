@@ -1,9 +1,11 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-04-16
   x-release: v4
-  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeDomainControllers #X Amz Target=DirectoryService 20150416.DescribeDomainControllers #X Amz Target=DirectoryService 20150416.DescribeDomainControllers API'
-  description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
+  title: 'AWS Directory Service #X Amz Target=DirectoryService…'
+  description: 'Directory Service
+
+    Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +25,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/ds-2015-04-16.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -196,95 +199,43 @@ paths:
           - DirectoryService_20150416.DescribeDomainControllers
       tags:
       - '#X Amz Target=DirectoryService 20150416.DescribeDomainControllers'
+      summary: Describe domain controllers
+      x-summary-source: derived
 components:
   schemas:
-    DomainControllerStatusReason:
-      type: string
-    ClientException: {}
-    VpcId:
-      type: string
-      pattern: ^(vpc-[0-9a-f]{8}|vpc-[0-9a-f]{17})$
-    UnsupportedOperationException: {}
-    InvalidNextTokenException: {}
-    InvalidParameterException: {}
-    ServiceException: {}
-    DescribeDomainControllersRequest:
-      type: object
-      required:
-      - DirectoryId
-      title: DescribeDomainControllersRequest
-      properties:
-        DirectoryId:
-          allOf:
-          - $ref: '#/components/schemas/DirectoryId'
-          - description: Identifier of the directory for which to retrieve the domain controller information.
-        DomainControllerIds:
-          allOf:
-          - $ref: '#/components/schemas/DomainControllerIds'
-          - description: A list of identifiers for the domain controllers whose information will be provided.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/NextToken'
-          - description: 'The <i>DescribeDomainControllers.NextToken</i> value from a previous call to <a>DescribeDomainControllers</a>. Pass null if this is the first call. '
-        Limit:
-          allOf:
-          - $ref: '#/components/schemas/Limit'
-          - description: The maximum number of items to return.
-    NextToken:
-      type: string
-    Limit:
-      type: integer
-      minimum: 0
-    DescribeDomainControllersResult:
-      type: object
-      properties:
-        DomainControllers:
-          allOf:
-          - $ref: '#/components/schemas/DomainControllers'
-          - description: List of the <a>DomainController</a> objects that were retrieved.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/NextToken'
-          - description: If not null, more results are available. Pass this value for the <code>NextToken</code> parameter in a subsequent call to <a>DescribeDomainControllers</a> retrieve the next set of items.
-    DirectoryId:
-      type: string
-      pattern: ^d-[0-9a-f]{10}$
     IpAddr:
       type: string
       pattern: ^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$
-    DomainControllerId:
-      type: string
-      pattern: ^dc-[0-9a-f]{10}$
-    AvailabilityZone:
-      type: string
-    EntityDoesNotExistException: {}
     SubnetId:
       type: string
       pattern: ^(subnet-[0-9a-f]{8}|subnet-[0-9a-f]{17})$
-    LaunchTime:
-      type: string
-      format: date-time
-    DomainControllerStatus:
-      type: string
-      enum:
-      - Creating
-      - Active
-      - Impaired
-      - Restoring
-      - Deleting
-      - Deleted
-      - Failed
-    LastUpdatedDateTime:
-      type: string
-      format: date-time
     DomainControllerIds:
       type: array
       items:
         $ref: '#/components/schemas/DomainControllerId'
+    DomainControllerStatusReason:
+      type: string
+    Limit:
+      type: integer
+      minimum: 0
+    AvailabilityZone:
+      type: string
     DomainControllers:
       type: array
       items:
         $ref: '#/components/schemas/DomainController'
+    ClientException: {}
+    NextToken:
+      type: string
+    ServiceException: {}
+    EntityDoesNotExistException: {}
+    InvalidParameterException: {}
+    VpcId:
+      type: string
+      pattern: ^(vpc-[0-9a-f]{8}|vpc-[0-9a-f]{17})$
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{10}$
     DomainController:
       type: object
       properties:
@@ -329,15 +280,81 @@ components:
           - $ref: '#/components/schemas/LastUpdatedDateTime'
           - description: The date and time that the status was last updated.
       description: Contains information about the domain controllers for a specified directory.
+    LastUpdatedDateTime:
+      type: string
+      format: date-time
+    DomainControllerStatus:
+      type: string
+      enum:
+      - Creating
+      - Active
+      - Impaired
+      - Restoring
+      - Deleting
+      - Deleted
+      - Failed
+    UnsupportedOperationException: {}
+    DomainControllerId:
+      type: string
+      pattern: ^dc-[0-9a-f]{10}$
+    LaunchTime:
+      type: string
+      format: date-time
+    DescribeDomainControllersResult:
+      type: object
+      properties:
+        DomainControllers:
+          allOf:
+          - $ref: '#/components/schemas/DomainControllers'
+          - description: List of the <a>DomainController</a> objects that were retrieved.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: If not null, more results are available. Pass this value for the <code>NextToken</code> parameter in a subsequent call to <a>DescribeDomainControllers</a> retrieve the next set of items.
+    DescribeDomainControllersRequest:
+      type: object
+      required:
+      - DirectoryId
+      title: DescribeDomainControllersRequest
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: Identifier of the directory for which to retrieve the domain controller information.
+        DomainControllerIds:
+          allOf:
+          - $ref: '#/components/schemas/DomainControllerIds'
+          - description: A list of identifiers for the domain controllers whose information will be provided.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: 'The <i>DescribeDomainControllers.NextToken</i> value from a previous call to <a>DescribeDomainControllers</a>. Pass null if this is the first call. '
+        Limit:
+          allOf:
+          - $ref: '#/components/schemas/Limit'
+          - description: The maximum number of items to return.
+    InvalidNextTokenException: {}
   parameters:
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
@@ -354,20 +371,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
       in: header
       schema:
         type: string

@@ -1,9 +1,11 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-04-16
   x-release: v4
-  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.ListCertificates #X Amz Target=DirectoryService 20150416.ListCertificates #X Amz Target=DirectoryService 20150416.ListCertificates API'
-  description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
+  title: 'AWS Directory Service #X Amz Target=DirectoryService…'
+  description: 'Directory Service
+
+    Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +25,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/ds-2015-04-16.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -196,10 +199,61 @@ paths:
           - DirectoryService_20150416.ListCertificates
       tags:
       - '#X Amz Target=DirectoryService 20150416.ListCertificates'
+      summary: List certificates
+      x-summary-source: derived
 components:
   schemas:
+    CertificateId:
+      type: string
+      pattern: ^c-[0-9a-f]{10}$
+    CertificateCN:
+      type: string
+    PageLimit:
+      type: integer
+      minimum: 1
+      maximum: 50
+    ListCertificatesRequest:
+      type: object
+      required:
+      - DirectoryId
+      title: ListCertificatesRequest
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The identifier of the directory.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: A token for requesting another page of certificates if the <code>NextToken</code> response element indicates that more certificates are available. Use the value of the returned <code>NextToken</code> element in your request until the token comes back as <code>null</code>. Pass <code>null</code> if this is the first call.
+        Limit:
+          allOf:
+          - $ref: '#/components/schemas/PageLimit'
+          - description: The number of items that should show up on one page
     ClientException: {}
-    UnsupportedOperationException: {}
+    CertificateExpiryDateTime:
+      type: string
+      format: date-time
+    NextToken:
+      type: string
+    DirectoryDoesNotExistException: {}
+    ServiceException: {}
+    InvalidParameterException: {}
+    CertificatesInfo:
+      type: array
+      items:
+        $ref: '#/components/schemas/CertificateInfo'
+    ListCertificatesResult:
+      type: object
+      properties:
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: Indicates whether another page of certificates is available when the number of available certificates exceeds the page limit.
+        CertificatesInfo:
+          allOf:
+          - $ref: '#/components/schemas/CertificatesInfo'
+          - description: A list of certificates with basic details including certificate ID, certificate common name, certificate state.
     CertificateInfo:
       type: object
       properties:
@@ -224,48 +278,10 @@ components:
           - $ref: '#/components/schemas/CertificateType'
           - description: The function that the registered certificate performs. Valid values include <code>ClientLDAPS</code> or <code>ClientCertAuth</code>. The default value is <code>ClientLDAPS</code>.
       description: Contains general information about a certificate.
-    InvalidNextTokenException: {}
-    InvalidParameterException: {}
-    ServiceException: {}
-    CertificateCN:
-      type: string
-    NextToken:
-      type: string
-    CertificateExpiryDateTime:
-      type: string
-      format: date-time
-    CertificatesInfo:
-      type: array
-      items:
-        $ref: '#/components/schemas/CertificateInfo'
     DirectoryId:
       type: string
       pattern: ^d-[0-9a-f]{10}$
-    PageLimit:
-      type: integer
-      minimum: 1
-      maximum: 50
-    ListCertificatesRequest:
-      type: object
-      required:
-      - DirectoryId
-      title: ListCertificatesRequest
-      properties:
-        DirectoryId:
-          allOf:
-          - $ref: '#/components/schemas/DirectoryId'
-          - description: The identifier of the directory.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/NextToken'
-          - description: A token for requesting another page of certificates if the <code>NextToken</code> response element indicates that more certificates are available. Use the value of the returned <code>NextToken</code> element in your request until the token comes back as <code>null</code>. Pass <code>null</code> if this is the first call.
-        Limit:
-          allOf:
-          - $ref: '#/components/schemas/PageLimit'
-          - description: The number of items that should show up on one page
-    CertificateId:
-      type: string
-      pattern: ^c-[0-9a-f]{10}$
+    UnsupportedOperationException: {}
     CertificateState:
       type: string
       enum:
@@ -275,32 +291,27 @@ components:
       - Deregistering
       - Deregistered
       - DeregisterFailed
-    DirectoryDoesNotExistException: {}
-    ListCertificatesResult:
-      type: object
-      properties:
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/NextToken'
-          - description: Indicates whether another page of certificates is available when the number of available certificates exceeds the page limit.
-        CertificatesInfo:
-          allOf:
-          - $ref: '#/components/schemas/CertificatesInfo'
-          - description: A list of certificates with basic details including certificate ID, certificate common name, certificate state.
     CertificateType:
       type: string
       enum:
       - ClientCertAuth
       - ClientLDAPS
+    InvalidNextTokenException: {}
   parameters:
-    X-Amz-Content-Sha256:
-      name: X-Amz-Content-Sha256
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Content-Sha256:
+      name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
@@ -319,12 +330,6 @@ components:
       required: false
     X-Amz-Security-Token:
       name: X-Amz-Security-Token
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
       in: header
       schema:
         type: string

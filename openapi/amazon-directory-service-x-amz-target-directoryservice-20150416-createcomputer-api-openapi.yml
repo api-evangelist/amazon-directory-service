@@ -1,9 +1,11 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-04-16
   x-release: v4
-  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateComputer #X Amz Target=DirectoryService 20150416.CreateComputer #X Amz Target=DirectoryService 20150416.CreateComputer API'
-  description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
+  title: 'AWS Directory Service #X Amz Target=DirectoryService…'
+  description: 'Directory Service
+
+    Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +25,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/ds-2015-04-16.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -196,28 +199,21 @@ paths:
           - DirectoryService_20150416.CreateComputer
       tags:
       - '#X Amz Target=DirectoryService 20150416.CreateComputer'
+      summary: Create computer
+      x-summary-source: derived
 components:
   schemas:
-    ClientException: {}
-    UnsupportedOperationException: {}
-    InvalidParameterException: {}
-    DirectoryUnavailableException: {}
+    AttributeName:
+      type: string
+      minLength: 1
+    AttributeValue:
+      type: string
+    AuthenticationFailedException: {}
     SID:
       type: string
       pattern: '[&\w+-.@]+'
       minLength: 1
       maxLength: 256
-    ServiceException: {}
-    ComputerPassword:
-      type: string
-      pattern: '[\u0020-\u00FF]+'
-      minLength: 8
-      maxLength: 64
-      format: password
-    OrganizationalUnitDN:
-      type: string
-      minLength: 1
-      maxLength: 2000
     Attribute:
       type: object
       properties:
@@ -230,7 +226,17 @@ components:
           - $ref: '#/components/schemas/AttributeValue'
           - description: The value of the attribute.
       description: Represents a named directory attribute.
-    AuthenticationFailedException: {}
+    ComputerName:
+      type: string
+      minLength: 1
+      maxLength: 15
+    ClientException: {}
+    OrganizationalUnitDN:
+      type: string
+      minLength: 1
+      maxLength: 2000
+    ServiceException: {}
+    EntityDoesNotExistException: {}
     CreateComputerResult:
       type: object
       properties:
@@ -239,33 +245,22 @@ components:
           - $ref: '#/components/schemas/Computer'
           - description: A <a>Computer</a> object that represents the computer account.
       description: Contains the results for the <a>CreateComputer</a> operation.
+    Attributes:
+      type: array
+      items:
+        $ref: '#/components/schemas/Attribute'
+    InvalidParameterException: {}
     DirectoryId:
       type: string
       pattern: ^d-[0-9a-f]{10}$
-    ComputerName:
+    ComputerPassword:
       type: string
-      minLength: 1
-      maxLength: 15
-    EntityDoesNotExistException: {}
+      pattern: '[\u0020-\u00FF]+'
+      minLength: 8
+      maxLength: 64
+      format: password
+    UnsupportedOperationException: {}
     EntityAlreadyExistsException: {}
-    AttributeValue:
-      type: string
-    Computer:
-      type: object
-      properties:
-        ComputerId:
-          allOf:
-          - $ref: '#/components/schemas/SID'
-          - description: The identifier of the computer.
-        ComputerName:
-          allOf:
-          - $ref: '#/components/schemas/ComputerName'
-          - description: The computer name.
-        ComputerAttributes:
-          allOf:
-          - $ref: '#/components/schemas/Attributes'
-          - description: An array of <a>Attribute</a> objects containing the LDAP attributes that belong to the computer account.
-      description: Contains information about a computer account in a directory.
     CreateComputerRequest:
       type: object
       required:
@@ -295,22 +290,44 @@ components:
           - $ref: '#/components/schemas/Attributes'
           - description: An array of <a>Attribute</a> objects that contain any LDAP attributes to apply to the computer account.
       description: Contains the inputs for the <a>CreateComputer</a> operation.
-    Attributes:
-      type: array
-      items:
-        $ref: '#/components/schemas/Attribute'
-    AttributeName:
-      type: string
-      minLength: 1
+    DirectoryUnavailableException: {}
+    Computer:
+      type: object
+      properties:
+        ComputerId:
+          allOf:
+          - $ref: '#/components/schemas/SID'
+          - description: The identifier of the computer.
+        ComputerName:
+          allOf:
+          - $ref: '#/components/schemas/ComputerName'
+          - description: The computer name.
+        ComputerAttributes:
+          allOf:
+          - $ref: '#/components/schemas/Attributes'
+          - description: An array of <a>Attribute</a> objects containing the LDAP attributes that belong to the computer account.
+      description: Contains information about a computer account in a directory.
   parameters:
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
@@ -327,20 +344,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
       in: header
       schema:
         type: string

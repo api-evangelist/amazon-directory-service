@@ -1,9 +1,11 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-04-16
   x-release: v4
-  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeRegions #X Amz Target=DirectoryService 20150416.DescribeRegions #X Amz Target=DirectoryService 20150416.DescribeRegions API'
-  description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
+  title: 'AWS Directory Service #X Amz Target=DirectoryService…'
+  description: 'Directory Service
+
+    Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +25,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/ds-2015-04-16.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -196,32 +199,22 @@ paths:
           - DirectoryService_20150416.DescribeRegions
       tags:
       - '#X Amz Target=DirectoryService 20150416.DescribeRegions'
+      summary: Describe regions
+      x-summary-source: derived
 components:
   schemas:
-    ClientException: {}
-    VpcId:
+    SubnetId:
       type: string
-      pattern: ^(vpc-[0-9a-f]{8}|vpc-[0-9a-f]{17})$
-    DesiredNumberOfDomainControllers:
-      type: integer
-      minimum: 2
-    UnsupportedOperationException: {}
-    InvalidNextTokenException: {}
-    InvalidParameterException: {}
-    ServiceException: {}
-    DescribeRegionsResult:
-      type: object
-      properties:
-        RegionsDescription:
-          allOf:
-          - $ref: '#/components/schemas/RegionsDescription'
-          - description: List of Region information related to the directory for each replicated Region.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/NextToken'
-          - description: If not null, more results are available. Pass this value for the <code>NextToken</code> parameter in a subsequent call to <a>DescribeRegions</a> to retrieve the next set of items.
-    NextToken:
+      pattern: ^(subnet-[0-9a-f]{8}|subnet-[0-9a-f]{17})$
+    RegionType:
       type: string
+      enum:
+      - Primary
+      - Additional
+    SubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SubnetId'
     DirectoryVpcSettings:
       type: object
       required:
@@ -237,17 +230,49 @@ components:
           - $ref: '#/components/schemas/SubnetIds'
           - description: The identifiers of the subnets for the directory servers. The two subnets must be in different Availability Zones. Directory Service creates a directory server and a DNS server in each of these subnets.
       description: Contains VPC information for the <a>CreateDirectory</a> or <a>CreateMicrosoftAD</a> operation.
-    RegionType:
+    ClientException: {}
+    DescribeRegionsRequest:
+      type: object
+      required:
+      - DirectoryId
+      title: DescribeRegionsRequest
+      properties:
+        DirectoryId:
+          allOf:
+          - $ref: '#/components/schemas/DirectoryId'
+          - description: The identifier of the directory.
+        RegionName:
+          allOf:
+          - $ref: '#/components/schemas/RegionName'
+          - description: The name of the Region. For example, <code>us-east-1</code>.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: The <code>DescribeRegionsResult.NextToken</code> value from a previous call to <a>DescribeRegions</a>. Pass null if this is the first call.
+    NextToken:
       type: string
-      enum:
-      - Primary
-      - Additional
-    DirectoryId:
+    DirectoryDoesNotExistException: {}
+    DescribeRegionsResult:
+      type: object
+      properties:
+        RegionsDescription:
+          allOf:
+          - $ref: '#/components/schemas/RegionsDescription'
+          - description: List of Region information related to the directory for each replicated Region.
+        NextToken:
+          allOf:
+          - $ref: '#/components/schemas/NextToken'
+          - description: If not null, more results are available. Pass this value for the <code>NextToken</code> parameter in a subsequent call to <a>DescribeRegions</a> to retrieve the next set of items.
+    ServiceException: {}
+    RegionName:
       type: string
-      pattern: ^d-[0-9a-f]{10}$
-    StateLastUpdatedDateTime:
-      type: string
-      format: date-time
+      minLength: 8
+      maxLength: 32
+    RegionsDescription:
+      type: array
+      items:
+        $ref: '#/components/schemas/RegionDescription'
+    InvalidParameterException: {}
     DirectoryStage:
       type: string
       enum:
@@ -262,6 +287,18 @@ components:
       - Deleting
       - Deleted
       - Failed
+    DesiredNumberOfDomainControllers:
+      type: integer
+      minimum: 2
+    VpcId:
+      type: string
+      pattern: ^(vpc-[0-9a-f]{8}|vpc-[0-9a-f]{17})$
+    DirectoryId:
+      type: string
+      pattern: ^d-[0-9a-f]{10}$
+    LastUpdatedDateTime:
+      type: string
+      format: date-time
     RegionDescription:
       type: object
       properties:
@@ -300,56 +337,36 @@ components:
           - $ref: '#/components/schemas/LastUpdatedDateTime'
           - description: The date and time that the Region description was last updated.
       description: The replicated Region information for a directory.
-    SubnetIds:
-      type: array
-      items:
-        $ref: '#/components/schemas/SubnetId'
-    SubnetId:
-      type: string
-      pattern: ^(subnet-[0-9a-f]{8}|subnet-[0-9a-f]{17})$
+    UnsupportedOperationException: {}
     LaunchTime:
       type: string
       format: date-time
-    RegionsDescription:
-      type: array
-      items:
-        $ref: '#/components/schemas/RegionDescription'
-    LastUpdatedDateTime:
+    AccessDeniedException: {}
+    InvalidNextTokenException: {}
+    StateLastUpdatedDateTime:
       type: string
       format: date-time
-    RegionName:
-      type: string
-      minLength: 8
-      maxLength: 32
-    DirectoryDoesNotExistException: {}
-    AccessDeniedException: {}
-    DescribeRegionsRequest:
-      type: object
-      required:
-      - DirectoryId
-      title: DescribeRegionsRequest
-      properties:
-        DirectoryId:
-          allOf:
-          - $ref: '#/components/schemas/DirectoryId'
-          - description: The identifier of the directory.
-        RegionName:
-          allOf:
-          - $ref: '#/components/schemas/RegionName'
-          - description: The name of the Region. For example, <code>us-east-1</code>.
-        NextToken:
-          allOf:
-          - $ref: '#/components/schemas/NextToken'
-          - description: The <code>DescribeRegionsResult.NextToken</code> value from a previous call to <a>DescribeRegions</a>. Pass null if this is the first call.
   parameters:
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
@@ -366,20 +383,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
       in: header
       schema:
         type: string

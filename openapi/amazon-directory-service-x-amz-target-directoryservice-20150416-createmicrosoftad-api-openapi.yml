@@ -1,9 +1,11 @@
 openapi: 3.2.0
 info:
-  version: 1.0.0
+  version: 2015-04-16
   x-release: v4
-  title: 'AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateMicrosoftAD #X Amz Target=DirectoryService 20150416.CreateMicrosoftAD #X Amz Target=DirectoryService 20150416.CreateMicrosoftAD API'
-  description: <fullname>Directory Service</fullname> <p>Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory. This guide provides detailed information about Directory Service operations, data types, parameters, and errors. For information about Directory Services features, see <a href="https://aws.amazon.com/directoryservice/">Directory Service</a> and the <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html">Directory Service Administration Guide</a>.</p> <note> <p>Amazon Web Services provides SDKs that consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .Net, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to Directory Service and other Amazon Web Services services. For more information about the Amazon Web Services SDKs, including how to download and install them, see <a href="http://aws.amazon.com/tools/">Tools for Amazon Web Services</a>.</p> </note>
+  title: 'AWS Directory Service #X Amz Target=DirectoryService…'
+  description: 'Directory Service
+
+    Directory Service is a web service that makes it easy for you to setup and run directories in the Amazon Web Services cloud, or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory.'
   x-logo:
     url: https://api.apis.guru/v2/cache/logo/https_twitter.com_awscloud_profile_image.png
     backgroundColor: '#FFFFFF'
@@ -23,6 +25,7 @@ info:
     url: https://raw.githubusercontent.com/aws/aws-sdk-js/master/apis/ds-2015-04-16.normal.json
     converter:
       url: https://github.com/mermade/aws2openapi
+      version: 1.0.0
     x-apisguru-driver: external
   x-apiClientRegistration:
     url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc2=h_ct
@@ -124,7 +127,10 @@ paths:
     - $ref: '#/components/parameters/X-Amz-SignedHeaders'
     post:
       operationId: CreateMicrosoftAD
-      description: '<p>Creates a Microsoft AD directory in the Amazon Web Services Cloud. For more information, see <a href="https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html">Managed Microsoft AD</a> in the <i>Directory Service Admin Guide</i>.</p> <p>Before you call <i>CreateMicrosoftAD</i>, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the <i>CreateMicrosoftAD</i> operation, see <a href="http://docs.aws.amazon.com/directoryservice/latest/admin-guide/UsingWithDS_IAM_ResourcePermissions.html">Directory Service API Permissions: Actions, Resources, and Conditions Reference</a>.</p>'
+      description: 'Creates a Microsoft AD directory in the Amazon Web Services Cloud. For more information, see Managed Microsoft AD in the Directory Service Admin Guide.
+
+
+        Before you call CreateMicrosoftAD, ensure that all of the required permissions have been explicitly granted through a policy. For details about what permissions are required to run the CreateMicrosoftAD operation, see Directory Service API Permissions: Actions, Resources, and Conditions Reference.'
       responses:
         '200':
           description: Success
@@ -178,12 +184,10 @@ paths:
           - DirectoryService_20150416.CreateMicrosoftAD
       tags:
       - '#X Amz Target=DirectoryService 20150416.CreateMicrosoftAD'
+      summary: Create microsoft AD
+      x-summary-source: derived
 components:
   schemas:
-    ClientException: {}
-    VpcId:
-      type: string
-      pattern: ^(vpc-[0-9a-f]{8}|vpc-[0-9a-f]{17})$
     CreateMicrosoftADRequest:
       type: object
       required:
@@ -221,43 +225,19 @@ components:
           - $ref: '#/components/schemas/Tags'
           - description: The tags to be assigned to the Managed Microsoft AD directory.
       description: Creates an Managed Microsoft AD directory.
-    DirectoryShortName:
+    SubnetId:
       type: string
-      pattern: ^[^\\/:*?"<>|.]+[^\\/:*?"<>|]*$
-    UnsupportedOperationException: {}
-    TagValue:
-      type: string
-      pattern: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$
-      minLength: 0
-      maxLength: 256
-    InvalidParameterException: {}
-    ServiceException: {}
-    DirectoryVpcSettings:
-      type: object
-      required:
-      - VpcId
-      - SubnetIds
-      properties:
-        VpcId:
-          allOf:
-          - $ref: '#/components/schemas/VpcId'
-          - description: The identifier of the VPC in which to create the directory.
-        SubnetIds:
-          allOf:
-          - $ref: '#/components/schemas/SubnetIds'
-          - description: The identifiers of the subnets for the directory servers. The two subnets must be in different Availability Zones. Directory Service creates a directory server and a DNS server in each of these subnets.
-      description: Contains VPC information for the <a>CreateDirectory</a> or <a>CreateMicrosoftAD</a> operation.
+      pattern: ^(subnet-[0-9a-f]{8}|subnet-[0-9a-f]{17})$
     TagKey:
       type: string
       pattern: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$
       minLength: 1
       maxLength: 128
-    Description:
+    TagValue:
       type: string
-      pattern: ^([a-zA-Z0-9_])[\\a-zA-Z0-9_@#%*+=:?./!\s-]*$
+      pattern: ^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$
       minLength: 0
-      maxLength: 128
-    DirectoryLimitExceededException: {}
+      maxLength: 256
     Tag:
       type: object
       required:
@@ -273,18 +253,45 @@ components:
           - $ref: '#/components/schemas/TagValue'
           - description: 'The optional value of the tag. The string value can be Unicode characters. The string can contain only the set of Unicode letters, digits, white-space, ''_'', ''.'', ''/'', ''='', ''+'', ''-'' (Java regex: "^([\\p{L}\\p{Z}\\p{N}_.:/=+\\-]*)$").'
       description: Metadata assigned to a directory consisting of a key-value pair.
+    SubnetIds:
+      type: array
+      items:
+        $ref: '#/components/schemas/SubnetId'
     DirectoryEdition:
       type: string
       enum:
       - Enterprise
       - Standard
+    DirectoryVpcSettings:
+      type: object
+      required:
+      - VpcId
+      - SubnetIds
+      properties:
+        VpcId:
+          allOf:
+          - $ref: '#/components/schemas/VpcId'
+          - description: The identifier of the VPC in which to create the directory.
+        SubnetIds:
+          allOf:
+          - $ref: '#/components/schemas/SubnetIds'
+          - description: The identifiers of the subnets for the directory servers. The two subnets must be in different Availability Zones. Directory Service creates a directory server and a DNS server in each of these subnets.
+      description: Contains VPC information for the <a>CreateDirectory</a> or <a>CreateMicrosoftAD</a> operation.
+    DirectoryName:
+      type: string
+      pattern: ^([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+$
+    ClientException: {}
     Password:
       type: string
       pattern: (?=^.{8,64}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9\s])(?=.*[a-z])|(?=.*[^A-Za-z0-9\s])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9\s]))^.*
       format: password
-    DirectoryId:
+    Tags:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tag'
+    DirectoryShortName:
       type: string
-      pattern: ^d-[0-9a-f]{10}$
+      pattern: ^[^\\/:*?"<>|.]+[^\\/:*?"<>|]*$
     CreateMicrosoftADResult:
       type: object
       properties:
@@ -293,29 +300,42 @@ components:
           - $ref: '#/components/schemas/DirectoryId'
           - description: The identifier of the directory that was created.
       description: Result of a CreateMicrosoftAD request.
-    SubnetIds:
-      type: array
-      items:
-        $ref: '#/components/schemas/SubnetId'
-    SubnetId:
+    ServiceException: {}
+    DirectoryLimitExceededException: {}
+    InvalidParameterException: {}
+    VpcId:
       type: string
-      pattern: ^(subnet-[0-9a-f]{8}|subnet-[0-9a-f]{17})$
-    Tags:
-      type: array
-      items:
-        $ref: '#/components/schemas/Tag'
-    DirectoryName:
+      pattern: ^(vpc-[0-9a-f]{8}|vpc-[0-9a-f]{17})$
+    DirectoryId:
       type: string
-      pattern: ^([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+$
+      pattern: ^d-[0-9a-f]{10}$
+    UnsupportedOperationException: {}
+    Description:
+      type: string
+      pattern: ^([a-zA-Z0-9_])[\\a-zA-Z0-9_@#%*+=:?./!\s-]*$
+      minLength: 0
+      maxLength: 128
   parameters:
+    X-Amz-SignedHeaders:
+      name: X-Amz-SignedHeaders
+      in: header
+      schema:
+        type: string
+      required: false
+    X-Amz-Signature:
+      name: X-Amz-Signature
+      in: header
+      schema:
+        type: string
+      required: false
     X-Amz-Content-Sha256:
       name: X-Amz-Content-Sha256
       in: header
       schema:
         type: string
       required: false
-    X-Amz-SignedHeaders:
-      name: X-Amz-SignedHeaders
+    X-Amz-Algorithm:
+      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
@@ -332,20 +352,8 @@ components:
       schema:
         type: string
       required: false
-    X-Amz-Signature:
-      name: X-Amz-Signature
-      in: header
-      schema:
-        type: string
-      required: false
     X-Amz-Date:
       name: X-Amz-Date
-      in: header
-      schema:
-        type: string
-      required: false
-    X-Amz-Algorithm:
-      name: X-Amz-Algorithm
       in: header
       schema:
         type: string
