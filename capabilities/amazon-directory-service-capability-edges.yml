@@ -11,7 +11,7 @@ capability_model:
   attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
     CC BY 4.0
   notice: NOTICE
-edge_count: 21
+edge_count: 22
 edges:
 - tag: '#X Amz Target=DirectoryService 20150416.ResetUserPassword'
   spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-resetuserpassword-api-openapi.yml
@@ -89,6 +89,18 @@ edges:
   evidence: DisableRadius; DisableRadiusRequest, DirectoryId
   reason: RADIUS in AWS Directory Service provides multi-factor authentication for directory users; disabling
     it is an authentication control change under Identity & Access Management.
+- tag: AWS Directory Service
+  spec_file: amazon-directory-service-aws-directory-service-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.78
+  evidence: '''Directory Service is a web service that makes it easy for you to setup and run directories
+    ... or connect your Amazon Web Services resources with an existing self-managed Microsoft Active Directory'';
+    ''Create microsoft AD'', ''Describe trusts'', ''ClientAuthenticationSettingsInfo'''
+  reason: Managed Active Directory with trusts, computers and client authentication is the directory/identity
+    backbone — identity and access management. Some overlap with infrastructure management, hence not
+    maximal confidence.
 - tag: '#X Amz Target=DirectoryService 20150416.ConnectDirectory'
   spec_file: amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api-openapi.yml
   capability_id: BC-620.20
