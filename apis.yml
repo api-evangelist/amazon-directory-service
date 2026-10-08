@@ -60,6 +60,10 @@ apis:
   - type: GettingStarted
     url: https://aws.amazon.com/directoryservice/getting-started/
 common:
+- type: RateLimits
+  url: rate-limits/amazon-directory-service-rate-limits.yml
+- type: FinOps
+  url: finops/amazon-directory-service-finops.yml
 - type: Pricing
   url: https://aws.amazon.com/pricing/?nc2=h_pr_hub
 - type: Plans
