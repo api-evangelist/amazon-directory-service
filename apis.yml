@@ -38,6 +38,12 @@ tags:
 - Authentication
 - AWS
 - Directory Services
+- Identity and Access Management
+tags_raw:
+- Active Directory
+- Authentication
+- AWS
+- Directory Services
 - Identity Management
 url: https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/apis.yml
 created: '2026-03-16'
