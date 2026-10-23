@@ -13,407 +13,407 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-addiproutes-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addiproutes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-addiproutes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addiproutes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-addregion-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addregion-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-addregion-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addregion-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-addtagstoresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addtagstoresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-addtagstoresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addtagstoresource-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-cancelschemaextension-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-cancelschemaextension-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-cancelschemaextension-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-cancelschemaextension-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createalias-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createalias-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createalias-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createalias-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createcomputer-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createcomputer-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createcomputer-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createcomputer-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createconditionalforwarder-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createconditionalforwarder-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createconditionalforwarder-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createconditionalforwarder-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createdirectory-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createdirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createdirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createdirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createlogsubscription-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createlogsubscription-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createlogsubscription-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createlogsubscription-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createmicrosoftad-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createmicrosoftad-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createmicrosoftad-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createmicrosoftad-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createsnapshot-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createsnapshot-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createsnapshot-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createsnapshot-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createtrust-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createtrust-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-createtrust-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createtrust-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deleteconditionalforwarder-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deleteconditionalforwarder-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deleteconditionalforwarder-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deleteconditionalforwarder-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deletedirectory-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deletedirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deletelogsubscription-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletelogsubscription-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deletelogsubscription-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletelogsubscription-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deletesnapshot-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletesnapshot-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deletesnapshot-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletesnapshot-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deletetrust-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletetrust-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deletetrust-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletetrust-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistercertificate-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistercertificate-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistercertificate-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistercertificate-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistereventtopic-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistereventtopic-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistereventtopic-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistereventtopic-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describecertificate-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describecertificate-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describecertificate-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describecertificate-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeclientauthenticationsettings-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeclientauthenticationsettings-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeclientauthenticationsettings-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeclientauthenticationsettings-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeconditionalforwarders-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeconditionalforwarders-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeconditionalforwarders-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeconditionalforwarders-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describedirectories-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describedirectories-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describedirectories-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describedirectories-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describedomaincontrollers-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describedomaincontrollers-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describedomaincontrollers-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describedomaincontrollers-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeeventtopics-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeeventtopics-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeeventtopics-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeeventtopics-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeldapssettings-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeldapssettings-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeldapssettings-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeldapssettings-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeregions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeregions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeregions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeregions-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describesettings-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describesettings-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describesettings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describesettings-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeshareddirectories-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeshareddirectories-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeshareddirectories-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeshareddirectories-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describesnapshots-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describesnapshots-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describesnapshots-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describesnapshots-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describetrusts-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describetrusts-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describetrusts-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describetrusts-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeupdatedirectory-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeupdatedirectory-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-describeupdatedirectory-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeupdatedirectory-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-disableclientauthentication-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableclientauthentication-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-disableclientauthentication-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableclientauthentication-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-disableldaps-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableldaps-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-disableldaps-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableldaps-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-disableradius-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableradius-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-disableradius-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableradius-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-disablesso-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disablesso-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-disablesso-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disablesso-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-enableclientauthentication-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableclientauthentication-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-enableclientauthentication-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableclientauthentication-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-enableldaps-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableldaps-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-enableldaps-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableldaps-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-enableradius-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableradius-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-enableradius-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableradius-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-enablesso-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enablesso-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-enablesso-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enablesso-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-getdirectorylimits-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-getdirectorylimits-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-getdirectorylimits-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-getdirectorylimits-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-getsnapshotlimits-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-getsnapshotlimits-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-getsnapshotlimits-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-getsnapshotlimits-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-listcertificates-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listcertificates-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-listcertificates-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listcertificates-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-listiproutes-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listiproutes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-listiproutes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listiproutes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-listlogsubscriptions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listlogsubscriptions-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-listlogsubscriptions-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listlogsubscriptions-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-listschemaextensions-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listschemaextensions-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-listschemaextensions-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listschemaextensions-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-listtagsforresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-listtagsforresource-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listtagsforresource-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-registercertificate-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-registercertificate-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-registercertificate-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-registercertificate-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-registereventtopic-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-registereventtopic-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-registereventtopic-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-registereventtopic-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-rejectshareddirectory-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-rejectshareddirectory-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-rejectshareddirectory-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-rejectshareddirectory-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-removeiproutes-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removeiproutes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-removeiproutes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removeiproutes-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-removeregion-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removeregion-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-removeregion-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removeregion-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-removetagsfromresource-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removetagsfromresource-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-removetagsfromresource-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removetagsfromresource-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-resetuserpassword-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-resetuserpassword-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-resetuserpassword-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-resetuserpassword-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-restorefromsnapshot-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-restorefromsnapshot-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-restorefromsnapshot-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-restorefromsnapshot-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-sharedirectory-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-sharedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-sharedirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-sharedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-startschemaextension-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-startschemaextension-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-startschemaextension-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-startschemaextension-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-unsharedirectory-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-unsharedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-unsharedirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-unsharedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updateconditionalforwarder-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updateconditionalforwarder-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updateconditionalforwarder-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updateconditionalforwarder-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updatedirectorysetup-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatedirectorysetup-api
+    method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updatedirectorysetup-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatedirectorysetup-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updatenumberofdomaincontrollers-api.opencollection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatenumberofdomaincontrollers-api
+  : method: unknown
+    evidence: no authorship recorded
   ? collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updatenumberofdomaincontrollers-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatenumberofdomaincontrollers-api
+  : method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updateradius-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updateradius-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updateradius-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updateradius-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updatesettings-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatesettings-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updatesettings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatesettings-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updatetrust-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatetrust-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-updatetrust-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatetrust-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api.opencollection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api
+    method: unknown
+    evidence: no authorship recorded
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api
+    method: unknown
+    evidence: no authorship recorded
   examples/amazon-directory-service-certificate-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -657,127 +657,7 @@ artifacts:
   json-structure/amazon-directory-service-trust-structure.json:
     method: unknown
     evidence: no authorship recorded
-  kin/checks-2026-09-24T161608.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T125852.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T133943.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T143147.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-25T154045.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-26T215308.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T094438.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T103455.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T123021.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T132314.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-27T140727.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-28T221322.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T213958.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-29T230545.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T203505.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-30T220315.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-08-31T223420.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T063623.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T210448.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-01T222808.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-02T224043.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T161828.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-03T174231.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T062714.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T212454.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-04T224856.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T055819.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T072335.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T144739.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T195450.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-05T211839.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T011047.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T211804.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-06T224210.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T200636.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-07T213054.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T214843.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-08T232836.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T204815.yml:
-    method: generated
-    evidence: Kin Score snapshot written by score.rb
-  kin/score-2026-09-10T222408.yml:
+  kin/checks-2026-10-11T110117.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-12T062655.yml:
@@ -861,415 +741,232 @@ artifacts:
   kin/score-2026-09-24T161608.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T210408.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-09-25T232841.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T000835.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-03T024842.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-10-11T110117.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   openapi/_original/amazon-directory-service-openapi.yaml:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
       to the provider's source is unverified
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addiproutes-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addregion-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addtagstoresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-cancelschemaextension-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createalias-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createcomputer-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createconditionalforwarder-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createdirectory-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createlogsubscription-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createmicrosoftad-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createsnapshot-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createtrust-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deleteconditionalforwarder-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletedirectory-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletelogsubscription-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletesnapshot-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletetrust-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistercertificate-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistereventtopic-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describecertificate-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  ? openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeclientauthenticationsettings-api-openapi.yml
-  : method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeconditionalforwarders-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describedirectories-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describedomaincontrollers-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeeventtopics-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeldapssettings-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeregions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describesettings-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeshareddirectories-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describesnapshots-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describetrusts-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeupdatedirectory-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableclientauthentication-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableldaps-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableradius-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disablesso-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableclientauthentication-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableldaps-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableradius-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enablesso-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-getdirectorylimits-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-getsnapshotlimits-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listcertificates-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listiproutes-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listlogsubscriptions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listschemaextensions-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listtagsforresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-registercertificate-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-registereventtopic-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-rejectshareddirectory-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removeiproutes-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removeregion-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removetagsfromresource-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-resetuserpassword-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-restorefromsnapshot-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-sharedirectory-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-startschemaextension-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-unsharedirectory-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updateconditionalforwarder-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatedirectorysetup-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatenumberofdomaincontrollers-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updateradius-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatesettings-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatetrust-api-openapi.yml:
-    method: derived
-    evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
-  openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api-openapi.yml:
+  openapi/amazon-directory-service-aws-directory-service-api-openapi.yml:
     method: derived
     evidence: paths are a subset of openapi/_original/ (split from the harvested spec)
   plans/amazon-directory-service-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-addiproutes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addiproutes-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-addregion-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addregion-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-addtagstoresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-addtagstoresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-cancelschemaextension-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-cancelschemaextension-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-createalias-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createalias-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-createcomputer-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createcomputer-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-directory-service-x-amz-target-directoryservice-20150416-createconditionalforwarder-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createconditionalforwarder-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-createdirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createdirectory-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-createlogsubscription-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createlogsubscription-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-createmicrosoftad-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createmicrosoftad-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-createsnapshot-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createsnapshot-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-createtrust-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-createtrust-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-directory-service-x-amz-target-directoryservice-20150416-deleteconditionalforwarder-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deleteconditionalforwarder-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-deletedirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-deletelogsubscription-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletelogsubscription-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-deletesnapshot-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletesnapshot-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-deletetrust-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deletetrust-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistercertificate-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistercertificate-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistereventtopic-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-deregistereventtopic-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describecertificate-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describecertificate-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describeclientauthenticationsettings-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeclientauthenticationsettings-api
+  : method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describeconditionalforwarders-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeconditionalforwarders-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describedirectories-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describedirectories-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describedomaincontrollers-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describedomaincontrollers-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describeeventtopics-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeeventtopics-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describeldapssettings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeldapssettings-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describeregions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeregions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describesettings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describesettings-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describeshareddirectories-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeshareddirectories-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describesnapshots-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describesnapshots-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describetrusts-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describetrusts-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-directory-service-x-amz-target-directoryservice-20150416-describeupdatedirectory-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-describeupdatedirectory-api
+  : method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-directory-service-x-amz-target-directoryservice-20150416-disableclientauthentication-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableclientauthentication-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-disableldaps-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableldaps-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-disableradius-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disableradius-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-disablesso-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-disablesso-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-directory-service-x-amz-target-directoryservice-20150416-enableclientauthentication-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableclientauthentication-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-enableldaps-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableldaps-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-enableradius-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enableradius-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-enablesso-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-enablesso-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-getdirectorylimits-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-getdirectorylimits-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-getsnapshotlimits-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-getsnapshotlimits-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-listcertificates-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listcertificates-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-listiproutes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listiproutes-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-listlogsubscriptions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listlogsubscriptions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-listschemaextensions-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listschemaextensions-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-listtagsforresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-listtagsforresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-registercertificate-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-registercertificate-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-registereventtopic-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-registereventtopic-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-rejectshareddirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-rejectshareddirectory-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-removeiproutes-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removeiproutes-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-removeregion-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removeregion-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-removetagsfromresource-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-removetagsfromresource-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-resetuserpassword-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-resetuserpassword-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-restorefromsnapshot-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-restorefromsnapshot-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-sharedirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-sharedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-startschemaextension-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-startschemaextension-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-unsharedirectory-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-unsharedirectory-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-directory-service-x-amz-target-directoryservice-20150416-updateconditionalforwarder-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updateconditionalforwarder-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-updatedirectorysetup-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatedirectorysetup-api
+    method: unknown
+    evidence: no authorship recorded
   ? postman/amazon-directory-service-x-amz-target-directoryservice-20150416-updatenumberofdomaincontrollers-api.postman_collection.json
-  : method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatenumberofdomaincontrollers-api
+  : method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-updateradius-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updateradius-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-updatesettings-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatesettings-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-updatetrust-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-updatetrust-api
+    method: unknown
+    evidence: no authorship recorded
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api.postman_collection.json:
-    method: derived
-    evidence: openapi/amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api
+    method: unknown
+    evidence: no authorship recorded
   rate-limits/amazon-directory-service-rate-limits.yml:
     method: generated
     evidence: declared in the artifact
