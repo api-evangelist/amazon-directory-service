@@ -64,124 +64,266 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD, enables your directory-aware workloads and AWS resources to use managed Active Directory in AWS. It provides a fully managed, highly available Microsoft Active Directory in the AWS Cloud, with features including trust relationships, domain controllers, LDAPS, and multi-account directory sharing.
+AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD, enables your directory-aware workloads and AWS resources to use managed Active Directory in AWS. It provides a fully managed, highly available Microsoft Active Directory in the AWS Cloud, with features including trust relationships, domain controllers, LDAPS, and multi-account sharing.
 
-- **URL:** https://aws.amazon.com/directoryservice/
-- **Run:** [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/api-evangelist/amazon-web-services/collection/)
+**Areas:** Active Directory · Authentication · AWS · Directory Services · Identity and Access Management
 
-**Tags:** Active Directory, Authentication, AWS, Directory Services, Identity Management
+## Amazon Directory Service on APIs.io
 
-**Created:** 2026-03-16 | **Modified:** 2026-04-19
+Everything profiled for Amazon Directory Service is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amazon-directory-service/](https://apis.io/providers/amazon-directory-service/)** — or go straight to one of the APIs or properties below.
 
-## APIs
+### APIs (5)
 
-- **AWS Directory Service API** - Provides programmatic access to create and manage directories, trusts, snapshots, and domain controllers for Microsoft Active Directory in the AWS Cloud.
-  - **Base URL:** https://ds.amazonaws.com
-  - **Version:** 2015-04-16
-  - **OpenAPI:** [amazon-directory-service-openapi.yaml](openapi/amazon-directory-service-openapi.yaml)
+- [Amazon Directory Service AWS Directory Service API](https://apis.io/apis/amazon-directory-service/amazon-directory-service-aws-directory-service-api/) — The AWS Directory Service API from Amazon Directory Service — 67 operation(s) for aws directory service.
+- [Amazon Directory Service Directory Service Ad Assessment API](https://apis.io/apis/amazon-directory-service/amazon-directory-service-ad-assessment-api/) — The Directory Service Ad Assessment API from Amazon Directory Service — 4 operation(s) for directory service ad assessment.
+- [Amazon Directory Service Directory Service Ca Enrollment Policy API](https://apis.io/apis/amazon-directory-service/amazon-directory-service-ca-enrollment-policy-api/) — The Directory Service Ca Enrollment Policy API from Amazon Directory Service — 3 operation(s) for directory service ca enrollment policy.
+- [Amazon Directory Service Directory Service Directory Data Access API](https://apis.io/apis/amazon-directory-service/amazon-directory-service-directory-data-access-api/) — The Directory Service Directory Data Access API from Amazon Directory Service — 3 operation(s) for directory service directory data access.
+- [Amazon Directory Service Directory Service Operations API](https://apis.io/apis/amazon-directory-service/amazon-directory-service-operations-api/) — The Directory Service Operations API from Amazon Directory Service — 3 operation(s) for directory service operations.
 
-### Common Properties
+### Published properties
 
-| Property | URL |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Amazon Directory Service Agentic Access](https://apis.io/agentic-access/amazon-directory-service/amazon-directory-service-agentic-access/)
+
+#### JSON Schema (26)
+
+The data models the API reads and writes.
+
+- [Certificate](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-certificate/)
+- [ClientCertAuthSettings](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-client-cert-auth-settings/)
+- [Computer](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-computer/)
+- [ConditionalForwarder](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-conditional-forwarder/)
+- [DirectoryConfigurationStatus](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-directory-configuration-status/)
+- [DirectoryConnectSettings](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-directory-connect-settings/)
+- [DirectoryConnectSettingsDescription](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-directory-connect-settings-description/)
+- [DirectoryDescription](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-directory-description/)
+- [DirectoryLimits](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-directory-limits/)
+- [DirectoryVpcSettings](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-directory-vpc-settings/)
+- [DirectoryVpcSettingsDescription](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-directory-vpc-settings-description/)
+- [EventTopic](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-event-topic/)
+- [IpRoute](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-ip-route/)
+- [IpRouteInfo](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-ip-route-info/)
+- [LDAPSSettingInfo](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-ldaps-setting-info/)
+- [LogSubscription](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-log-subscription/)
+- [OSUpdateSettings](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-os-update-settings/)
+- [OwnerDirectoryDescription](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-owner-directory-description/)
+- [RadiusSettings](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-radius-settings/)
+- [RegionDescription](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-region-description/)
+- [SchemaExtensionInfo](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-schema-extension-info/)
+- [SharedDirectory](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-shared-directory/)
+- [Snapshot](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-snapshot/)
+- [SnapshotLimits](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-snapshot-limits/)
+- [Tag](https://apis.io/schemas/amazon-directory-service/amazon-directory-service-tag/)
+- …and 1 more published on APIs.io
+
+#### JSON Structure (26)
+
+Data models expressed in JSON Structure.
+
+- [Amazon Directory Service Certificate Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-certificate-structure/)
+- [Amazon Directory Service Client Cert Auth Settings Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-client-cert-auth-settings-structure/)
+- [Amazon Directory Service Computer Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-computer-structure/)
+- [Amazon Directory Service Conditional Forwarder Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-conditional-forwarder-structure/)
+- [Amazon Directory Service Directory Configuration Status Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-directory-configuration-status-structure/)
+- [Amazon Directory Service Directory Connect Settings Description Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-directory-connect-settings-description-structure/)
+- [Amazon Directory Service Directory Connect Settings Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-directory-connect-settings-structure/)
+- [Amazon Directory Service Directory Description Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-directory-description-structure/)
+- [Amazon Directory Service Directory Limits Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-directory-limits-structure/)
+- [Amazon Directory Service Directory Vpc Settings Description Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-directory-vpc-settings-description-structure/)
+- [Amazon Directory Service Directory Vpc Settings Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-directory-vpc-settings-structure/)
+- [Amazon Directory Service Event Topic Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-event-topic-structure/)
+- [Amazon Directory Service Ip Route Info Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-ip-route-info-structure/)
+- [Amazon Directory Service Ip Route Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-ip-route-structure/)
+- [Amazon Directory Service Ldaps Setting Info Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-ldaps-setting-info-structure/)
+- [Amazon Directory Service Log Subscription Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-log-subscription-structure/)
+- [Amazon Directory Service Os Update Settings Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-os-update-settings-structure/)
+- [Amazon Directory Service Owner Directory Description Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-owner-directory-description-structure/)
+- [Amazon Directory Service Radius Settings Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-radius-settings-structure/)
+- [Amazon Directory Service Region Description Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-region-description-structure/)
+- [Amazon Directory Service Schema Extension Info Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-schema-extension-info-structure/)
+- [Amazon Directory Service Shared Directory Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-shared-directory-structure/)
+- [Amazon Directory Service Snapshot Limits Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-snapshot-limits-structure/)
+- [Amazon Directory Service Snapshot Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-snapshot-structure/)
+- [Amazon Directory Service Tag Structure](https://apis.io/json-structure/amazon-directory-service/amazon-directory-service-tag-structure/)
+- …and 1 more published on APIs.io
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Amazon Directory Service Context](https://apis.io/jsonld/amazon-directory-service/amazon-directory-service-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Amazon Directory Service Vocabulary](https://apis.io/vocabularies/amazon-directory-service/amazon-directory-service-vocabulary/)
+
+#### Examples (25)
+
+Example requests and responses.
+
+- [Amazon Directory Service Certificate Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-certificate-example/)
+- [Amazon Directory Service Client Cert Auth Settings Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-client-cert-auth-settings-example/)
+- [Amazon Directory Service Computer Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-computer-example/)
+- [Amazon Directory Service Conditional Forwarder Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-conditional-forwarder-example/)
+- [Amazon Directory Service Directory Connect Settings Description Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-directory-connect-settings-description-example/)
+- [Amazon Directory Service Directory Connect Settings Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-directory-connect-settings-example/)
+- [Amazon Directory Service Directory Description Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-directory-description-example/)
+- [Amazon Directory Service Directory Limits Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-directory-limits-example/)
+- [Amazon Directory Service Directory Vpc Settings Description Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-directory-vpc-settings-description-example/)
+- [Amazon Directory Service Directory Vpc Settings Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-directory-vpc-settings-example/)
+- [Amazon Directory Service Event Topic Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-event-topic-example/)
+- [Amazon Directory Service Ip Route Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-ip-route-example/)
+- [Amazon Directory Service Ip Route Info Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-ip-route-info-example/)
+- [Amazon Directory Service Ldaps Setting Info Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-ldaps-setting-info-example/)
+- [Amazon Directory Service Log Subscription Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-log-subscription-example/)
+- [Amazon Directory Service Os Update Settings Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-os-update-settings-example/)
+- [Amazon Directory Service Owner Directory Description Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-owner-directory-description-example/)
+- [Amazon Directory Service Radius Settings Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-radius-settings-example/)
+- [Amazon Directory Service Region Description Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-region-description-example/)
+- [Amazon Directory Service Schema Extension Info Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-schema-extension-info-example/)
+- [Amazon Directory Service Shared Directory Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-shared-directory-example/)
+- [Amazon Directory Service Snapshot Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-snapshot-example/)
+- [Amazon Directory Service Snapshot Limits Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-snapshot-limits-example/)
+- [Amazon Directory Service Tag Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-tag-example/)
+- [Amazon Directory Service Trust Example](https://apis.io/examples/amazon-directory-service/amazon-directory-service-trust-example/)
+
+#### Collections (134)
+
+Postman and Open Collection request collections.
+
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AddIpRoutes API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-addiproutes-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AddRegion API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-addregion-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AddTagsToResource API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-addtagstoresource-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CancelSchemaExtension API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-cancelschemaextension-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.ConnectDirectory API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-connectdirectory-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateAlias API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-createalias-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateComputer API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-createcomputer-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateConditionalForwarder API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-createconditionalforwarder-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateDirectory API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-createdirectory-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateLogSubscription API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-createlogsubscription-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateMicrosoftAD API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-createmicrosoftad-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateSnapshot API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-createsnapshot-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.CreateTrust API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-createtrust-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DeleteConditionalForwarder API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-deleteconditionalforwarder-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DeleteDirectory API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-deletedirectory-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DeleteLogSubscription API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-deletelogsubscription-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DeleteSnapshot API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-deletesnapshot-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DeleteTrust API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-deletetrust-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DeregisterCertificate API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-deregistercertificate-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DeregisterEventTopic API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-deregistereventtopic-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeCertificate API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-describecertificate-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeClientAuthenticationSettings API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-describeclientauthenticationsettings-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeConditionalForwarders API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-describeconditionalforwarders-api/)
+- [AWS Directory Service #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.AcceptSharedDirectory #X Amz Target=DirectoryService 20150416.DescribeDirectories API](https://apis.io/collections/amazon-directory-service/open-amazon-directory-service-x-amz-target-directoryservice-20150416-describedirectories-api/)
+- …and 109 more published on APIs.io
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Amazon Directory Service — jsonschema rules](https://apis.io/rules/amazon-directory-service/amazon-directory-service-jsonschema-spectral-rules/)
+- [Amazon Directory Service API Rules](https://apis.io/rules/amazon-directory-service/amazon-directory-service-spectral-rules/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Amazon Directory Service Authentication](https://apis.io/security/amazon-directory-service/amazon-directory-service-authentication/)
+- [Amazon Directory Service Domain Security](https://apis.io/security/amazon-directory-service/amazon-directory-service-domain-security/)
+- [Amazon Directory Service Trust Center](https://apis.io/security/amazon-directory-service/amazon-directory-service-trust-center/)
+- [Amazon Directory Service Vulnerability Disclosure](https://apis.io/security/amazon-directory-service/amazon-directory-service-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Amazon Directory Service Plans Pricing](https://apis.io/plans/amazon-directory-service/amazon-directory-service-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Amazon Directory Service Rate Limits](https://apis.io/rate-limits/amazon-directory-service/amazon-directory-service-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Amazon Directory Service Finops](https://apis.io/finops/amazon-directory-service/amazon-directory-service-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://aws.amazon.com/directoryservice/)
+- [Documentation](https://docs.aws.amazon.com/directoryservice/)
+- [Pricing](https://aws.amazon.com/pricing/?nc2=h_pr_hub)
+- [Support](https://aws.amazon.com/premiumsupport/)
+- [Blog](https://aws.amazon.com/blogs/security/tag/aws-directory-service/)
+- [Terms of service](https://aws.amazon.com/service-terms/)
+- [Privacy policy](https://aws.amazon.com/privacy/)
+- [GitHub](https://github.com/aws)
+- [Status](https://health.aws.amazon.com/health/status)
+
+## API Evangelist rating
+
+**Kin Score 52.5** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
 |---|---|
-| Documentation | https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html |
-| Getting Started | https://aws.amazon.com/directoryservice/getting-started/ |
-| Terms of Service | https://aws.amazon.com/service-terms/ |
-| Privacy Policy | https://aws.amazon.com/privacy/ |
-| Sign Up | https://portal.aws.amazon.com/billing/signup |
-| GitHub Organization | https://github.com/aws |
-| Status Page | https://health.aws.amazon.com/health/status |
+| Discoverability | 57.1 |
+| Contract quality | 59.5 |
+| Contract governance | 27.3 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 61.4 |
+| Access clarity | 46.1 |
 
-### Features
+**Agent readiness 27.0** — agent-aware
 
-| Feature | Description |
+| Agent-readiness dimension | Result |
 |---|---|
-| Managed Microsoft AD | Fully managed AWS Managed Microsoft Active Directory with automatic patching and monitoring |
-| Simple AD | Standalone managed directory powered by Samba 4 for basic AD functionality |
-| AD Connector | Proxy service for connecting AWS applications to existing on-premises AD |
-| Trust Relationships | One-way and two-way trust relationships between AWS and on-premises directories |
-| Multi-Region Replication | Replicate your AWS Managed Microsoft AD across multiple AWS Regions |
-| Directory Sharing | Share a single directory across multiple AWS accounts and VPCs |
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | verified |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
 
-### Use Cases
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
 
-| Use Case | Description |
-|---|---|
-| Hybrid Identity | Extend on-premises Active Directory into AWS for unified identity management |
-| Workload Authentication | Enable Windows and Linux workloads to join and authenticate against managed AD |
-| AWS Application Integration | Use managed AD for AWS WorkSpaces, RDS, and other AD-aware services |
-| LDAPS Encryption | Secure LDAP communications with certificates for compliance requirements |
-| Disaster Recovery | Use directory snapshots for point-in-time recovery of directory data |
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/amazon-directory-service/](https://apis.io/providers/amazon-directory-service/).
 
-### Integrations
+## How this profile is made
 
-| Integration | Description |
-|---|---|
-| Amazon WorkSpaces | Join WorkSpaces desktops to managed AD for enterprise desktop management |
-| Amazon RDS | Enable Windows Authentication for SQL Server RDS instances via managed AD |
-| AWS IAM Identity Center | Use managed AD as identity source for centralized access management |
-| AWS CloudTrail | Audit all Directory Service API calls for compliance and security monitoring |
-| Amazon SNS | Receive directory event notifications via SNS topic subscriptions |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Artifacts
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amazon Directory Service: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-### OpenAPI
+## Open an issue
 
-| Name | Description | File |
-|---|---|---|
-| AWS Directory Service OpenAPI | OpenAPI 3.x specification for the AWS Directory Service API | [amazon-directory-service-openapi.yaml](openapi/amazon-directory-service-openapi.yaml) |
-
-### JSON Schema
-
-| Schema | Description | File |
-|---|---|---|
-| DirectoryDescription | Full description of a managed directory | [amazon-directory-service-directory-description-schema.json](json-schema/amazon-directory-service-directory-description-schema.json) |
-| Trust | A trust relationship between directories | [amazon-directory-service-trust-schema.json](json-schema/amazon-directory-service-trust-schema.json) |
-| Snapshot | A point-in-time snapshot of a directory | [amazon-directory-service-snapshot-schema.json](json-schema/amazon-directory-service-snapshot-schema.json) |
-| Certificate | A certificate registered for directory authentication | [amazon-directory-service-certificate-schema.json](json-schema/amazon-directory-service-certificate-schema.json) |
-| IpRouteInfo | An IP route entry for directory traffic | [amazon-directory-service-ip-route-info-schema.json](json-schema/amazon-directory-service-ip-route-info-schema.json) |
-| ConditionalForwarder | A DNS conditional forwarder for a directory | [amazon-directory-service-conditional-forwarder-schema.json](json-schema/amazon-directory-service-conditional-forwarder-schema.json) |
-
-### JSON Structure
-
-| Schema | Description | File |
-|---|---|---|
-| DirectoryDescription | JSON Structure for DirectoryDescription | [amazon-directory-service-directory-description-structure.json](json-structure/amazon-directory-service-directory-description-structure.json) |
-| Trust | JSON Structure for Trust | [amazon-directory-service-trust-structure.json](json-structure/amazon-directory-service-trust-structure.json) |
-| Snapshot | JSON Structure for Snapshot | [amazon-directory-service-snapshot-structure.json](json-structure/amazon-directory-service-snapshot-structure.json) |
-
-### JSON-LD
-
-| Name | Description | File |
-|---|---|---|
-| Amazon Directory Service Context | JSON-LD 1.1 context for Amazon Directory Service types and properties | [amazon-directory-service-context.jsonld](json-ld/amazon-directory-service-context.jsonld) |
-
-## Capabilities
-
-### Shared API Definitions
-
-| Name | Description | File |
-|---|---|---|
-| Amazon Directory Service API | Shared Naftiko capability definition for Directory Service API operations | [directory-service-api.yaml](capabilities/shared/directory-service-api.yaml) |
-
-### Workflows
-
-| Workflow | Description | Tools | Personas | File |
-|---|---|---|---|---|
-| Active Directory Management | End-to-end Active Directory lifecycle management using Amazon Directory Service | 14 | Identity Engineer, Cloud Architect | [active-directory-management.yaml](capabilities/active-directory-management.yaml) |
-
-## Vocabulary
-
-| Name | Description | File |
-|---|---|---|
-| Amazon Directory Service Vocabulary | Unified taxonomy mapping operational and capability dimensions | [amazon-directory-service-vocabulary.yaml](vocabulary/amazon-directory-service-vocabulary.yaml) |
-
-## Rules
-
-| Name | Description | File |
-|---|---|---|
-| Amazon Directory Service Spectral Rules | Spectral governance rules for AWS Directory Service API quality | [amazon-directory-service-spectral-rules.yml](rules/amazon-directory-service-spectral-rules.yml) |
-
-## Maintainers
-
-- Kin Lane - kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amazon-directory-service/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
