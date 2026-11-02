@@ -1,0 +1,223 @@
+aid: amazon-directory-service
+name: Amazon Directory Service
+description: AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD, enables your directory-aware
+  workloads and AWS resources to use managed Active Directory in AWS. It provides a fully managed, highly available Microsoft
+  Active Directory in the AWS Cloud, with features including trust relationships, domain controllers, LDAPS, and multi-account
+  sharing.
+type: Index
+kind: company
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: medium
+  source:
+  - plans
+  - authentication
+  - security
+  generated: '2026-09-03'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-directory-service.png
+tags:
+- Active Directory
+- Authentication
+- Amazon Web Services
+- Directory Services
+- Identity and Access Management
+tags_raw:
+- Active Directory
+- Authentication
+- AWS
+- Directory Services
+- Identity Management
+url: https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/apis.yml
+created: '2026-03-16'
+modified: '2026-05-19'
+specificationVersion: '0.23'
+apis:
+- aid: amazon-directory-service:amazon-directory-service-aws-directory-service-api
+  name: Amazon Directory Service AWS Directory Service API
+  description: >-
+    The AWS Directory Service API from Amazon Directory Service — 67 operation(s) for aws directory service.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - AWS Directory Service
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-aws-directory-service-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+- aid: amazon-directory-service:amazon-directory-service-ad-assessment-api
+  name: Amazon Directory Service Directory Service Ad Assessment API
+  description: >-
+    The Directory Service Ad Assessment API from Amazon Directory Service — 4 operation(s) for directory
+    service ad assessment.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - Directory Service Ad Assessment
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-ad-assessment-api-openapi.yml
+- aid: amazon-directory-service:amazon-directory-service-ca-enrollment-policy-api
+  name: Amazon Directory Service Directory Service Ca Enrollment Policy API
+  description: >-
+    The Directory Service Ca Enrollment Policy API from Amazon Directory Service — 3 operation(s) for
+    directory service ca enrollment policy.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - Directory Service Ca Enrollment Policy
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-ca-enrollment-policy-api-openapi.yml
+- aid: amazon-directory-service:amazon-directory-service-directory-data-access-api
+  name: Amazon Directory Service Directory Service Directory Data Access API
+  description: >-
+    The Directory Service Directory Data Access API from Amazon Directory Service — 3 operation(s) for
+    directory service directory data access.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - Directory Service Directory Data Access
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-directory-data-access-api-openapi.yml
+- aid: amazon-directory-service:amazon-directory-service-operations-api
+  name: Amazon Directory Service Directory Service Operations API
+  description: >-
+    The Directory Service Operations API from Amazon Directory Service — 3 operation(s) for directory
+    service operations.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - Directory Service Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-operations-api-openapi.yml
+common:
+- type: RateLimits
+  url: rate-limits/amazon-directory-service-rate-limits.yml
+- type: FinOps
+  url: finops/amazon-directory-service-finops.yml
+- type: Pricing
+  url: https://aws.amazon.com/pricing/?nc2=h_pr_hub
+- type: Plans
+  url: plans/amazon-directory-service-plans-pricing.yml
+- type: CapabilityMap
+  url: capabilities/amazon-directory-service-capability-edges.yml
+  name: Amazon Directory Service Business Capability Map
+- type: PostmanWorkspace
+  url: https://www.postman.com/kinlaneapi/amazon-directory-service/overview
+- type: AgenticAccess
+  url: agentic-access/amazon-directory-service-agentic-access.yml
+- type: TrustCenter
+  url: security/amazon-directory-service-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/amazon-directory-service-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/amazon-directory-service-domain-security.yml
+- type: Authentication
+  url: authentication/amazon-directory-service-authentication.yml
+- type: Portal
+  url: https://aws.amazon.com/directoryservice/
+- type: Website
+  url: https://aws.amazon.com/directoryservice/
+- type: Documentation
+  url: https://docs.aws.amazon.com/directoryservice/
+- type: TermsOfService
+  url: https://aws.amazon.com/service-terms/
+- type: PrivacyPolicy
+  url: https://aws.amazon.com/privacy/
+- type: Support
+  url: https://aws.amazon.com/premiumsupport/
+- type: Blog
+  url: https://aws.amazon.com/blogs/security/tag/aws-directory-service/
+- type: GitHubOrganization
+  url: https://github.com/aws
+- type: Console
+  url: https://console.aws.amazon.com/directoryservicev2/
+- type: Signup
+  url: https://portal.aws.amazon.com/billing/signup
+- type: Login
+  url: https://signin.aws.amazon.com/
+- type: StatusPage
+  url: https://health.aws.amazon.com/health/status
+- type: Contact
+  url: https://aws.amazon.com/contact-us/
+- type: SpectralRules
+  url: https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/rules/amazon-directory-service-spectral-rules.yml
+- type: Vocabulary
+  url: https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/vocabulary/amazon-directory-service-vocabulary.yaml
+- type: Features
+  data:
+  - name: Managed Microsoft AD
+    description: Fully managed AWS Managed Microsoft Active Directory with automatic patching and monitoring
+  - name: Simple AD
+    description: Standalone managed directory powered by Samba 4 for basic AD functionality
+  - name: AD Connector
+    description: Proxy service for connecting AWS applications to existing on-premises AD
+  - name: Trust Relationships
+    description: One-way and two-way trust relationships between AWS and on-premises directories
+  - name: Multi-Region Replication
+    description: Replicate your AWS Managed Microsoft AD across multiple AWS Regions
+  - name: Directory Sharing
+    description: Share a single directory across multiple AWS accounts and VPCs
+- type: UseCases
+  data:
+  - name: Hybrid Identity
+    description: Extend on-premises Active Directory into AWS for unified identity management
+  - name: Workload Authentication
+    description: Enable Windows and Linux workloads to join and authenticate against managed AD
+  - name: AWS Application Integration
+    description: Use managed AD for AWS WorkSpaces, RDS, and other AD-aware services
+  - name: LDAPS Encryption
+    description: Secure LDAP communications with certificates for compliance requirements
+  - name: Disaster Recovery
+    description: Use directory snapshots for point-in-time recovery of directory data
+- type: Integrations
+  data:
+  - name: Amazon WorkSpaces
+    description: Join WorkSpaces desktops to managed AD for enterprise desktop management
+  - name: Amazon RDS
+    description: Enable Windows Authentication for SQL Server RDS instances via managed AD
+  - name: AWS IAM Identity Center
+    description: Use managed AD as identity source for centralized access management
+  - name: AWS CloudTrail
+    description: Audit all Directory Service API calls for compliance and security monitoring
+  - name: Amazon SNS
+    description: Receive directory event notifications via SNS topic subscriptions
+- type: Integrations
+  url: https://aws.amazon.com/marketplace
+integrations:
+- name: Agent Mode
+- name: Sign in
+- name: Become a Channel Partner
+- name: Resources
+- name: Sell in AWS Marketplace
+- name: Why AWS Marketplace?
+- name: Get started in AWS Marketplace
+- name: Manage Your Account
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-parent: amazon-web-services
+x-relationship: product
