@@ -1,11 +1,15 @@
 aid: amazon-directory-service
+
 name: Amazon Directory Service
-description: AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD, enables your directory-aware
-  workloads and AWS resources to use managed Active Directory in AWS. It provides a fully managed, highly available Microsoft
-  Active Directory in the AWS Cloud, with features including trust relationships, domain controllers, LDAPS, and multi-account
-  sharing.
+
+description: AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD, enables your directory-aware workloads
+  and AWS resources to use managed Active Directory in AWS. It provides a fully managed, highly available Microsoft Active Directory in the AWS
+  Cloud, with features including trust relationships, domain controllers, LDAPS, and multi-account sharing.
+
 type: Index
+
 kind: company
+
 deliveryModel:
   model: saas
   open_source: false
@@ -18,6 +22,7 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -28,10 +33,12 @@ accessModel:
   confidence: low
   source:
   - authentication
+  - rate-limits
   - security
-  generated: '2026-11-06'
+  generated: '2026-11-13'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amazon-directory-service.png
+
 tags:
 - Active Directory
 - Authentication
@@ -43,76 +50,74 @@ tags_raw:
 - Authentication
 - AWS
 - Directory Services
+- Identity and Access Management
+
+tags_raw:
+- Active Directory
+- Authentication
+- AWS
+- Directory Services
 - Identity Management
+
 url: https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/apis.yml
+
 created: '2026-03-16'
+
 modified: '2026-05-19'
+
 specificationVersion: '0.23'
-apis:
-- aid: amazon-directory-service:amazon-directory-service-aws-directory-service-api
-  name: Amazon Directory Service AWS Directory Service API
-  description: >-
-    The AWS Directory Service API from Amazon Directory Service — 67 operation(s) for aws directory service.
-  humanURL: https://aws.amazon.com/directoryservice/
-  baseURL: https://ds.amazonaws.com
-  tags:
-  - AWS Directory Service
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-directory-service-aws-directory-service-api-openapi.yml
-  - type: Documentation
-    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
-  - type: GettingStarted
-    url: https://aws.amazon.com/directoryservice/getting-started/
-- aid: amazon-directory-service:amazon-directory-service-ad-assessment-api
-  name: Amazon Directory Service Directory Service Ad Assessment API
-  description: >-
-    The Directory Service Ad Assessment API from Amazon Directory Service — 4 operation(s) for directory
-    service ad assessment.
-  humanURL: https://aws.amazon.com/directoryservice/
-  baseURL: https://ds.amazonaws.com
-  tags:
-  - Directory Service Ad Assessment
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-directory-service-ad-assessment-api-openapi.yml
-- aid: amazon-directory-service:amazon-directory-service-ca-enrollment-policy-api
-  name: Amazon Directory Service Directory Service Ca Enrollment Policy API
-  description: >-
-    The Directory Service Ca Enrollment Policy API from Amazon Directory Service — 3 operation(s) for
-    directory service ca enrollment policy.
-  humanURL: https://aws.amazon.com/directoryservice/
-  baseURL: https://ds.amazonaws.com
-  tags:
-  - Directory Service Ca Enrollment Policy
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-directory-service-ca-enrollment-policy-api-openapi.yml
-- aid: amazon-directory-service:amazon-directory-service-directory-data-access-api
-  name: Amazon Directory Service Directory Service Directory Data Access API
-  description: >-
-    The Directory Service Directory Data Access API from Amazon Directory Service — 3 operation(s) for
-    directory service directory data access.
-  humanURL: https://aws.amazon.com/directoryservice/
-  baseURL: https://ds.amazonaws.com
-  tags:
-  - Directory Service Directory Data Access
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-directory-service-directory-data-access-api-openapi.yml
-- aid: amazon-directory-service:amazon-directory-service-operations-api
-  name: Amazon Directory Service Directory Service Operations API
-  description: >-
-    The Directory Service Operations API from Amazon Directory Service — 3 operation(s) for directory
-    service operations.
-  humanURL: https://aws.amazon.com/directoryservice/
-  baseURL: https://ds.amazonaws.com
-  tags:
-  - Directory Service Operations
-  properties:
-  - type: OpenAPI
-    url: openapi/amazon-directory-service-operations-api-openapi.yml
+
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+
 common:
+- type: Spectral
+  url: rules/amazon-directory-service-spectral-rules.yml
+- type: Spectral
+  url: rules/amazon-directory-service-rules.yml
+- type: Spectral
+  url: rules/amazon-directory-service-jsonschema-spectral-rules.yml
+- type: JSONLD
+  url: json-ld/amazon-directory-service-context.jsonld
+- type: Vocabulary
+  url: vocabulary/amazon-directory-service-vocabulary.yml
+- type: DataModel
+  url: data-model/amazon-directory-service-data-model.yml
+- type: CLI
+  url: cli/amazon-directory-service-cli.yml
+- type: Idempotency
+  url: conventions/amazon-directory-service-conventions.yml
+- type: Conventions
+  url: conventions/amazon-directory-service-conventions.yml
+- type: Compliance
+  url: https://aws.amazon.com/compliance/
+- type: Lifecycle
+  url: lifecycle/amazon-directory-service-lifecycle.yml
+- type: ErrorCatalog
+  url: errors/amazon-directory-service-problem-types.yml
+- type: Conformance
+  url: conformance/amazon-directory-service-conformance.yml
+- type: LLMsTxt
+  url: llms/amazon-directory-service-llms.txt
+- type: SecurityTxt
+  url: well-known/amazon-directory-service-security.txt
+- type: WellKnown
+  url: well-known/amazon-directory-service-well-known.yml
+- type: Hosts
+  url: hosts/amazon-directory-service-hosts.yml
+- type: Vendors
+  url: vendors/amazon-directory-service-vendors.yml
+- type: SDKs
+  url: packages/amazon-directory-service-packages.yml
+- type: Packages
+  url: packages/amazon-directory-service-packages.yml
+- type: Security
+  url: https://aws.amazon.com/security/?nc2=h_dsc_aa_sec
+- type: Newsroom
+  url: https://aws.amazon.com/media/?nc2=h_sol_ind_med
+- type: GettingStarted
+  url: https://docs.aws.amazon.com/AmazonRDS/latest/gettingstartedguide/what-is-rds
 - type: RateLimits
   url: rate-limits/amazon-directory-service-rate-limits.yml
 - type: FinOps
@@ -162,10 +167,6 @@ common:
   url: https://health.aws.amazon.com/health/status
 - type: Contact
   url: https://aws.amazon.com/contact-us/
-- type: SpectralRules
-  url: https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/rules/amazon-directory-service-spectral-rules.yml
-- type: Vocabulary
-  url: https://raw.githubusercontent.com/api-evangelist/amazon-directory-service/refs/heads/main/vocabulary/amazon-directory-service-vocabulary.yaml
 - type: Features
   data:
   - name: Managed Microsoft AD
@@ -206,6 +207,201 @@ common:
     description: Receive directory event notifications via SNS topic subscriptions
 - type: Integrations
   url: https://aws.amazon.com/marketplace
+- type: UsageTerms
+  url: terms/amazon-directory-service-terms-of-service.yml
+- type: DataProcessing
+  url: privacy/amazon-directory-service-privacy-policy.yml
+- type: Attestations
+  url: compliance/amazon-directory-service-compliance.yml
+- type: Eligibility
+  url: eligibility/amazon-directory-service-eligibility.yml
+- type: AIPreferences
+  url: ai-preferences/amazon-directory-service-ai-preferences.yml
+
+apis:
+- aid: amazon-directory-service:amazon-directory-service-aws-directory-service-api
+  name: Amazon Directory Service AWS Directory Service API
+  description: The AWS Directory Service API from Amazon Directory Service — 67 operation(s) for aws directory service.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - AWS Directory Service
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-aws-directory-service-api-openapi.yml
+  - type: Documentation
+    url: https://docs.aws.amazon.com/directoryservice/latest/devguide/what_is.html
+  - type: GettingStarted
+    url: https://aws.amazon.com/directoryservice/getting-started/
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-create-microsoft-adrequest-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-create-directory-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-create-trust-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-add-ip-routes-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-connect-directory-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-disable-sso-request-schema.json
+- aid: amazon-directory-service:amazon-directory-service-ad-assessment-api
+  name: Amazon Directory Service Directory Service Ad Assessment API
+  description: The Directory Service Ad Assessment API from Amazon Directory Service — 4 operation(s) for directory service ad assessment.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - Directory Service Ad Assessment
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-ad-assessment-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-list-adassessments-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-list-adassessments-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-describe-adassessment-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-start-adassessment-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-start-adassessment-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-delete-adassessment-request-schema.json
+- aid: amazon-directory-service:amazon-directory-service-ca-enrollment-policy-api
+  name: Amazon Directory Service Directory Service Ca Enrollment Policy API
+  description: The Directory Service Ca Enrollment Policy API from Amazon Directory Service — 3 operation(s) for directory service ca enrollment
+    policy.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - Directory Service Ca Enrollment Policy
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-ca-enrollment-policy-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-describe-caenrollment-policy-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-enable-caenrollment-policy-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-describe-caenrollment-policy-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-disable-caenrollment-policy-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-disable-caenrollment-policy-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-enable-caenrollment-policy-result-schema.json
+- aid: amazon-directory-service:amazon-directory-service-directory-data-access-api
+  name: Amazon Directory Service Directory Service Directory Data Access API
+  description: The Directory Service Directory Data Access API from Amazon Directory Service — 3 operation(s) for directory service directory
+    data access.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - Directory Service Directory Data Access
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-directory-data-access-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-describe-directory-data-access-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-describe-directory-data-access-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-disable-directory-data-access-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-enable-directory-data-access-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-disable-directory-data-access-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-enable-directory-data-access-result-schema.json
+- aid: amazon-directory-service:amazon-directory-service-operations-api
+  name: Amazon Directory Service Directory Service Operations API
+  description: The Directory Service Operations API from Amazon Directory Service — 3 operation(s) for directory service operations.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - Directory Service Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-operations-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-create-hybrid-adrequest-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-share-directory-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-describe-hybrid-adupdate-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-update-hybrid-adrequest-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-update-hybrid-adresult-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-describe-hybrid-adupdate-result-schema.json
+- aid: amazon-directory-service:amazon-directory-service-groupmemberships-api
+  name: Amazon Directory Service Directory Service Groupmemberships API
+  description: The Directory Service Groupmemberships API from Amazon Directory Service — 4 operation(s) for directory service groupmemberships.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - Directory Service Groupmemberships
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-groupmemberships-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-add-group-member-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-remove-group-member-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-list-groups-for-member-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-list-group-members-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-list-groups-for-member-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-list-group-members-result-schema.json
+- aid: amazon-directory-service:amazon-directory-service-groups-api
+  name: Amazon Directory Service Directory Service Groups API
+  description: The Directory Service Groups API from Amazon Directory Service — 6 operation(s) for directory service groups.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - Directory Service Groups
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-groups-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-update-group-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-create-group-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-search-groups-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-describe-group-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-delete-group-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-describe-group-request-schema.json
+- aid: amazon-directory-service:amazon-directory-service-users-api
+  name: Amazon Directory Service Directory Service Users API
+  description: The Directory Service Users API from Amazon Directory Service — 7 operation(s) for directory service users.
+  humanURL: https://aws.amazon.com/directoryservice/
+  baseURL: https://ds.amazonaws.com
+  tags:
+  - Directory Service Users
+  properties:
+  - type: OpenAPI
+    url: openapi/amazon-directory-service-users-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-update-user-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-create-user-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-describe-user-result-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-search-users-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-delete-user-request-schema.json
+  - type: JSONSchema
+    url: json-schema/amazon-directory-service-disable-user-request-schema.json
+
 integrations:
 - name: Agent Mode
 - name: Sign in
@@ -215,8 +411,12 @@ integrations:
 - name: Why AWS Marketplace?
 - name: Get started in AWS Marketplace
 - name: Manage Your Account
-maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+
 x-parent: amazon-web-services
+
 x-relationship: product
+x-enrichment:
+  date: '2026-11-11'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v6

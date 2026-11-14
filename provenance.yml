@@ -5,12 +5,24 @@ artifacts:
   agentic-access/amazon-directory-service-agentic-access.yml:
     method: generated
     evidence: declared in the artifact
+  ai-preferences/amazon-directory-service-ai-preferences.yml:
+    method: harvested
+    evidence: declared in the artifact
   authentication/amazon-directory-service-authentication.yml:
     method: derived
     evidence: declared in the artifact
   capabilities/amazon-directory-service-capability-edges.yml:
     method: unknown
     evidence: no authorship recorded
+  certification/observations-2026-11-11.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
+    method: unknown
+    evidence: no authorship recorded
+  cli/amazon-directory-service-cli.yml:
+    method: searched
+    evidence: declared in the artifact
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-acceptshareddirectory-api.opencollection.json:
     method: unknown
     evidence: no authorship recorded
@@ -413,6 +425,24 @@ artifacts:
   collections/amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api.postman_collection.json:
     method: unknown
     evidence: no authorship recorded
+  compliance/amazon-directory-service-compliance.yml:
+    method: harvested
+    evidence: declared in the artifact
+  conformance/amazon-directory-service-conformance.yml:
+    method: derived
+    evidence: declared in the artifact
+  conventions/amazon-directory-service-conventions.yml:
+    method: derived
+    evidence: declared in the artifact
+  data-model/amazon-directory-service-data-model.yml:
+    method: derived
+    evidence: declared in the artifact
+  eligibility/amazon-directory-service-eligibility.yml:
+    method: harvested
+    evidence: declared in the artifact
+  errors/amazon-directory-service-problem-types.yml:
+    method: derived
+    evidence: declared in the artifact
   examples/amazon-directory-service-certificate-example.json:
     method: unknown
     evidence: no authorship recorded
@@ -497,6 +527,9 @@ artifacts:
   front-door-ai/2026-09-17.yml:
     method: unknown
     evidence: no authorship recorded
+  hosts/amazon-directory-service-hosts.yml:
+    method: derived
+    evidence: declared in the artifact
   integrations/_index.yml:
     method: generated
     evidence: carries an API Evangelist house phrase
@@ -504,6 +537,12 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   json-ld/amazon-directory-service-context.jsonld:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-add-group-member-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-add-ip-routes-request-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-schema/amazon-directory-service-certificate-schema.json:
@@ -516,6 +555,66 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   json-schema/amazon-directory-service-conditional-forwarder-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-connect-directory-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-create-directory-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-create-group-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-create-hybrid-adrequest-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-create-microsoft-adrequest-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-create-trust-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-create-user-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-delete-adassessment-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-delete-group-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-delete-user-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-describe-adassessment-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-describe-caenrollment-policy-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-describe-caenrollment-policy-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-describe-directory-data-access-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-describe-directory-data-access-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-describe-group-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-describe-group-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-describe-hybrid-adupdate-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-describe-hybrid-adupdate-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-describe-user-result-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-schema/amazon-directory-service-directory-configuration-status-schema.json:
@@ -539,6 +638,36 @@ artifacts:
   json-schema/amazon-directory-service-directory-vpc-settings-schema.json:
     method: unknown
     evidence: no authorship recorded
+  json-schema/amazon-directory-service-disable-caenrollment-policy-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-disable-caenrollment-policy-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-disable-directory-data-access-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-disable-directory-data-access-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-disable-sso-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-disable-user-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-enable-caenrollment-policy-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-enable-caenrollment-policy-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-enable-directory-data-access-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-enable-directory-data-access-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
   json-schema/amazon-directory-service-event-topic-schema.json:
     method: unknown
     evidence: no authorship recorded
@@ -549,6 +678,24 @@ artifacts:
     method: unknown
     evidence: no authorship recorded
   json-schema/amazon-directory-service-ldaps-setting-info-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-list-adassessments-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-list-adassessments-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-list-group-members-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-list-group-members-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-list-groups-for-member-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-list-groups-for-member-result-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-schema/amazon-directory-service-log-subscription-schema.json:
@@ -566,7 +713,19 @@ artifacts:
   json-schema/amazon-directory-service-region-description-schema.json:
     method: unknown
     evidence: no authorship recorded
+  json-schema/amazon-directory-service-remove-group-member-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
   json-schema/amazon-directory-service-schema-extension-info-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-search-groups-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-search-users-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-share-directory-request-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-schema/amazon-directory-service-shared-directory-schema.json:
@@ -578,10 +737,28 @@ artifacts:
   json-schema/amazon-directory-service-snapshot-schema.json:
     method: unknown
     evidence: no authorship recorded
+  json-schema/amazon-directory-service-start-adassessment-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-start-adassessment-result-schema.json:
+    method: unknown
+    evidence: no authorship recorded
   json-schema/amazon-directory-service-tag-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-schema/amazon-directory-service-trust-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-update-group-request-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-update-hybrid-adrequest-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-update-hybrid-adresult-schema.json:
+    method: unknown
+    evidence: no authorship recorded
+  json-schema/amazon-directory-service-update-user-request-schema.json:
     method: unknown
     evidence: no authorship recorded
   json-structure/amazon-directory-service-certificate-structure.json:
@@ -665,7 +842,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -734,10 +911,21 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  openapi/_original/amazon-directory-service-openapi.yaml:
-    method: harvested
-    evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
-      to the provider's source is unverified
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
+  lifecycle/amazon-directory-service-lifecycle.yml:
+    method: searched
+    evidence: declared in the artifact
+  llms/amazon-directory-service-llms-provenance.yml:
+    method: unknown
+    evidence: no authorship recorded
+  llms/amazon-directory-service-llms.txt:
+    method: unknown
+    evidence: no authorship recorded
+  mcp/amazon-directory-service-mcp.yml:
+    method: derived
+    evidence: declared in the artifact
   openapi/amazon-directory-service-ad-assessment-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
@@ -750,9 +938,24 @@ artifacts:
   openapi/amazon-directory-service-directory-data-access-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
+  openapi/amazon-directory-service-groupmemberships-api-openapi.yml:
+    method: unknown
+    evidence: no authorship recorded
+  openapi/amazon-directory-service-groups-api-openapi.yml:
+    method: unknown
+    evidence: no authorship recorded
   openapi/amazon-directory-service-operations-api-openapi.yml:
     method: unknown
     evidence: no authorship recorded
+  openapi/amazon-directory-service-users-api-openapi.yml:
+    method: unknown
+    evidence: no authorship recorded
+  packages/amazon-directory-service-packages.yml:
+    method: searched
+    evidence: declared in the artifact
+  patterns/amazon-directory-service-patterns.yml:
+    method: derived
+    evidence: declared in the artifact
   plans/amazon-directory-service-plans-pricing.yml:
     method: searched
     evidence: declared in the artifact
@@ -957,10 +1160,16 @@ artifacts:
   postman/amazon-directory-service-x-amz-target-directoryservice-20150416-verifytrust-api.postman_collection.json:
     method: unknown
     evidence: no authorship recorded
+  privacy/amazon-directory-service-privacy-policy.yml:
+    method: harvested
+    evidence: declared in the artifact
   rate-limits/amazon-directory-service-rate-limits.yml:
-    method: generated
+    method: searched
     evidence: declared in the artifact
   rules/amazon-directory-service-jsonschema-spectral-rules.yml:
+    method: generated
+    evidence: declared in the artifact
+  rules/amazon-directory-service-rules.yml:
     method: generated
     evidence: declared in the artifact
   rules/amazon-directory-service-spectral-rules.yml:
@@ -976,8 +1185,31 @@ artifacts:
     method: searched
     evidence: declared in the artifact
   smithy/directory-service-2015-04-16.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/directory-service/service/2015-04-16/directory-service-2015-04-16.json
+      (sha256 8b9061ad7ee1, fetched 2026-11-11T21:08:28+00:00)
+  smithy/directory-service-data-2023-05-31.json:
+    method: harvested
+    evidence: byte-identical to https://raw.githubusercontent.com/aws/api-models-aws/3cd98287b471c106254abd89279cc87308d38bfd/models/directory-service-data/service/2023-05-31/directory-service-data-2023-05-31.json
+      (sha256 2f3f76b2573f, fetched 2026-11-11T21:08:29+00:00)
+  terms/amazon-directory-service-terms-of-service.yml:
+    method: harvested
+    evidence: declared in the artifact
+  vendors/amazon-directory-service-vendors.yml:
     method: unknown
     evidence: no authorship recorded
   vocabulary/amazon-directory-service-vocabulary.yaml:
+    method: unknown
+    evidence: no authorship recorded
+  vocabulary/amazon-directory-service-vocabulary.yml:
+    method: derived
+    evidence: declared in the artifact
+  well-known/amazon-directory-service-midway-auth-openid-configuration.json:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-directory-service-security.txt:
+    method: unknown
+    evidence: no authorship recorded
+  well-known/amazon-directory-service-well-known.yml:
     method: unknown
     evidence: no authorship recorded
